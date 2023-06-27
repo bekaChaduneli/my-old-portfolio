@@ -1,39 +1,62 @@
 .Text {
     font-size: 32px;
     margin-right: 24px;
+    font-family: var(--font-pragmatica);
     line-height: 110%;
     font-weight: 400;
 }
 
 .ProjectsWrapper {
     overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
 }
 .ProjectsHeadlines {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px;
-    border-bottom: 1px solid white;
-    &__Text {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 14px 32px;
+    border-bottom: 1px solid rgba(white, 0.6);
+    &__Text,
+    &__Tools,
+    &__Date {
         color: white;
+        font-family: var(--font-roman);
         font-size: 20px;
+    }
+
+    &__Date {
+        text-align: center;
     }
 }
 .HoveredProject {
-    padding: 22.5px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+    padding: 23px 0;
+    border-bottom: 1px solid rgba(white, 0.1);
 }
 .Project {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
     padding: 32px;
+    font-family: var(--font-acorn);
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+    border-bottom: 1px solid rgba(white, 0.1);
     &__Name {
-        font-size: 42px;
+        font-size: 36px;
         font-weight: 400;
     }
     &__Date {
-        font-size: 36px;
+        text-align: center;
+        font-size: 26px;
+    }
+    &__Slug {
+        font-size: 12px;
+    }
+    &__Tools {
+        text-align: start;
+        display: flex;
+        gap: 14px;
+    }
+    &__Tool {
+        height: 30px;
     }
 }
 

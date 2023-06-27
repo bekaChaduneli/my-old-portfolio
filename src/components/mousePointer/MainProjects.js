@@ -76,7 +76,10 @@ export default function MainProjects({ data }) {
         <div ref={ref} className={styles.ProjectsWrapper}>
             <div className={styles.ProjectsHeadlines}>
                 <h1 className={styles.ProjectsHeadlines__Text}>Project name</h1>
-                <h1 className={styles.ProjectsHeadlines__Text}>Project Date</h1>
+                <h1 className={styles.ProjectsHeadlines__Tools}>
+                    Project tools
+                </h1>
+                <h1 className={styles.ProjectsHeadlines__Date}>Project date</h1>
             </div>
             {data?.projects.map((project) => {
                 return (
@@ -146,7 +149,15 @@ export default function MainProjects({ data }) {
                                     <h1 className={styles.Project__Name}>
                                         {project.name}
                                     </h1>
-                                    <h2 className={styles.Projec__Date}>
+                                    <div className={styles.Project__Tools}>
+                                        {project?.tools?.map((tool) => (
+                                            <img
+                                                className={styles.Project__Tool}
+                                                src={`/images${tool}`}
+                                            />
+                                        ))}
+                                    </div>
+                                    <h2 className={styles.Project__Date}>
                                         {project.date}
                                     </h2>
                                 </div>

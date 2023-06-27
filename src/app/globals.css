@@ -13,4 +13,5 @@ body {
 body {
     background-color: #10101a;
     color: white;
+    font-family: var(--font-pragmatica);
 }

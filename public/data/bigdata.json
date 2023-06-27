@@ -62,9 +62,9 @@
             "tools": [
                 "/next.png",
                 "/typescript.png",
-                "prisma.png",
+                "/prisma.png",
                 "/tailwind.png",
-                "mysql"
+                "/mysql.png"
             ],
             "github": "https://github.com/bekaChaduneli/reddit-clone",
             "live": "https://reddit-clone-ir9l.vercel.app/",
@@ -92,7 +92,7 @@
             "tools": [
                 "/next.png",
                 "/tailwind.png",
-                "supabase.png",
+                "/supabase.png",
                 "/typescript.png"
             ],
             "github": "https://github.com/bekaChaduneli/spotify-clone",
@@ -123,7 +123,7 @@
                 "/weddings-contact.png",
                 "/weddings-search.png"
             ],
-            "tools": ["/html.png", "/scss.png", "gsap.png", "jquery.png"],
+            "tools": ["/html.png", "/scss.png", "/gsap.png", "/jquery.png"],
             "live": "http://wedding.artmedia.ge/",
             "about": [
                 "Introducing a captivating wedding site that offers a seamless booking experience for couples. This project, which I previously shared with you, provides a platform where users can effortlessly plan and book their dream weddings",
@@ -226,7 +226,7 @@
         },
         {
             "name": "3D Portfolio",
-            "best": true,
+            "best": false,
             "slug": "A 3D website with a flexible portfolio-like design powered by three js",
             "frameworks": ["next", "tailwind"],
             "id": "3d-portfolio",
@@ -242,7 +242,7 @@
             "date": " Mar",
             "image": "/3d-portfolio.png",
             "tools": [
-                "/threejs.png",
+                "/three.png",
                 "/react.png",
                 "/typescript.png",
                 "/styledcomponents.png"
@@ -253,7 +253,7 @@
         },
         {
             "name": "Clock app",
-            "best": true,
+            "best": false,
             "slug": "Locator of user's location and time information",
             "id": "clock-app",
             "display": false,
@@ -274,7 +274,7 @@
         },
         {
             "name": "Github user search",
-            "best": true,
+            "best": false,
             "display": false,
             "frameworks": ["next", "tailwind"],
             "date": " Mar",
@@ -296,7 +296,7 @@
         },
         {
             "name": "Ecommerce product",
-            "best": true,
+            "best": false,
             "display": false,
             "frameworks": ["next", "tailwind"],
             "slug": "Product purchase page where you can see many things about the product",
@@ -806,7 +806,7 @@
         {
             "name": "ThreeJS",
             "main": true,
-            "icon": "/threejs.png",
+            "icon": "/three.png",
             "startlearningdate": "March",
             "tip": "JavaScript framework",
             "projectsList": ["my-portfolio", "3d-portfolio"],
