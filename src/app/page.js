@@ -1,16 +1,25 @@
-import Image from "next/image";
+"use client";
+import MainProjects from "@/components/MainProjects/MainProjects";
 import styles from "./page.module.scss";
-import FramerText from "@/components/framerText/FramerText";
-
+import { useEffect, useState } from "react";
 export default function Home() {
+    const [data, setData] = useState(null);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("/data/bigdata.json");
+                const jsonData = await response.json();
+                setData(jsonData);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
     return (
-        <>
-            <FramerText baseVelocity={-8}>
-                <span className={styles.Text}> SPOTIFY </span>
-            </FramerText>
-            <FramerText baseVelocity={8}>
-                <span className={styles.Text}> CLONE </span>
-            </FramerText>
-        </>
+        <div className={styles.Wrapper}>
+            <MainProjects data={data} />
+        </div>
     );
 }

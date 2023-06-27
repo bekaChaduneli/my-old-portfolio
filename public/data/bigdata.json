@@ -1,0 +1,992 @@
+{
+    "personal": {
+        "name": "beka",
+        "lasname": "chaduneli",
+        "age": 19,
+        "address": "Tbilisi, Georgia",
+        "phone": "(+995) 571 11 85 60",
+        "bithday": "20 November",
+        "bithdate": "2003.11.20",
+        "noprogrammingstack": {
+            "photoshop": "Adobe Photoshop",
+            "videomontage": {
+                "sonyvegas": "Sony Vegas",
+                "filmora": "Filmora"
+            }
+        },
+        "position": "Full-Stack Developer",
+        "languages": {
+            "english": "Conversant",
+            "georgian": "Native"
+        },
+        "linkedin": "https://www.linkedin.com/in/beka-chaduneli-28203422b/",
+        "github": "https://github.com/bekaChaduneli",
+        "facebook": "https://www.facebook.com/chadunelibb/",
+        "instagram": "https://www.instagram.com/bekachaduneli/",
+        "mail": "beka.chaduneli.1@btu.edu.ge"
+    },
+
+    "questions": [
+        {
+            "name": "Tell me about you",
+            "answer": "Hello, I’m a full-stack web developer. I used eloquent javascript to teach myself fundamentals of web technologies - creating markup, manipulating DOM, and building web apps using modern javascript. After working on about 10-15 projects using Vanilla JavaScript, I learned how to use React to Build more ambitious and scalable web applications. Nowadays I’m learning advanced React, NodeJS, and Databases. I am very motivated to learn many new things in technologies, for example, Three.js, Prisma, React Native, Next.js, Python, C, and many others. I devote all my time to programming and building projects"
+        },
+        {
+            "name": "Do you have work experience?",
+            "answer": "I have no work experience, but I am in the process of searching, if you have any suggestions, write to me on the following email - beka.chaduneli.1@btu.edu.ge"
+        },
+        {
+            "name": "Tell me something about your education",
+            "answer": "In 2021, I entered the Faculty of Management at the University of Business and Technology, but I soon realized that I made a mistake and a year later I moved to the Faculty of Information Technology, where I am still studying today. During this time, I passed such subjects as Python, Oracle, Information security, and Principles of digital technologies. Also, on December 20, 2022, I started learning web development at Bitcamp. It's a Georgian super-intensive Bootcamp, where I study full-stack development, and I also took the react 101 course and covered React at an advanced level. In addition to all this, Bitcamp taught me how to develop on my own independently"
+        },
+        {
+            "name": "What is bitcamp",
+            "answer": "BitCamp is a platform for people interested in learning and teaching programming and web technologies. On this platform, aspiring developers test learning and gaining experience, using developers who have guided them along the way"
+        },
+        {
+            "name": "",
+            "answer": ""
+        }
+    ],
+
+    "projects": [
+        {
+            "name": "Breadit",
+            "slug": "social network",
+            "id": "breadit",
+            "best": true,
+            "display": true,
+            "frameworks": ["next", "typescript", "prisma", "tailwind", "mysql"],
+            "date": " Jun",
+            "image": ["/breadit-home.png", "/breadit-post.png"],
+            "tools": [
+                "/next.png",
+                "/typescript.png",
+                "prisma.png",
+                "/tailwind.png",
+                "mysql"
+            ],
+            "github": "https://github.com/bekaChaduneli/reddit-clone",
+            "live": "https://reddit-clone-ir9l.vercel.app/",
+            "about": [
+                "Breadit is an impressive project that has successfully developed a user-friendly platform for online community enthusiasts. Leveraging the capabilities of Next.js, NextAuth, TypeScript, Prisma, and MySQL, Breadit offers a seamless and intuitive experience for users seeking to connect and engage with diverse communities",
+                "With Breadit, users can effortlessly register via email and explore a vast array of communities catering to their interests. The platform allows for the creation and joining of communities, enabling users to find their niche and connect with like-minded individuals",
+                "Breadit's flexible posting system empowers users to share a wide range of content types, while the interactive features, such as reactions, comments, and replies, facilitate engaging discussions and interactions within the community",
+                "The main page's dynamic feed presents users with a wealth of posts, ensuring a constant stream of content tailored to their preferences and keeping them engaged",
+                "Breadit has succeeded in delivering a reliable and user-centric platform, offering an enjoyable experience for online community enthusiasts to connect, share, and engage in meaningful discussions"
+            ]
+        },
+        {
+            "name": "Spotify Clone",
+            "slug": "Music upload platform",
+            "id": "spotify-clone",
+            "best": true,
+            "display": false,
+            "frameworks": ["next", "supabase", "tailwind", "typescript"],
+            "date": " Jun",
+            "image": [
+                "/spotify-home.png",
+                "/spotify-liked.png",
+                "/spotify-search.png"
+            ],
+            "tools": [
+                "/next.png",
+                "/tailwind.png",
+                "supabase.png",
+                "/typescript.png"
+            ],
+            "github": "https://github.com/bekaChaduneli/spotify-clone",
+            "live": "https://spotify-clone-tau-ochre.vercel.app/",
+            "about": [
+                "Introducing a music platform, inspired by the popular music streaming platform. This project, as discussed earlier, is built with Next.js, TypeScript, Supabase, and Tailwind CSS, offering users a comprehensive music experience",
+                "The Spotify clone allows users to register, upload their music, search for songs, create playlists, and enjoy a seamless listening experience. It showcases my proficiency in Next.js, TypeScript, Supabase, and Tailwind CSS, creating a visually appealing and user-friendly interface",
+                "With Next.js, the project leverages server-side rendering for efficient performance, while TypeScript ensures strong typing and code integrity. Supabase provides a reliable database solution for user authentication, music storage, and playlist management. Tailwind CSS ensures a sleek and responsive design across different devices",
+                "Experience the joy of music with our Spotify clone, where you can explore, create, and enjoy your favorite tunes. Dive into a world of melodies as we bring the essence of Spotify to your fingertips, providing an immersive music streaming experience"
+            ]
+        },
+        {
+            "name": "Weddings project",
+            "slug": "weddings specified platform",
+            "id": "weddings-project",
+            "best": true,
+            "display": false,
+            "frameworks": ["html", "scss", "jquery"],
+            "date": " Apr",
+            "image": [
+                "/weddings-home.png",
+                "/weddings-about.png",
+                "/weddings-package.png",
+                "/spotify-packages.png",
+                "/spotify-honeymoon.png",
+                "/weddings-blog.png",
+                "/weddings-blog-article.png",
+                "/weddings-contact.png",
+                "/weddings-search.png"
+            ],
+            "tools": ["/html.png", "/scss.png", "gsap.png", "jquery.png"],
+            "live": "http://wedding.artmedia.ge/",
+            "about": [
+                "Introducing a captivating wedding site that offers a seamless booking experience for couples. This project, which I previously shared with you, provides a platform where users can effortlessly plan and book their dream weddings",
+                "With a user-friendly interface, the site allows couples to explore various wedding options, browse through available services, and make bookings based on their preferences. The intuitive design ensures easy navigation and showcases the elegance and sophistication synonymous with weddings",
+                "Created with HTML, GSAP, SCSS, and jQuery, this project reflects my dedication to delivering visually appealing and functional web applications. The use of GSAP brings animations and transitions to life, enhancing the overall user experience",
+                "By leveraging HTML, SCSS, and jQuery, I have created a comprehensive wedding site that caters to the unique needs of couples. It serves as a valuable tool for couples looking to create memorable moments on their special day",
+                "Explore the possibilities with our wedding site, where your dream wedding awaits. Discover, plan, and book your perfect celebration, as we guide you through an enchanting journey of love and togetherness"
+            ]
+        },
+
+        {
+            "name": "Google Clone",
+            "slug": "Site with google search system,created with google api",
+            "id": "google-clone",
+            "best": true,
+            "display": false,
+            "frameworks": ["next", "tailwind"],
+            "date": " Apr",
+            "image": [
+                "/google-home.png",
+                "/google-images.png",
+                "/google-search.png"
+            ],
+            "tools": ["/next.png", "/tailwind.png"],
+            "github": "https://github.com/bekaChaduneli/google-clone",
+            "live": "https://google-clone-coral-nine.vercel.app/",
+            "about": [
+                "Introducing a Google clone, which is craeted with Next.js and Tailwind CSS. This project, powered by the Google API, offers users a familiar search experience where they can explore a vast array of information, view images, and even search random words",
+                "It looks like real Google. Clone provides an intuitive interface for users to search for anything they desire. The project dynamically displays the number of results found for each search term, mimicking the functionality of the original search engine",
+                "Built on Next.js, the project delivers efficient server-side rendering and ensures a seamless browsing experience. Tailwind CSS enhances the design aesthetics, creating a visually appealing and responsive user interface",
+                "Unlock the power of search with our Google clone, where you can explore, discover, and find information with ease. Embrace the familiarity of Google while enjoying the capabilities of this tailor-made project, providing an immersive search experience for users"
+            ]
+        },
+        {
+            "name": "IMBd Clone",
+            "slug": "List where information about famous and unknown movies is stored",
+            "id": "imdb-clone",
+            "best": true,
+            "display": false,
+            "frameworks": ["next", "tailwind"],
+            "date": " Apr",
+            "image": [
+                "/google-home.png",
+                "/google-images.png",
+                "/google-search.png"
+            ],
+            "tools": ["/next.png", "/tailwind.png"],
+            "github": "https://github.com/bekaChaduneli/imdb-clone",
+            "live": "https://imdb-clone-self.vercel.app/",
+            "about": [
+                "This is my first Next.js project, allowing users to explore a vast collection of films available on IMDb. Discover film information, browse popular releases, and stay up-to-date with the latest trends in the film industry",
+                "Using the IMDb API, this web application delivers real-time film data, ensuring accurate and comprehensive details for an enhanced user experience. The intuitive interface enables effortless searching and seamless navigation through film listings",
+                "Built with Next.js, the project provides efficient server-side rendering and a smooth browsing experience. Tailwind CSS ensures a visually appealing and responsive design across different devices and screen sizes",
+                "Unlock the magic of cinema with our Next.js and Tailwind CSS project, as we bring the IMDb library to your fingertips. Immerse yourself in the world of films, explore captivating stories, and stay connected with the latest releases"
+            ]
+        },
+        {
+            "name": "Entertaiment app",
+            "slug": "Movies and series site",
+            "id": "entertaiment-app",
+            "best": true,
+            "display": false,
+            "frameworks": ["next", "tailwind"],
+            "react": true,
+            "three": false,
+            "typescript": true,
+            "markup": false,
+            "javascript": false,
+            "styledcomponents": true,
+            "chakraui": false,
+            "tailwind": false,
+            "date": " Mar",
+            "image": "/entertaiment-web-app.png",
+            "tools": ["/react.png", "/typescript.png", "/styledcomponents.png"],
+            "github": "https://github.com/bekaChaduneli/entertaiment-web-app",
+            "live": "https://entertaiment-web-app-nu.vercel.app/",
+            "about": "The main goal of this project was to get experience working with large files, building the site using the received information, and I also got to work with react components like swipper"
+        },
+        {
+            "name": "Planet facts",
+            "best": true,
+            "display": false,
+            "frameworks": ["next", "tailwind"],
+            "slug": "Lots of information about planets in solar systems",
+            "id": "planet-facts",
+            "react": true,
+            "typescript": true,
+            "three": false,
+            "markup": false,
+            "javascript": false,
+            "styledcomponents": true,
+            "chakraui": false,
+            "tailwind": false,
+            "date": " Mar",
+            "image": "/planet-facts.png",
+            "tools": ["/react.png", "/typescript.png", "/styledcomponents.png"],
+            "github": "https://github.com/bekaChaduneli/planet-facts-react",
+            "live": "https://planet-facts-reacts.vercel.app/",
+            "about": "The main goal of this project was to gain experience working with React routers and Vite"
+        },
+        {
+            "name": "3D Portfolio",
+            "best": true,
+            "slug": "A 3D website with a flexible portfolio-like design powered by three js",
+            "frameworks": ["next", "tailwind"],
+            "id": "3d-portfolio",
+            "react": true,
+            "typescript": true,
+            "javascript": false,
+            "three": true,
+            "styledcomponents": true,
+            "chakraui": false,
+            "markup": false,
+            "tailwind": false,
+            "display": false,
+            "date": " Mar",
+            "image": "/3d-portfolio.png",
+            "tools": [
+                "/threejs.png",
+                "/react.png",
+                "/typescript.png",
+                "/styledcomponents.png"
+            ],
+            "github": "https://github.com/bekaChaduneli/3d-portfolio",
+            "live": "https://3d-portfolio-liard.vercel.app/",
+            "about": "The main goal of the project was to get experience working with three.js"
+        },
+        {
+            "name": "Clock app",
+            "best": true,
+            "slug": "Locator of user's location and time information",
+            "id": "clock-app",
+            "display": false,
+            "date": " Mar",
+            "react": true,
+            "typescript": true,
+            "markup": false,
+            "javascript": false,
+            "three": false,
+            "styledcomponents": false,
+            "chakraui": true,
+            "tailwind": false,
+            "image": "/clock-app.png",
+            "tools": ["/react.png", "/typescript.png", "/chakraui.png"],
+            "github": "https://github.com/bekaChaduneli/clock-app-react",
+            "live": "https://clock-app-react-z4tq.vercel.app/",
+            "about": "The main goal of this project was to gain experience working with API, Typescript and Chakra UI"
+        },
+        {
+            "name": "Github user search",
+            "best": true,
+            "display": false,
+            "frameworks": ["next", "tailwind"],
+            "date": " Mar",
+            "slug": "locator of github users information with github api",
+            "id": "github-user-search-react",
+            "react": true,
+            "typescript": false,
+            "javascript": false,
+            "three": false,
+            "markup": false,
+            "styledcomponents": true,
+            "chakraui": false,
+            "tailwind": false,
+            "image": "/github-users-search-app.png",
+            "tools": ["/react.png", "/styledcomponents.png"],
+            "github": "https://github.com/bekaChaduneli/github-user-search-app-REACT",
+            "live": "https://github-user-search-app-react.vercel.app/",
+            "about": "This is my forth React app. The main goal of this project was to fetch the GitHub API with Axios and include the API information in HTML with React and Styled components"
+        },
+        {
+            "name": "Ecommerce product",
+            "best": true,
+            "display": false,
+            "frameworks": ["next", "tailwind"],
+            "slug": "Product purchase page where you can see many things about the product",
+            "id": "ecommerce-product",
+            "react": false,
+            "typescript": false,
+            "javascript": true,
+            "three": false,
+            "styledcomponents": false,
+            "chakraui": false,
+            "tailwind": false,
+            "markup": false,
+            "date": " Feb",
+            "image": "/ecommerce-product-page.png",
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/ecommerce-product-page",
+            "live": "https://bekachaduneli.github.io/ecommerce-product-page/",
+            "about": "The main goal of this project was to create a box with a document object model where many product images could be viewed"
+        },
+        {
+            "name": "Metaversus app",
+            "slug": "a Metaversus page with good animations and design",
+            "id": "metaversus-app",
+            "best": false,
+            "display": false,
+            "date": " Mar",
+            "react": true,
+            "typescript": false,
+            "javascript": false,
+            "three": false,
+            "markup": false,
+            "styledcomponents": false,
+            "chakraui": false,
+            "tailwind": true,
+            "image": "/metaversus-app.png",
+            "tools": ["/react.png", "/tailwind.png", "/framermotion.png"],
+            "github": "https://github.com/bekaChaduneli/metaversus-app",
+            "about": "The main goal of the project was to get experience working with framer motion"
+        },
+        {
+            "name": "company project",
+            "best": false,
+            "display": false,
+            "date": " Apr",
+            "slug": "React minified project with validation, swipper and animations",
+            "id": "company-project",
+            "react": true,
+            "typescript": false,
+            "javascript": false,
+            "three": false,
+            "markup": false,
+            "styledcomponents": false,
+            "chakraui": false,
+            "tailwind": true,
+            "image": "/work-project.png",
+            "tools": ["/react.png", "/tailwind.png"],
+            "github": "https://github.com/bekaChaduneli/artmedia-project",
+            "live": "https://artmedia-project-phi.vercel.app/",
+            "about": "The main goal of this project was to get experience with SwipperJS, UseForm, and other tools.            "
+        },
+        {
+            "name": "Interactive card details",
+            "best": false,
+            "slug": "Card filler site with useForm validations",
+            "id": "interactive-card-details",
+            "display": false,
+            "frameworks": ["react", "typescript", "chakra"],
+            "date": " Mar",
+            "image": [
+                "/interactive-card-details.png",
+                "/interactive-card-details-long.png"
+            ],
+            "tools": ["/react.png", "/typescript.png", "/chakraui.png"],
+            "github": "https://github.com/bekaChaduneli/interactive-card-details-REACT",
+            "about": [
+                "Introducing a card project created with React, TypeScript, and Chakra UI. This project enables users to enter their information, including card numbers and other details, and dynamically generates a new card based on their inputs",
+                "The project leverages the useForm library for validations, ensuring that the entered information meets the required criteria. With the power of React and TypeScript, the project offers a seamless and intuitive user interface for inputting and generating personalized cards",
+                "Explore the functionality of the project as it dynamically generates cards based on user input, providing a practical and interactive experience",
+                "Join us on this digital journey as we showcase the capabilities of React, TypeScript, and Chakra UI in creating a dynamic card project with form validations at its core"
+            ]
+        },
+        {
+            "name": "Interactive comment section",
+            "best": false,
+            "display": false,
+            "date": " Feb",
+            "slug": "An interactive site for adding comments",
+            "id": "interactive-comment-section",
+            "react": false,
+            "frameworks": ["html", "css", "javascript"],
+            "image": [
+                "/interactive-comments-section.png",
+                "/interactive-comments-section-long.png"
+            ],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/interactive-comment-section",
+            "live": "https://bekachaduneli.github.io/interactive-comment-section/",
+            "about": [
+                "Introducing a comment section project created with HTML, CSS, and JavaScript. This project allows users to engage in discussions by adding comments, replying to existing comments, deleting their comments, and editing their comments",
+                "Additionally, users have the ability to express their reactions to comments. The project offers a user-friendly interface, providing a seamless experience for interacting with the comment section",
+                "With the power of HTML, CSS, and JavaScript, users can actively participate in conversations, express their thoughts, and engage with other users",
+                "Join us as we explore the functionalities of the comment section project, enabling users to communicate, collaborate, and share their opinions through an intuitive and interactive interface"
+            ]
+        },
+        {
+            "name": "Todo UI",
+            "best": false,
+            "slug": "An app to add and manage todos and see information about your local time",
+            "id": "todo-ui",
+            "date": " Mar",
+            "image": ["/todo-ui.png", "/todo-ui-long.png"],
+            "frameworks": ["react", "tailwind"],
+            "tools": ["/react.png", "/tailwind.png"],
+            "github": "https://github.com/bekaChaduneli/Todo-UI-REACT",
+            "live": "https://todo-ui-1b33c.web.app/",
+            "about": [
+                "Introducing a todo app created with React and Tailwind CSS. This project allows users to add and manage their todos, providing a convenient way to keep track of tasks. Users can add their todos, check them off upon completion, and easily delete them when no longer needed",
+                "The app also displays the current time and day, providing users with additional context for their todos. With the simplicity of React and the flexibility of Tailwind CSS, the todo app offers a clean and user-friendly interface",
+                "Stay organized and stay on top of your tasks with this intuitive todo app. Join us as we explore the functionalities of the app, helping users effectively manage their todos and stay productive throughout the day"
+            ]
+        },
+        {
+            "name": "Github user search",
+            "best": false,
+            "slug": "A site for finding information about github users",
+            "id": "github-user-search",
+            "date": " Feb",
+            "frameworks": ["html", "css", "javascript"],
+            "image": [
+                "/github-users-search-app.png",
+                "/github-users-search-app-long.png"
+            ],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/github-user-search-app",
+            "live": "https://bekachaduneli.github.io/github-user-search-app/",
+            "about": [
+                "Introducing a GitHub user search application created with HTML, CSS, and JavaScript. This project allows users to search for GitHub users and retrieve information about them. Leveraging the power of the GitHub API, users can easily discover and explore the profiles of fellow developers",
+                "The project serves as an introduction to working with APIs, providing an opportunity to retrieve data dynamically and showcase it within the application. Discover the world of GitHub and connect with developers around the globe through this user-friendly search application",
+                "Experience the thrill of exploring profiles, discovering projects, and gaining insights into the developer community. Join us on this coding journey as we delve into the possibilities of HTML, CSS, and JavaScript, empowering users to search and connect with the GitHub community effortlessly"
+            ]
+        },
+        {
+            "name": "Tic Tac Toe",
+            "best": false,
+            "slug": "A gaming site for playing tic tac toe both in two players and against the computer",
+            "id": "tic-tac-toe",
+            "frameworks": ["html", "css", "javascript"],
+            "date": " Feb",
+            "image": ["/tic-tac-toe.png", "/tic-tac-toe-long.png"],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/tic-tac-toe",
+            "live": "https://bekachaduneli.github.io/tic-tac-toe/",
+            "about": [
+                "Introducing a classic Tic Tac Toe game created with HTML, CSS, and JavaScript. This project allows users to engage in a fun and interactive game of Tic Tac Toe. Users can play against each other in a two-player mode or challenge the computer in a single-player mode",
+                "Experience the thrill of strategizing and outsmarting your opponent in this timeless game. As one of the first projects created with JavaScript, the Tic Tac Toe game serves as an introduction to programming logic and user interaction",
+                "Engage in friendly competitions, test your skills, and enjoy the nostalgia of this popular game. Join us on this journey as we explore the possibilities of HTML, CSS, and JavaScript, and immerse ourselves in the world of Tic Tac Toe"
+            ]
+        },
+        {
+            "name": "Tip calculator app React",
+            "best": false,
+            "slug": "Tip and amount calculation site that was built with react",
+            "id": "tip-calculator-app-react",
+            "date": " Mar",
+            "image": ["/tip-calculator.png", "/tip-calculator-long.png"],
+            "frameworks": ["react", "tailwind"],
+            "tools": ["/react.png", "/tailwind.png"],
+            "github": "https://github.com/bekaChaduneli/tip-calculator-app-REACT",
+            "live": "https://tip-calculator-app-react.web.app/",
+            "about": [
+                "Introducing a handy Tip Calculator application created with React and Tailwind CSS. This project simplifies the process of calculating tips and total amounts, making it easier for users to manage payments",
+                "With a clean and intuitive interface, users can enter the bill amount, select the desired tip percentage, and instantly see the calculated tip amount and total bill",
+                "This practical tool eliminates the need for manual calculations and ensures accurate tip calculations every time. Designed with simplicity in mind, the Tip Calculator focuses on functionality and usability, providing users with a convenient solution for calculating tips on the go",
+                "Enhance your payment experience and make tipping hassle-free with this React and Tailwind-powered Tip Calculator application"
+            ]
+        },
+        {
+            "name": "Todo app",
+            "best": false,
+            "slug": "A site for managing todos where it is possible to delete, activate and filter todos",
+            "id": "todo-app",
+            "date": " Feb",
+            "frameworks": ["html", "css", "javascript"],
+            "image": ["/todo-app.png", "/todo-app-long.png"],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/todo-app",
+            "live": "https://bekachaduneli.github.io/todo-app/",
+            "about": [
+                "Introducing a functional Todo App created with HTML, CSS, and JavaScript. This project provides users with a simple and intuitive interface to manage their tasks efficiently. Users can easily add new todos, mark them as completed or active, and delete them as needed",
+                "The app also includes a feature that highlights the active todos, allowing users to prioritize their tasks effectively. Additionally, users have the option to switch to a dark mode theme for a more comfortable viewing experience",
+                "The Todo App focuses on usability and practicality, offering a straightforward solution for organizing and tracking daily tasks",
+                "With its user-friendly design and essential features, this HTML, CSS, and JavaScript-based Todo App simplifies task management and enhances productivity"
+            ]
+        },
+        {
+            "name": "Tip calculator app",
+            "best": false,
+            "slug": "Tip and amount calculation site that was built with javascript",
+            "id": "tip-calcultor-app",
+            "date": " Jan",
+            "image": ["/tip-calculator.png", "/tip-calculator-long.png"],
+            "frameworks": ["html", "css", "javascript"],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/tip-calculator-app",
+            "live": "https://bekachaduneli.github.io/tip-calculator-app/",
+            "about": [
+                "Introducing a Tip Calculator application built using HTML, CSS, and JavaScript. This project allows users to calculate the tip amount and total bill based on the entered bill amount and desired tip percentage",
+                "By providing a convenient and efficient way to calculate tips, this application aims to simplify the payment process for users. With its straightforward interface, users can easily input the bill amount and select the desired tip percentage to instantly obtain the tip amount and the final total",
+                "This project serves as an excellent introduction to JavaScript programming, providing a practical example of using basic mathematical calculations to enhance user experience",
+                "Overall, the Tip Calculator application offers a practical solution for quickly calculating tips, making it a useful tool for everyday use"
+            ]
+        },
+        {
+            "name": "Interactive rating component",
+            "best": false,
+            "slug": "A site where you can rate anything from 1 to 5 points",
+            "id": "interactive-rating-component",
+            "date": " Feb",
+            "image": [
+                "/interactive-rating-component.png",
+                "/interactive-rating-component-long.png"
+            ],
+            "frameworks": ["react", "tailwind"],
+            "tools": ["/react.png", "/tailwind.png"],
+            "github": "https://github.com/bekaChaduneli/interactive-rating-component",
+            "live": "https://interactive-rating-component-amber-two.vercel.app/",
+            "about": [
+                "Introducing a Rating Component built with React and Tailwind CSS. This project allows users to provide their rating for an app or any other item. Users can select their preferred score and submit their vote",
+                "The Rating Component provides a simple and intuitive interface for users to express their opinion. As a first React project, it serves as a great introduction to the fundamental concepts of React, such as component-based architecture and state management",
+                "By utilizing Tailwind CSS, the project achieves a clean and modern design. The Rating Component is a valuable addition to any website or application that requires user feedback and ratings",
+                "With its user-friendly interface and easy integration, it provides a convenient solution for collecting and displaying user ratings"
+            ]
+        },
+        {
+            "name": "Sass project",
+            "best": false,
+            "slug": "A site with a simple design, for which I used Sass for the first time",
+            "id": "sass-project",
+            "date": " Feb",
+            "image": ["/scss-project.png", "/scss-project-long.png"],
+            "frameworks": ["html", "scss"],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/scss-project",
+            "live": "https://bekachaduneli.github.io/Sass-project/",
+            "about": [
+                "Introducing a project created with HTML and Sass. This project serves as an opportunity for me to explore and expand my knowledge of Sass, a powerful CSS preprocessor. The main objective of this project is to gain hands-on experience with Sass by building simple designs",
+                "By using Sass, I can leverage its features such as variables, mixins, and nesting to write more efficient and maintainable CSS code. The project focuses on practicing and implementing Sass-specific techniques, enabling me to improve my skills in styling and design",
+                "While the emphasis is on learning and experimentation rather than complex functionality, the project serves as a solid foundation for future projects and furthering my understanding of Sass"
+            ]
+        },
+        {
+            "name": "launch countdown timer",
+            "best": false,
+            "slug": "A countdown timer site where the user can see how much time is left until the countdown ends",
+            "id": "launch-countdown-timer",
+            "date": " Feb",
+            "image": "/launch-countdown-app.png",
+            "frameworks": ["html", "css", "javascript"],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/launch-countdown-timer",
+            "live": "https://bekachaduneli.github.io/launch-countdown-timer/",
+            "about": [
+                "Presenting a project developed using HTML, CSS, and JavaScript – a countdown timer app. The primary purpose of this project is to create a user-friendly application where users can set specific countdown durations and visualize the remaining time",
+                "By inputting the desired time, users can initiate the countdown, and the app will display the decreasing time in a clear and intuitive manner",
+                "This project serves as an opportunity for me to practice JavaScript functionality and manipulate the DOM dynamically. It focuses on implementing essential timer features and providing a smooth user experience",
+                "Through this project, I aimed to enhance my JavaScript skills and gain a better understanding of handling time-related operations within a web application"
+            ]
+        },
+        {
+            "name": "Single page design portfolio",
+            "best": false,
+            "slug": "Website with portfolio design, with slide pagination",
+            "id": "single-page-design-portfolio",
+            "date": " Feb",
+            "image": [
+                "/single-page-portfolio.png",
+                "/single-page-portfolio-long.png"
+            ],
+            "frameworks": ["html", "css", "javascript"],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/single-page-design-portfolio",
+            "live": "https://bekachaduneli.github.io/single-page-design-portfolio/",
+            "about": [
+                "Introducing a project developed using HTML, CSS, and JavaScript – a single-page design website. The objective of this project was to create a visually appealing website that showcases information about a particular individual",
+                "One of the main highlights of this project is the implementation of a slider using native JavaScript, providing a seamless navigation experience for users to view different sections of the website",
+                "By utilizing HTML and CSS, I aimed to enhance my skills in creating structured and visually appealing web pages. The focus was on designing an engaging layout and incorporating smooth transitions using JavaScript",
+                "This project served as an opportunity to expand my knowledge in front-end development and explore different techniques to create an interactive and well-designed website"
+            ]
+        },
+        {
+            "name": "Faq accordion card",
+            "best": false,
+            "slug": "A component with an accordion effect",
+            "id": "faq-accordion-card",
+            "date": " Jan",
+            "frameworks": ["html", "css", "javascript"],
+            "image": [
+                "/faq-accordion-card.png",
+                "/faq-accordion-card-long.png"
+            ],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/faq-accordion-card",
+            "live": "https://bekachaduneli.github.io/faq-accordion-card/",
+            "about": [
+                "Introducing a project developed using HTML, CSS, and JavaScript – an FAQ Accordion Card. This project focuses on creating an interactive component where users can access information in an accordion-style format",
+                "It served as my first attempt at implementing an accordion feature using JavaScript. The purpose was to provide a user-friendly experience by allowing users to expand and collapse sections to view relevant information",
+                "The HTML and CSS were utilized to structure and style the accordion card, while JavaScript was responsible for the functionality of expanding and collapsing the sections",
+                "Through this project, I aimed to enhance my skills in front-end development and gain experience in creating interactive components that improve the usability of web pages"
+            ]
+        },
+        {
+            "name": "Interactive pricing component",
+            "best": false,
+            "slug": "Input type, price determining component",
+            "id": "interactive-pricing-component",
+            "date": " Jan",
+            "image": ["/rating-component.png", "/rating-component-long.png"],
+            "frameworks": ["html", "css", "javascript"],
+            "tools": ["/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/interactive-pricing-component",
+            "live": "https://bekachaduneli.github.io/interactive-pricing-component/",
+            "about": [
+                "Introducing an interactive pricing component project developed using HTML, CSS, and JavaScript. This project focuses on creating a pricing display where users can easily compare and select different pricing options",
+                "The main challenge was to design and implement the styles for the pricing component, ensuring it was visually appealing and user-friendly. The JavaScript functionality allows users to see which features and prices are associated with each plan, enabling them to make informed decisions",
+                "Through this project, I aimed to enhance my skills in front-end development and gain experience in creating interactive and visually engaging components",
+                "The HTML structure and CSS styles were utilized to create the layout and aesthetics of the pricing component, while JavaScript was responsible for the dynamic display of information"
+            ]
+        },
+        {
+            "name": "Fylo landing page",
+            "best": false,
+            "slug": "A design-built project with a file storage site with mail validation",
+            "id": "fylo-landing-page",
+            "date": " Jan",
+            "frameworks": ["html", "css"],
+            "image": ["/fylo-landing-page.png", "/fylo-landing-page-long.png"],
+            "tools": ["/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/fylo-landing-page-with-two-column-layout-master",
+            "live": "https://bekachaduneli.github.io/fylo-landing-page-with-two-column-layout-master/",
+            "about": [
+                "Introducing the Fylo Landing Page project, developed using HTML and CSS. This project represents my most recent endeavor where I focused on creating a visually appealing landing page for Fylo, a fictional company",
+                "The project primarily utilizes HTML and CSS to structure and style the page, showcasing my skills in front-end development. Additionally, a small JavaScript snippet was implemented for email validation purposes, ensuring that user-submitted email addresses are valid",
+                "The landing page aims to effectively communicate Fylo's key features and offerings through concise and engaging content sections. The design emphasizes a clean and modern aesthetic, with attention to detail in layout and typography",
+                "By completing this project, I furthered my proficiency in HTML and CSS while gaining experience in incorporating basic JavaScript functionality for form validation"
+            ]
+        },
+        {
+            "name": "Typemaster landing page",
+            "best": false,
+            "slug": "typemaster website which is styled with grid layout",
+            "id": "typemaster-landing-page",
+            "date": " Jan",
+            "frameworks": ["html", "css"],
+            "image": ["/typemaster.png", "/typemaster-long.png"],
+            "tools": ["/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/typemaster-pre-launch-landing-page",
+            "live": "https://bekachaduneli.github.io/typemaster-pre-launch-landing-page/",
+            "about": [
+                "Presenting a project created using HTML and CSS that heavily utilizes grid for styling purposes. The primary objective of this project was to implement a grid-based layout, which proved to be quite challenging due to the complexity of creating visually appealing and well-structured styles",
+                "Through persistent effort and attention to detail, I successfully crafted an aesthetically pleasing design using the grid system. This project provided valuable experience in working with grid layouts and improved my ability to create effective styles",
+                "By overcoming the difficulties encountered during the development process, I acquired a deeper understanding of HTML and CSS, enhancing my skill set for future projects"
+            ]
+        },
+        {
+            "name": "four card section",
+            "best": false,
+            "slug": "A flexible project of four components whose positions are selected by a grid",
+            "id": "four-card-section",
+            "frameworks": ["html", "css"],
+            "date": " Jan",
+            "image": ["/four-card.png", "/four-card-long.png"],
+            "tools": ["/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/four-card-feature-section-master",
+            "live": "https://bekachaduneli.github.io/four-card-feature-section-master/",
+            "about": [
+                "Introducing a project created with HTML and CSS featuring four cards that are arranged using the grid system. This project served as my initial introduction to working with grids. It provided an opportunity to explore and familiarize myself with the grid layout and its functionalities",
+                "Implementing the grid for organizing the cards proved to be an insightful experience, allowing me to understand the grid's flexibility and its potential for creating responsive designs",
+                "By diligently experimenting with the grid properties and configurations, I successfully achieved the desired card arrangement. This project marked an important milestone in my journey, enabling me to grasp the fundamental concepts of grid-based layouts and laying a strong foundation for future projects"
+            ]
+        },
+        {
+            "name": "Art gallery website",
+            "best": false,
+            "slug": "A site with a gallery design consisting of 2 pages, the main page and the location",
+            "id": "art-gallery-website",
+            "date": " Jan",
+            "frameworks": ["html", "css"],
+            "image": ["/art-gallery.png", "/art-gallery-long.png"],
+            "tools": ["/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/art-gallery-website",
+            "live": "https://bekachaduneli.github.io/art-gallery-website/",
+            "about": [
+                "Introducing ArtGallery, a project created with HTML and CSS consisting of two pages. The first page showcases an art gallery, while the second page provides information about its location. This project marks a significant milestone as it was my first experience connecting pages using the <a> tag",
+                "Implementing this feature allowed for seamless navigation between the art gallery page and the location page, enhancing the overall user experience",
+                "Through this project, I gained valuable insights into the concept of linking pages and gained a deeper understanding of how to create interconnected web experiences. ArtGallery serves as a testament to my growth and proficiency in HTML and CSS, demonstrating my ability to create multi-page websites with smooth transitions and cohesive navigation"
+            ]
+        },
+        {
+            "name": "Equalizer landing page",
+            "best": false,
+            "slug": "html css website with audio systems design",
+            "id": "equalizer-landing-page",
+            "frameworks": ["html", "css"],
+            "date": " Jan",
+            "image": [
+                "/equlaizer-landing-page.png",
+                "/equlaizer-landing-page-long.png"
+            ],
+            "tools": ["/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/equalizer-landing-page",
+            "live": "https://bekachaduneli.github.io/equalizer-landing-page/",
+            "about": [
+                "Introducing the Equalizer Landing Page, a visually stunning project created with HTML and CSS. The main focus of this project was to design an eye-catching layout featuring multiple boxes within a container, with some of the boxes partially extending outside the container",
+                "This unique design challenge pushed the boundaries of my HTML and CSS skills and allowed me to explore creative techniques to achieve the desired effect",
+                "The Equalizer Landing Page stands as a testament to my ability to create visually appealing and dynamic web designs, showcasing my proficiency in crafting engaging user interfaces",
+                "Through this project, I honed my skills in layout design, positioning elements, and creating visually captivating compositions. The Equalizer Landing Page captures attention and offers a memorable user experience with its captivating design"
+            ]
+        },
+        {
+            "name": "Skilled landing page",
+            "best": false,
+            "slug": "My first website which is also responsive",
+            "id": "skilled-landing-page",
+            "date": " Jan",
+            "image": [
+                "/skilled-elearning-app.png",
+                "/skilled-elearning-app-long.png"
+            ],
+            "frameworks": ["html", "css"],
+            "tools": ["/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/skilled-elearning-landing-page",
+            "live": "https://encouraging-catnip-washer.glitch.me/",
+            "about": [
+                "Introducing the Skilled Landing Page, a project crafted with HTML and CSS. As my first endeavor in creating a complete web page rather than individual components, the Skilled Landing Page showcases my ability to design and develop a responsive layout",
+                "The primary objective of this project was to ensure that the page adapts seamlessly to different screen sizes and devices, providing an optimal viewing experience for users across desktops, tablets, and mobile devices",
+                "By incorporating responsive design principles, I learned how to structure and style elements to achieve fluidity and responsiveness. The Skilled Landing Page serves as a testament to my growing skills in creating engaging and user-friendly web pages",
+                "It exemplifies my commitment to staying up-to-date with modern web design practices and delivering a seamless user experience"
+            ]
+        }
+    ],
+
+    "skills": [
+        {
+            "name": "React",
+            "main": true,
+            "startlearningdate": "February",
+            "icon": "/react.png",
+            "tip": "Javascript framework",
+            "projectsList": [
+                "entertaiment-app",
+                "planet-facts",
+                "my-portfolio",
+                "clock-app",
+                "3d-portfolio",
+                "metaversus-app",
+                "clock-app",
+                "interactive-card-details",
+                "todo-ui",
+                "github-user-search-react",
+                "company-project",
+                "tip-calculator-app-react",
+                "interactive-rating-component"
+            ],
+            "about": ""
+        },
+        {
+            "name": "nextjs",
+            "main": true,
+            "startlearningdate": "April",
+            "tip": "Javascript framework",
+            "icon": "/next.png",
+            "projectsList": [
+                "breadit",
+                "spotify-clone",
+                "google-clone",
+                "imdb-clone"
+            ],
+            "about": ""
+        },
+        {
+            "name": "Typescript",
+            "main": true,
+            "startlearningdate": "March",
+            "icon": "/typescript.png",
+            "tip": "Javascript superset",
+            "projectsList": [
+                "breadit",
+                "spotify-clone",
+                "entertaiment-app",
+                "my-portfolio",
+                "planet-facts",
+                "3d-portfolio",
+                "clock-app",
+                "interactive-card-details"
+            ],
+            "about": ""
+        },
+        {
+            "name": "NodeJS",
+            "main": false,
+            "icon": "/node.png",
+            "startlearningdate": "February",
+            "tip": "Javascript backend framework",
+            "projectsList": [],
+            "about": ""
+        },
+        {
+            "name": "ThreeJS",
+            "main": true,
+            "icon": "/threejs.png",
+            "startlearningdate": "March",
+            "tip": "JavaScript framework",
+            "projectsList": ["my-portfolio", "3d-portfolio"],
+            "about": ""
+        },
+        {
+            "name": "Javascript",
+            "main": true,
+            "startlearningdate": "January",
+            "icon": "/javascript.png",
+            "tip": "Programming language",
+            "projectsList": [
+                "weddings-project",
+                "ecommerce-product",
+                "interactive-comment-section",
+                "todo-app",
+                "tic-tac-toe",
+                "launch-countdown-timer",
+                "github-user-search",
+                "single-page-design-portfolio",
+                "interactive-pricing-component",
+                "tip-calculator"
+            ],
+            "about": ""
+        },
+        {
+            "name": "SQL",
+            "startlearningdate": "February",
+            "main": true,
+            "tip": "Database",
+            "icon": "/sql.png",
+            "projectsList": ["breadit", "spotify-clone"],
+            "about": ""
+        },
+        {
+            "name": "Styled Components",
+            "main": false,
+            "icon": "/styledcomponents.png",
+            "startlearningdate": "March",
+            "tip": "Css Framework",
+            "projectsList": [
+                "planet-facts",
+                "github-user-search-react",
+                "entertaiment-web-app",
+                "3d-portfolio"
+            ],
+            "about": ""
+        },
+        {
+            "name": "Chakra UI",
+            "main": false,
+            "icon": "/chakraui.png",
+            "startlearningdate": "March",
+            "tip": "Css Framework",
+            "projectsList": [
+                "my-portfolio",
+                "clock-app",
+                "interactive-card-details"
+            ],
+            "about": ""
+        },
+        {
+            "name": "Prisma",
+            "main": false,
+            "icon": "/prisma.png",
+            "startlearningdate": "jun",
+            "tip": "next-generation ORM",
+            "projectsList": ["breadit"],
+            "about": ""
+        },
+        {
+            "name": "Taiwlind",
+            "main": false,
+            "icon": "/tailwind.png",
+            "startlearningdate": "February",
+            "tip": "Css Framework",
+            "projectsList": [
+                "breadit",
+                "spotify-clone",
+                "google-clone",
+                "imdb-clone",
+                "metaversus-app",
+                "interactive-rating-component",
+                "todo-ui",
+                "tip-calculator-app-react"
+            ],
+            "about": ""
+        },
+        {
+            "name": "css",
+            "startlearningdate": "",
+            "main": false,
+            "icon": "/css.png",
+            "tip": "",
+            "projectsList": [
+                "ecommerce-product",
+                "interactive-comment-section",
+                "todo-app",
+                "tic-tac-toe",
+                "launch-countdown-timer",
+                "github-user-search",
+                "single-page-design-portfolio",
+                "interactive-pricing-component",
+                "fylo-landing-page",
+                "typemaster-landing-page",
+                "four-card-section",
+                "art-gallery-website",
+                "equalizer-landing-page",
+                "skilled-landing-page",
+                "tip-calculator"
+            ],
+            "about": ""
+        },
+        {
+            "name": "html",
+            "main": false,
+            "icon": "/html.png",
+            "startlearningdate": "",
+            "tip": "",
+            "about": ""
+        },
+        {
+            "name": "Git",
+            "main": false,
+            "icon": "/git.png",
+            "startlearningdate": "January",
+            "tip": "version control system",
+            "about": ""
+        },
+        {
+            "name": "linux",
+            "main": false,
+            "startlearningdate": "",
+            "tip": "",
+            "icon": "/linux.png",
+            "about": ""
+        },
+        {
+            "name": "redux",
+            "main": false,
+            "startlearningdate": "",
+            "icon": "/redux.png",
+            "tip": "",
+            "projectsList": [],
+            "about": ""
+        },
+        {
+            "name": "scss",
+            "main": false,
+            "startlearningdate": "",
+            "tip": "",
+            "icon": "/scss.png",
+            "projectsList": ["weddings-project", "sass-project"],
+            "about": ""
+        },
+        {
+            "name": "express",
+            "main": false,
+            "startlearningdate": "",
+            "tip": "nodejs framework",
+            "icon": "/express.png",
+            "projectsList": [],
+            "about": ""
+        },
+        {
+            "name": "figma",
+            "main": false,
+            "startlearningdate": "",
+            "icon": "/figma.png",
+            "tip": "",
+            "about": ""
+        },
+        {
+            "name": "Postman",
+            "main": false,
+            "startlearningdate": "February",
+            "icon": "/postman.png",
+            "tip": "API platform",
+            "projectsList": [],
+            "about": ""
+        }
+    ]
+}

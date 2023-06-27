@@ -9,7 +9,6 @@ import {
     useVelocity,
     useAnimationFrame,
 } from "framer-motion";
-// import { wrap } from "@motionone/utils";
 import { wrap } from "framer-motion";
 import styles from "./framerText.module.scss";
 
@@ -40,6 +39,21 @@ export default function FramerText({ children, baseVelocity = 100 }) {
     return (
         <div className={styles.Parallax}>
             <motion.div className={styles.Parallax__Scroller} style={{ x }}>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
+                <span>{children} </span>
                 <span>{children} </span>
                 <span>{children} </span>
                 <span>{children} </span>
