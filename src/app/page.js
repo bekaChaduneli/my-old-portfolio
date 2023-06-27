@@ -1,7 +1,9 @@
 "use client";
-import MainProjects from "@/components/MainProjects/MainProjects";
+
+import MainProjects from "@/components/mousePointer/MainProjects";
 import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
+
 export default function Home() {
     const [data, setData] = useState(null);
     useEffect(() => {
@@ -19,7 +21,9 @@ export default function Home() {
     }, []);
     return (
         <div className={styles.Wrapper}>
-            <MainProjects data={data} />
+            <div className={styles.Wrapper__Projects}>
+                <MainProjects data={data} />
+            </div>
         </div>
     );
 }

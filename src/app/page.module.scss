@@ -1,4 +1,10 @@
 .Wrapper {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    &__Projects {
+        width: 60%;
+    }
 }
