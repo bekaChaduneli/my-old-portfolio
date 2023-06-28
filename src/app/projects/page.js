@@ -1,18 +1,15 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import MainProjects from "@/components/mousePointer/MainProjects";
+import React from "react";
+import { useEffect, useState } from "react";
 export default function page() {
     const [data, setData] = useState(null);
-    const params = useParams();
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch("/data/bigdata.json");
                 const jsonData = await response.json();
-                const project = jsonData.projects.filter(
-                    (project) => project.id === params.id
-                )[0];
-                setData(project);
+                setData(jsonData);
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
@@ -20,5 +17,9 @@ export default function page() {
 
         fetchData();
     }, []);
-    return <div>{params.id}</div>;
+    return (
+        <div>
+            <MainProjects data={data} />
+        </div>
+    );
 }
