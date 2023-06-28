@@ -21,14 +21,6 @@ export default function Home() {
     }, []);
     return (
         <>
-            <div className={styles.Background}>
-                <div className={styles.Background__BtnBg} />
-                <div className={styles.Background__Fade} />
-                <div className={styles.Background__Wrap}>
-                    <h1>Beka chaduneli</h1>
-                    <h2>Full stack developer</h2>
-                </div>
-            </div>
             <div className={styles.Wrapper}>
                 <div className={styles.Wrapper__Projects}>
                     <MainProjects data={data} />

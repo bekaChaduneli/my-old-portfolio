@@ -2,6 +2,7 @@ import "./globals.css";
 import "../assets/styles/main.scss";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import styles from "./page.module.scss";
 
 export const metadata = {
     title: "Create Next App",
@@ -13,6 +14,10 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <Navbar />
+                <div className={styles.Background}>
+                    <div className={styles.Background__BtnBg} />
+                    <div className={styles.Background__Fade} />
+                </div>
                 {children}
                 <Footer />
             </body>
