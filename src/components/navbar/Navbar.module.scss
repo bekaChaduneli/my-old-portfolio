@@ -1,22 +1,67 @@
+@keyframes shadowDrop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .Navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  padding: 40px;
+  @media (max-width: 1024px) {
+    padding: 34px;
+  }
+  @media (max-width: 560px) {
+    padding: 24px 20px;
+  }
+  &__Box {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    position: absolute;
-    width: 100%;
-    padding: 40px;
-    &__Link {
-        list-style: none;
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.832);
+    padding: 20px 12px;
+    border-radius: 30px;
+    transition: shadowDrop 1s;
+    @media (max-width: 1024px) {
+      gap: 12px;
+      padding: 14px 10px;
+      border-radius: 24px;
     }
-    &__Text {
-        padding: 10px 24px;
-        border-radius: 24px;
-        font-family: var(--font-pragmatica);
-        font-size: 18px;
-        &--active {
-            background-color: rgba(white, 0.05);
-        }
+    @media (max-width: 560px) {
+      gap: 4px;
+      padding: 14px 10px;
+      border-radius: 24px;
     }
+    &--active {
+      transition: 0.4s;
+      background-color: rgba(#a405b3, 0.4);
+    }
+  }
+  &__Link {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+  }
+  &__Text {
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-family: var(--font-pragmatica);
+    font-weight: 700;
+    font-size: 18px;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      padding: 6px 16px;
+      border-radius: 18px;
+    }
+    @media (max-width: 560px) {
+      gap: 14px;
+      padding: 6px 14px;
+      border-radius: 18px;
+    }
+    &--active {
+      background-color: rgba(#c700da, 0.3);
+    }
+  }
 }
