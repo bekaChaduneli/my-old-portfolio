@@ -1,0 +1,22 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    padding: 40px;
+    &__Link {
+        list-style: none;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.832);
+    }
+    &__Text {
+        padding: 10px 24px;
+        border-radius: 24px;
+        font-family: var(--font-pragmatica);
+        font-size: 18px;
+        &--active {
+            background-color: rgba(white, 0.05);
+        }
+    }
+}

@@ -1,4 +1,5 @@
 .Wrapper {
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,5 +7,34 @@
     overflow: hidden;
     &__Projects {
         width: 60%;
+    }
+}
+.Background {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    &__BtnBg {
+        opacity: 1;
+        background: #c700da url("/images/background.jpeg");
+        background-size: 600%;
+        height: 100vh;
+        animation: btnHover 30s linear;
+    }
+    &__Fade {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        );
+    }
+    &__Wrap {
+    }
+}
+@keyframes btnHover {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 600%;
     }
 }
