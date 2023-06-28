@@ -9,6 +9,7 @@ import { motion, useTransform } from "framer-motion";
 import MyImage from "../../../public/images/laptop.png";
 import styles from "./mainProjects.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MainProjects({ data }) {
     const [cursorText, setCursorText] = useState("");
@@ -81,10 +82,11 @@ export default function MainProjects({ data }) {
                 </h1>
                 <h1 className={styles.ProjectsHeadlines__Date}>Project date</h1>
             </div>
-            {data?.projects.map((project) => {
+            {data?.projects.map((project, index) => {
                 return (
                     project.best && (
                         <div
+                            key={index}
                             onMouseEnter={() => {
                                 setRealLink(project.name);
                                 setHovered(project.id);
@@ -94,74 +96,85 @@ export default function MainProjects({ data }) {
                                 setHovered("");
                             }}
                         >
-                            <motion.div
-                                variants={variants}
-                                className={styles.circle}
-                                animate={cursorVariant}
-                                transition={spring}
+                            <Link
+                                className={styles.Link}
+                                key={project.id}
+                                href={`/projects/${project.id}`}
                             >
-                                {RealLink === project.name && (
-                                    <figure
-                                        className={styles.LaptopWrapper}
-                                        style={{
-                                            transform: `${
-                                                RealLink
-                                                    ? "scale(1) translate(-35%, -80%)"
-                                                    : "scale(0) translate(-35%, -80%)"
-                                            } `,
-                                        }}
-                                    >
-                                        <Image
-                                            src={MyImage}
-                                            width="300"
-                                            height="192"
-                                            className={styles.Laptop}
-                                        />
-                                        <h1>{RealLink}</h1>
-                                    </figure>
-                                )}
-                            </motion.div>
-                            {hovered === project.id ? (
-                                <div
-                                    onMouseEnter={contactEnter}
-                                    onMouseLeave={contactLeave}
-                                    className={styles.HoveredProject}
+                                <motion.div
+                                    variants={variants}
+                                    className={styles.circle}
+                                    animate={cursorVariant}
+                                    transition={spring}
                                 >
-                                    <FramerText baseVelocity={-1.5}>
-                                        <span className={styles.Text}>
-                                            {" "}
-                                            Click to see more{" "}
-                                        </span>
-                                    </FramerText>
-                                    <FramerText baseVelocity={1.5}>
-                                        <span className={styles.Text}>
-                                            {" "}
-                                            Click to see more{" "}
-                                        </span>
-                                    </FramerText>
-                                </div>
-                            ) : (
-                                <div
-                                    onMouseEnter={contactEnter}
-                                    onMouseLeave={contactLeave}
-                                    className={styles.Project}
-                                >
-                                    <h1 className={styles.Project__Name}>
-                                        {project.name}
-                                    </h1>
-                                    <div className={styles.Project__Tools}>
-                                        {project?.tools?.map((tool) => (
-                                            <img
-                                                className={styles.Project__Tool}
-                                                src={`/images${tool}`}
+                                    {RealLink === project.name && (
+                                        <figure
+                                            className={styles.LaptopWrapper}
+                                            style={{
+                                                transform: `${
+                                                    RealLink
+                                                        ? "scale(1) translate(-35%, -80%)"
+                                                        : "scale(0) translate(-35%, -80%)"
+                                                } `,
+                                            }}
+                                        >
+                                            <Image
+                                                src={MyImage}
+                                                width="300"
+                                                height="192"
+                                                className={styles.Laptop}
                                             />
-                                        ))}
+                                            <h1>{RealLink}</h1>
+                                        </figure>
+                                    )}
+                                </motion.div>
+                                {hovered === project.id ? (
+                                    <div
+                                        onMouseEnter={contactEnter}
+                                        onMouseLeave={contactLeave}
+                                        className={styles.HoveredProject}
+                                    >
+                                        <FramerText baseVelocity={-1.5}>
+                                            <span className={styles.Text}>
+                                                {" "}
+                                                Click to see more{" "}
+                                            </span>
+                                        </FramerText>
+                                        <FramerText baseVelocity={1.5}>
+                                            <span className={styles.Text}>
+                                                {" "}
+                                                Click to see more{" "}
+                                            </span>
+                                        </FramerText>
                                     </div>
-                                    <h2 className={styles.Project__Date}>
-                                        {project.date}
-                                    </h2>
-                                </div>
-                            )}
+                                ) : (
+                                    <div
+                                        onMouseEnter={contactEnter}
+                                        onMouseLeave={contactLeave}
+                                        className={styles.Project}
+                                    >
+                                        <h1 className={styles.Project__Name}>
+                                            {project.name}
+                                        </h1>
+                                        <div className={styles.Project__Tools}>
+                                            {project?.tools?.map(
+                                                (tool, index) => (
+                                                    <img
+                                                        key={index}
+                                                        className={
+                                                            styles.Project__Tool
+                                                        }
+                                                        src={`/images${tool}`}
+                                                    />
+                                                )
+                                            )}
+                                        </div>
+                                        <h2 className={styles.Project__Date}>
+                                            {project.date}
+                                        </h2>
+                                    </div>
+                                )}
+                            </Link>
                         </div>
                     )
                 );
