@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    &__Projects {
+        width: 60%;
+    }
 }
 .Content {
     padding-top: 130px;

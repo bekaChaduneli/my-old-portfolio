@@ -23,8 +23,8 @@ export default function Home() {
     return (
         <>
             <div className={styles.Wrapper}>
+                <Header />
                 <div className={styles.Wrapper__Projects}>
-                    <Header />
                     <MainProjects data={data} />
                 </div>
             </div>
