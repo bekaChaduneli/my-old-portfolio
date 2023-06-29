@@ -1,0 +1,81 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    font-family: var(--font-acorn);
+    &__Headline {
+        font-size: 100px;
+        line-height: 100%;
+    }
+
+    &__Skills {
+        font-size: 50px;
+        font-family: var(--font-acorn);
+        margin-bottom: 28px;
+        font-weight: 700;
+    }
+    &__SkillsValue {
+        font-size: 50px;
+        color: #b747ff;
+        font-family: var(--font-acorn);
+        margin-bottom: 28px;
+        font-weight: 700;
+    }
+    &__Text {
+        line-height: 100%;
+        font-family: var(--font-roman);
+        font-size: 30px;
+        min-height: 30px;
+        margin-bottom: 4px;
+    }
+    &__ButtonsWrapper {
+        display: flex;
+        gap: 30px;
+    }
+    &__Location {
+        display: flex;
+        gap: 12px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-roman);
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__LocationIcon {
+        width: 28px;
+        transform: translateY(-3px);
+        height: 28px;
+    }
+    &__Button {
+        background-color: rgba(#880094, 0.28);
+        // background-size: 2000%;
+        // animation: btnHover 100s linear infinite;
+        list-style: none;
+        // flex: 1;
+        min-width: 240px;
+        text-align: center;
+        text-decoration: none;
+        font-family: var(--font-acorn);
+        color: #f2cbf6;
+        padding: 8px 50px;
+        font-size: 30px;
+        transition: 0.4s;
+        border-radius: 12px;
+        &:hover {
+            transition: 0.4s;
+            transform: scale(0.92);
+            background-color: rgba(#880094, 0.6);
+        }
+    }
+}
+@keyframes btnHover {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 600%;
+    }
+}
