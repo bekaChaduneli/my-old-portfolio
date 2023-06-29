@@ -1,25 +1,58 @@
 .Footer {
-  border-top: 1px solid rgba(#fff, 0.4);
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  padding: 30px;
-  &__Socials {
+    border-top: 1px solid rgba(#fff, 0.4);
     display: flex;
-    cursor: pointer;
-    gap: 20px;
-  }
-  &__Icons {
-    width: 30px;
-    height: 30px;
-  }
-  &__Text {
-    font-family: var(--font-acorn);
-    font-size: 18px;
-  }
+    justify-content: space-between;
+    width: 80%;
+    padding: 30px;
+    @media (max-width: 768px) {
+        width: 84%;
+    }
+    @media (max-width: 560px) {
+        width: 92%;
+    }
+    @media (max-width: 420px) {
+        padding: 24px;
+    }
+    &__Socials {
+        display: flex;
+        cursor: pointer;
+        gap: 20px;
+        align-items: center;
+    }
+    &__Icon {
+        width: 30px;
+
+        @media (max-width: 768px) {
+            width: 20px;
+        }
+    }
+    &__IconLink {
+        list-style: none;
+        text-decoration: none;
+        color: #fce2ff;
+        height: 30px;
+        transition: 0.3s;
+    }
+    &__IconLink:hover {
+        opacity: 0.7;
+        list-style: none;
+        text-decoration: none;
+        color: #fce2ff;
+        transform: scale(0.9);
+    }
+    &__Text {
+        font-family: var(--font-acorn);
+        font-size: 18px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+        @media (max-width: 420px) {
+            font-size: 12px;
+        }
+    }
 }
 
 .FooterWrapper {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
