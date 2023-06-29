@@ -1,98 +1,97 @@
 .Text {
-    font-size: 32px;
-    margin-right: 24px;
-    font-family: var(--font-pragmatica);
-    line-height: 110%;
-    font-weight: 400;
+  font-size: 32px;
+  margin-right: 24px;
+  font-family: var(--font-pragmatica);
+  line-height: 110%;
+  font-weight: 400;
 }
 
 .ProjectsWrapper {
-    overflow: hidden;
-    border-collapse: collapse;
-    width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+  width: 100%;
 }
 .ProjectsHeadlines {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 14px 32px;
-    border-bottom: 1px solid rgba(white, 0.6);
-    &__Text,
-    &__Tools,
-    &__Date {
-        color: white;
-        font-family: var(--font-roman);
-        font-size: 20px;
-    }
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 14px 32px;
+  border-bottom: 1px solid rgba(white, 0.6);
+  &__Text,
+  &__Tools,
+  &__Date {
+    color: #ecd7ff;
+    font-family: var(--font-roman);
+    font-size: 20px;
+  }
 
-    &__Date {
-        text-align: center;
-    }
+  &__Date {
+    text-align: center;
+  }
 }
 .HoveredProject {
-    padding: 23px 0;
-    border-bottom: 1px solid rgba(white, 0.1);
+  padding: 23px 0;
+  border-bottom: 1px solid rgba(white, 0.1);
 }
 .Project {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 32px;
-    font-family: var(--font-acorn);
-    align-items: center;
-    border-bottom: 1px solid rgba(white, 0.1);
-    &__Name {
-        font-size: 36px;
-        font-weight: 400;
-    }
-    &__Date {
-        text-align: center;
-        font-size: 20px;
-    }
-    &__Slug {
-        font-size: 12px;
-    }
-    &__Tools {
-        text-align: start;
-        display: flex;
-        gap: 14px;
-    }
-    &__Tool {
-        height: 30px;
-    }
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 32px;
+  font-family: var(--font-acorn);
+  align-items: center;
+  border-bottom: 1px solid rgba(white, 0.1);
+  &__Name {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &__Date {
+    text-align: center;
+    font-size: 20px;
+  }
+  &__Slug {
+    font-size: 12px;
+  }
+  &__Tools {
+    text-align: start;
+    display: flex;
+    gap: 14px;
+  }
+  &__Tool {
+    height: 30px;
+  }
 }
 .Link {
-    list-style: none;
-    text-decoration: none;
-    color: white;
+  list-style: none;
+  text-decoration: none;
+  color: #ecd7ff;
 }
 
 .contactWrapper {
-    padding: 120px;
+  padding: 120px;
 }
 
 .circle {
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    flex-flow: row;
-    align-content: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    height: 10px;
-    width: 10px;
-    // background-color: #1e91d6;
-    // border-radius: 200px;
-    pointer-events: none;
-    color: transparent;
-    background: transparent;
-    text-align: center;
-    font-size: 16px;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+
+  pointer-events: none;
+  color: transparent;
+  background: transparent;
+  text-align: center;
+  font-size: 16px;
 }
 .LaptopWrapper {
-    transform: translate(-35%, -120%);
-    transition: 0.4s;
+  transform: translate(-35%, -120%);
+  transition: 0.4s;
 }
 .Laptop {
-    width: 450px;
-    height: 280px;
+  width: 450px;
+  height: 280px;
 }

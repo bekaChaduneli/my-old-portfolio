@@ -23,7 +23,7 @@
     gap: 20px;
     padding: 20px 12px;
     border-radius: 30px;
-    transition: shadowDrop 1s;
+    transition: 0.6s;
     @media (max-width: 1024px) {
       gap: 12px;
       padding: 14px 10px;
@@ -35,14 +35,14 @@
       border-radius: 24px;
     }
     &--active {
-      transition: 0.4s;
-      background-color: rgba(#a405b3, 0.4);
+      transition: 0.6s;
+      background-color: rgba(#5c0864, 0.69);
     }
   }
   &__Link {
     list-style: none;
     text-decoration: none;
-    color: #fff;
+    color: #fce2ff;
   }
   &__Text {
     padding: 10px 24px;
@@ -61,7 +61,7 @@
       border-radius: 18px;
     }
     &--active {
-      background-color: rgba(#c700da, 0.3);
+      background-color: rgba(#ca09db, 0.25);
     }
   }
 }

@@ -1,0 +1,25 @@
+.Footer {
+  border-top: 1px solid rgba(#fff, 0.4);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 30px;
+  &__Socials {
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+  }
+  &__Icons {
+    width: 30px;
+    height: 30px;
+  }
+  &__Text {
+    font-family: var(--font-acorn);
+    font-size: 18px;
+  }
+}
+
+.FooterWrapper {
+  display: flex;
+  justify-content: center;
+}
