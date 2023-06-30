@@ -1,0 +1,68 @@
+.Projects {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    flex-wrap: wrap;
+    &__Project {
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px 0px #00000094;
+    }
+    &__Background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    &__ProjectAbout {
+        padding: 20px;
+        background-color: rgba(#ffffff, 0.2);
+        text-align: center;
+    }
+    &__ProjectHeadline {
+        font-size: 18px;
+        font-family: var(--font-acorn);
+        margin-bottom: 8px;
+    }
+    &__ProjectText {
+        font-size: 12px;
+        font-family: var(--font-pragmatica);
+        margin-bottom: 16px;
+    }
+    &__ProjectDateWrapper {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    &__ProjectDateIcon {
+        width: 24px;
+        height: 24px;
+    }
+    &__ProjectDate {
+        font-size: 16px;
+    }
+    &__ProjectFrameworkWrapper {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+    &__ProjectFramework {
+        width: 26px;
+        height: 26px;
+    }
+    &__ProjectsLinksWrapper {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+    }
+    &__ProjectsLink {
+        padding: 6px 20px;
+        color: #fff;
+        border-radius: 8px;
+        background-color: #ffffff1a;
+    }
+}

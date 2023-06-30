@@ -8,4 +8,17 @@
         font-size: 80px;
         margin-bottom: 60px;
     }
+    &__Button {
+        list-style: none;
+        text-decoration: none;
+        color: #fce2ff;
+        font-size: 22px;
+        padding: 8px 24px;
+        border-radius: 6px;
+        background-color: rgba(#880094, 0.28);
+    }
+}
+
+.SeeMoreWrapper {
+    margin: 60px 0;
 }

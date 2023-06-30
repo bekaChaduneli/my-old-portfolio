@@ -1,11 +1,10 @@
 "use client";
-import MainProjects from "@/components/mousePointer/MainProjects";
 import React from "react";
 import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import AppButton from "@/components/appButton/AppButton";
-export default function Page() {
+import AllProjects from "@/components/allProjects/AllProjects";
+
+export default function page() {
     const [data, setData] = useState(null);
     useEffect(() => {
         const fetchData = async () => {
@@ -21,16 +20,9 @@ export default function Page() {
         fetchData();
     }, []);
     return (
-        <div className={styles.MainProjectsWrapper}>
-            <h1 className={styles.MainProjectsWrapper__Text}>
-                My Best Projects
-            </h1>
-            <MainProjects data={data} />
-            <div className={styles.SeeMoreWrapper}>
-                <AppButton md href="/projects/archive">
-                    See more
-                </AppButton>
-            </div>
+        <div className={styles.Archive}>
+            <h1 className={styles.Archive__Text}>All Projects</h1>
+            <AllProjects data={data} />
         </div>
     );
 }

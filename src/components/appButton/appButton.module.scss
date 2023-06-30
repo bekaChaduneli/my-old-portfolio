@@ -1,0 +1,152 @@
+.Button {
+    background-color: rgba(#880094, 0.28);
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-acorn);
+    color: #f2cbf6;
+    transition: 0.4s;
+    &:hover {
+        transition: 0.4s;
+        transform: scale(0.92);
+        background-color: rgba(#880094, 0.6);
+    }
+    &--sm {
+        padding: 6px 24px;
+        border-radius: 8px;
+        min-width: 100px;
+        font-size: 16px;
+        @media (max-width: 1280px) {
+            min-width: 80px;
+            padding: 5px 20px;
+            font-size: 14px;
+            border-radius: 6px;
+        }
+        @media (max-width: 1024px) {
+            min-width: 60px;
+            padding: 4px 18px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            min-width: 50px;
+            padding: 4px 16px;
+        }
+        @media (max-width: 560px) {
+            min-width: 40px;
+            padding: 4px 14px;
+        }
+        @media (max-width: 420px) {
+            padding: 6px 28px;
+            font-size: 11px;
+        }
+    }
+    &--md {
+        padding: 8px 36px;
+        border-radius: 10px;
+        min-width: 160px;
+        font-size: 24px;
+        @media (max-width: 1280px) {
+            min-width: 140px;
+            padding: 6px 32px;
+            font-size: 22px;
+            border-radius: 8px;
+        }
+        @media (max-width: 1024px) {
+            min-width: 120px;
+            padding: 6px 28px;
+            font-size: 20px;
+            border-radius: 7px;
+        }
+        @media (max-width: 768px) {
+            min-width: 100px;
+            padding: 6px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+        @media (max-width: 560px) {
+            min-width: 80px;
+            padding: 6px 34px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        @media (max-width: 420px) {
+            min-width: 60px;
+            padding: 4px 28px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+    }
+    &--lg {
+        padding: 8px 50px;
+        border-radius: 12px;
+        min-width: 240px;
+        font-size: 30px;
+        @media (max-width: 1280px) {
+            min-width: 200px;
+            padding: 8px 50px;
+            font-size: 26px;
+            border-radius: 12px;
+        }
+        @media (max-width: 1024px) {
+            min-width: 160px;
+            padding: 8px 42px;
+            font-size: 24px;
+            border-radius: 12px;
+        }
+        @media (max-width: 768px) {
+            min-width: 120px;
+            padding: 8px 38px;
+            font-size: 22px;
+            border-radius: 10px;
+        }
+        @media (max-width: 560px) {
+            min-width: 110px;
+            padding: 8px 34px;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 420px) {
+            min-width: 60px;
+            padding: 6px 28px;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+    }
+    &--xl {
+        padding: 12px 70px;
+        border-radius: 16px;
+        min-width: 280px;
+        font-size: 36px;
+        @media (max-width: 1280px) {
+            min-width: 240px;
+            padding: 10px 60px;
+            font-size: 32px;
+            border-radius: 12px;
+        }
+        @media (max-width: 1024px) {
+            min-width: 200px;
+            padding: 8px 50px;
+            font-size: 28px;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            min-width: 150px;
+            padding: 6px 40px;
+            font-size: 24px;
+            border-radius: 12px;
+        }
+        @media (max-width: 560px) {
+            min-width: 100px;
+            padding: 6px 34px;
+            font-size: 22px;
+            border-radius: 10px;
+        }
+        @media (max-width: 420px) {
+            min-width: 74px;
+            padding: 6px 30px;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+    }
+}

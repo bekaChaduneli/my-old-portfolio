@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./header.module.scss";
 import { MapPin } from "lucide-react";
 import { useTypingText } from "@/hooks/useTypingText";
+import AppButton from "../appButton/AppButton";
 export default function Header() {
     const { word } = useTypingText(
         [
@@ -40,12 +41,12 @@ export default function Header() {
                 Georgia
             </div>
             <div className={styles.Header__ButtonsWrapper}>
-                <Link className={styles.Header__Button} href="/about">
+                <AppButton lg href="/about">
                     About me
-                </Link>
-                <Link className={styles.Header__Button} href="#">
+                </AppButton>
+                <AppButton lg href="#">
                     Resume
-                </Link>
+                </AppButton>
             </div>
         </div>
     );
