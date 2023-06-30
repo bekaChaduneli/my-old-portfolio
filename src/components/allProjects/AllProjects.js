@@ -10,7 +10,7 @@ import styles from "./allProjects.module.scss";
 import { useState } from "react";
 import classNames from "classnames";
 export default function AllProjects({ data }) {
-    const itemsPerPage = 9;
+    const itemsPerPage = 12;
     const [currentPage, setCurrentPage] = useState(1);
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
