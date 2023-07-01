@@ -1,10 +1,9 @@
 const path = require("path");
+const withVideos = require("next-videos");
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    sassOptions: {
-        includePaths: [path.join(__dirname, "styles")],
-    },
-};
-
-module.exports = nextConfig;
+module.exports = withVideos({
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+  },
+});
