@@ -32,20 +32,23 @@ export default function AllProjects({ data }) {
         return (
           <div className={styles.Project} key={index}>
             <figure className={styles.Project__Background}>
-              {/* <img
-                className={styles.Project__BackgroundImage}
-                id={`image-${index}`}
-                // src={`images${project.image[0]}`}
-                src="/images/3d-portfolio.png"
-              /> */}
               {/* <div className={styles.Project__Overlay}></div> */}
-              <video
-                src={require("../../assets/breadit.mp4")}
-                className={styles.Project__Video}
-                autoPlay
-                loop
-                muted
-              />
+              {project.videoLink ? (
+                <video
+                  src={require(`../../assets/videos/${project.videoLink}.mp4`)}
+                  className={styles.Project__Video}
+                  autoPlay
+                  loop
+                  muted
+                />
+              ) : (
+                <img
+                  className={styles.Project__BackgroundImage}
+                  id={`image-${index}`}
+                  // src={`images${project.image[0]}`}
+                  src="/images/3d-portfolio.png"
+                />
+              )}
             </figure>
             <div className={styles.Project__ProjectAbout}>
               <h1 className={styles.Project__ProjectHeadline}>
