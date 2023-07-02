@@ -45,6 +45,7 @@ export default function AllProjects({ data }) {
                 <img
                   className={styles.Project__BackgroundImage}
                   id={`image-${index}`}
+                  alt="project-image"
                   // src={`images${project.image[0]}`}
                   src="/images/3d-portfolio.png"
                 />
@@ -68,6 +69,7 @@ export default function AllProjects({ data }) {
                   <img
                     src={`/images/${framework}.png`}
                     className={styles.Project__ProjectFramework}
+                    alt="framework"
                   />
                 ))}
               </div>

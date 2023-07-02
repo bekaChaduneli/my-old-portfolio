@@ -119,9 +119,27 @@ export default function MainProjects({ data }) {
                       <Image
                         src={MyImage}
                         width="300"
+                        alt="Laptop"
                         height="192"
                         className={styles.Laptop}
                       />
+                      {project.videoLink ? (
+                        <video
+                          src={require(`../../assets/videos/${project.videoLink}.mp4`)}
+                          className={styles.LaptopBackground}
+                          autoPlay
+                          loop
+                          muted
+                        />
+                      ) : (
+                        <img
+                          className={styles.LaptopBackgroundImage}
+                          id={`image-${index}`}
+                          alt="project background"
+                          src="/images/3d-portfolio.png"
+                        />
+                      )}
+
                       <h1>{RealLink}</h1>
                     </figure>
                   )}
@@ -150,6 +168,7 @@ export default function MainProjects({ data }) {
                       {project?.tools?.map((tool, index) => (
                         <img
                           key={index}
+                          alt="tool"
                           className={styles.Project__Tool}
                           src={`/images${tool}`}
                         />
