@@ -3,20 +3,41 @@
     flex-direction: column;
     align-items: center;
     padding: 40px 10%;
+    @media (max-width: 1024px) {
+        padding: 34px 8%;
+    }
+    @media (max-width: 560px) {
+        padding: 24px 4%;
+    }
+    @media (max-width: 420px) {
+        padding: 14px 4%;
+    }
     &__Text {
         font-family: var(--font-acorn);
         font-size: 80px;
         margin-bottom: 60px;
+        @media (max-width: 1280px) {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 1024px) {
+            margin-bottom: 44px;
+            font-size: 50px;
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 34px;
+            font-size: 40px;
+        }
     }
-    &__Button {
-        list-style: none;
-        text-decoration: none;
-        color: #fce2ff;
-        font-size: 22px;
-        padding: 8px 24px;
-        border-radius: 6px;
-        background-color: rgba(#880094, 0.28);
-    }
+    // &__Button {
+    //     list-style: none;
+    //     text-decoration: none;
+    //     color: #fce2ff;
+    //     font-size: 22px;
+    //     padding: 8px 24px;
+    //     border-radius: 6px;
+    //     background-color: rgba(#880094, 0.28);
+    // }
 }
 
 .SeeMoreWrapper {

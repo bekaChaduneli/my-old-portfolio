@@ -4,6 +4,22 @@
     font-family: var(--font-pragmatica);
     line-height: 110%;
     font-weight: 400;
+    @media (max-width: 1280px) {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    @media (max-width: 1024px) {
+        margin-right: 16px;
+        font-size: 18px;
+    }
+    @media (max-width: 768px) {
+        margin-right: 12px;
+        font-size: 16px;
+    }
+    @media (max-width: 420px) {
+        font-size: 12px;
+        line-height: 102%;
+    }
 }
 
 .ProjectsWrapper {
@@ -16,21 +32,54 @@
     grid-template-columns: 2fr 1fr 1fr;
     padding: 14px 32px;
     border-bottom: 1px solid rgba(white, 0.6);
+    @media (max-width: 1280px) {
+        padding: 12px 28px;
+    }
+    @media (max-width: 1024px) {
+        padding: 10px 24px;
+    }
+    @media (max-width: 768px) {
+        padding: 8px 16px;
+    }
+    @media (max-width: 420px) {
+        padding: 6px 12px;
+    }
     &__Text,
     &__Tools,
     &__Date {
         color: #ecd7ff;
         font-family: var(--font-acorn);
         font-size: 20px;
+        @media (max-width: 1280px) {
+            font-size: 18px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+        @media (max-width: 420px) {
+            font-size: 10px;
+        }
     }
 
     &__Date {
         text-align: center;
+        @media (max-width: 768px) {
+            text-align: right;
+        }
     }
 }
 .HoveredProject {
     padding: 23px 0;
     border-bottom: 1px solid rgba(white, 0.1);
+    @media (max-width: 768px) {
+        padding: 12px 0;
+    }
+    @media (max-width: 420px) {
+        padding: 8px 0;
+    }
 }
 .Project {
     display: grid;
@@ -39,13 +88,47 @@
     font-family: var(--font-acorn);
     align-items: center;
     border-bottom: 1px solid rgba(white, 0.1);
+    @media (max-width: 1280px) {
+        padding: 28px;
+    }
+    @media (max-width: 1024px) {
+        padding: 24px;
+    }
+    @media (max-width: 768px) {
+        padding: 18px;
+    }
+    @media (max-width: 420px) {
+        padding: 12px;
+    }
     &__Name {
         font-size: 36px;
         font-weight: 400;
+        @media (max-width: 1280px) {
+            font-size: 30px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+        @media (max-width: 420px) {
+            font-size: 16px;
+        }
     }
     &__Date {
         text-align: center;
         font-size: 20px;
+        @media (max-width: 1280px) {
+            font-size: 18px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+            text-align: right;
+        }
     }
     &__Slug {
         font-size: 12px;
@@ -54,9 +137,24 @@
         text-align: start;
         display: flex;
         gap: 14px;
+        @media (max-width: 1280px) {
+            gap: 10px;
+        }
+        @media (max-width: 1024px) {
+            gap: 6px;
+        }
     }
     &__Tool {
         height: 30px;
+        @media (max-width: 1024px) {
+            height: 20px;
+        }
+        @media (max-width: 768px) {
+            height: 16px;
+        }
+        @media (max-width: 420px) {
+            height: 12px;
+        }
     }
 }
 .Link {
@@ -79,7 +177,6 @@
     top: 0;
     left: 0;
     height: 10px;
-
     width: 10px;
 
     pointer-events: none;
@@ -93,8 +190,23 @@
     width: 450px;
     height: 280px;
     position: relative;
-
     transition: 0.4s;
+    @media (max-width: 1280px) {
+        width: 400px;
+        height: 248px;
+    }
+    @media (max-width: 1024px) {
+        width: 320px;
+        height: 198px;
+    }
+    @media (max-width: 768px) {
+        width: 220px;
+        height: 136px;
+    }
+    @media (max-width: 420px) {
+        width: 140px;
+        height: 86px;
+    }
 }
 .Laptop {
     position: absolute;
@@ -102,6 +214,26 @@
     width: 416px;
     z-index: 1;
     height: 248px;
+    @media (max-width: 1280px) {
+        width: 368px;
+        height: 220px;
+        transform: translate(-206px, 60px);
+    }
+    @media (max-width: 1024px) {
+        width: 294px;
+        height: 176px;
+        transform: translate(-198px, 60px);
+    }
+    @media (max-width: 768px) {
+        width: 202px;
+        height: 118px;
+        transform: translate(-190px, 60px);
+    }
+    @media (max-width: 420px) {
+        width: 117px;
+        height: 78px;
+        transform: translate(-184px, 60px);
+    }
 }
 .LaptopBackground {
     width: 328px;
@@ -111,10 +243,44 @@
     object-fit: cover;
     height: 220px;
     transform: translate(-170px, 62px);
+    @media (max-width: 1280px) {
+        width: 292px;
+        height: 196px;
+    }
+    @media (max-width: 1024px) {
+        width: 234px;
+        height: 156px;
+    }
+    @media (max-width: 768px) {
+        border-radius: 2px;
+
+        width: 160px;
+        height: 108px;
+    }
+    @media (max-width: 420px) {
+        width: 90px;
+        height: 68px;
+    }
 }
 .LaptopBackgroundImage {
     width: 300px;
     object-fit: cover;
     position: absolute;
     height: 160px;
+    @media (max-width: 1280px) {
+        width: 266px;
+        height: 142px;
+    }
+    @media (max-width: 1024px) {
+        width: 212px;
+        height: 114px;
+    }
+    @media (max-width: 768px) {
+        width: 146px;
+        height: 78px;
+    }
+    @media (max-width: 420px) {
+        width: 92px;
+        height: 50px;
+    }
 }

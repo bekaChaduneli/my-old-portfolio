@@ -7,6 +7,9 @@
 
     &__Projects {
         width: 80%;
+        @media (max-width: 420px) {
+            width: 92%;
+        }
     }
     &__MainProjectHeadline {
         text-align: center;
