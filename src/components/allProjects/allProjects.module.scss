@@ -75,9 +75,20 @@
         height: 100%;
         position: absolute;
     }
+    &__ProjectAboutBackground {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0;
+        left: 0;
+        background-color: rgba(#38023c, 0.69);
+        transition: 0.4s;
+    }
     &__ProjectAbout {
         padding: 20px 40px;
         position: absolute;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -86,7 +97,6 @@
         left: 0;
         transition: 0.4s;
         height: 100.1%;
-        background-color: rgba(#000, 0.5);
         border-radius: 14px;
         text-align: center;
         transition: 0.4s;
@@ -101,6 +111,7 @@
     &__ProjectHeadline {
         font-size: 18px;
         position: relative;
+        z-index: 1;
 
         font-family: var(--font-acorn);
         margin-bottom: 8px;
@@ -119,6 +130,7 @@
     }
     &__ProjectText {
         font-size: 14px;
+        z-index: 1;
         position: relative;
         font-family: var(--font-pragmatica);
         margin-bottom: 16px;
@@ -137,6 +149,7 @@
     }
     &__ProjectDateWrapper {
         display: flex;
+        z-index: 1;
         gap: 12px;
         align-items: center;
         justify-content: center;
@@ -153,6 +166,7 @@
     }
     &__ProjectDateIcon {
         width: 24px;
+        z-index: 1;
         height: 24px;
         @media (max-width: 768px) {
             width: 16px;
@@ -179,6 +193,7 @@
     }
     &__ProjectFrameworkWrapper {
         display: flex;
+        z-index: 1;
         gap: 8px;
         justify-content: center;
         align-items: center;
@@ -227,7 +242,11 @@
 
 .Project:hover .Project__ProjectAbout {
     opacity: 1;
+    border-radius: 14px;
+}
+.Project:hover .Project__ProjectAboutBackground {
     backdrop-filter: blur(4px);
+    opacity: 1;
     border-radius: 14px;
 }
 

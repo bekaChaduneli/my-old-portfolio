@@ -34,6 +34,7 @@ export default function AllProjects({ data }) {
             {currentItems?.map((project, index) => {
                 return (
                     <Link
+                        key={index}
                         className={styles.Project__ProjectsLink}
                         href={`/projects/${project?.id}`}
                     >
@@ -49,6 +50,7 @@ export default function AllProjects({ data }) {
                                     />
                                 ) : (
                                     <img
+                                        key={index}
                                         className={
                                             styles.Project__BackgroundImage
                                         }
@@ -59,6 +61,11 @@ export default function AllProjects({ data }) {
                                 )}
                             </figure>
                             <div className={styles.Project__ProjectAbout}>
+                                <div
+                                    className={
+                                        styles.Project__ProjectAboutBackground
+                                    }
+                                />
                                 <h1 className={styles.Project__ProjectHeadline}>
                                     {project.name}
                                 </h1>
@@ -86,15 +93,18 @@ export default function AllProjects({ data }) {
                                         styles.Project__ProjectFrameworkWrapper
                                     }
                                 >
-                                    {project.frameworks?.map((framework) => (
-                                        <img
-                                            src={`/images/${framework}.png`}
-                                            className={
-                                                styles.Project__ProjectFramework
-                                            }
-                                            alt="framework"
-                                        />
-                                    ))}
+                                    {project.frameworks?.map(
+                                        (framework, index) => (
+                                            <img
+                                                key={index}
+                                                src={`/images/${framework}.png`}
+                                                className={
+                                                    styles.Project__ProjectFramework
+                                                }
+                                                alt="framework"
+                                            />
+                                        )
+                                    )}
                                 </div>
                                 <div
                                     className={

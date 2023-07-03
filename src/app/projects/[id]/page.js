@@ -81,9 +81,10 @@ export default function Page() {
                 })}
             </ul>
             <figure className={styles.Project__ImagesWrapper}>
-                {data?.image.map((img) => {
+                {data?.image.map((img, index) => {
                     return (
                         <img
+                            key={index}
                             className={styles.Project__Images}
                             src={`/images/${img}`}
                         />

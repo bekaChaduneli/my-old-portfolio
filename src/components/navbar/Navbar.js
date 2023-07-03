@@ -25,11 +25,12 @@ export default function Navbar() {
     }, [pathname]);
     return (
         <div className={styles.Navbar}>
-            <div
-                className={classNames(styles.Navbar__Box, {
-                    [styles["Navbar__Box--active"]]: scrolled,
-                })}
-            >
+            <div className={styles.Navbar__Box}>
+                <div
+                    className={classNames(styles.Navbar__Background, {
+                        [styles["Navbar__Background--active"]]: scrolled,
+                    })}
+                />
                 <Link className={styles.Navbar__Link} href="/">
                     <span
                         className={classNames(styles.Navbar__Text, {

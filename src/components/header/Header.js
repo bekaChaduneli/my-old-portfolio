@@ -30,7 +30,7 @@ export default function Header() {
     );
     return (
         <div className={styles.Header}>
-            <h1 className={styles.Header__Headline}>Hi I'm Beka</h1>
+            <h1 className={styles.Header__Headline}>Hi I am Beka</h1>
             <h2 className={styles.Header__Text}>Full Stack Developer</h2>
             <h1 className={styles.Header__Skills}>
                 I Love{" "}

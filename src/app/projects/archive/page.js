@@ -4,7 +4,7 @@ import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
 import AllProjects from "@/components/allProjects/AllProjects";
 
-export default function page() {
+export default function Page() {
     const [data, setData] = useState(null);
     useEffect(() => {
         const fetchData = async () => {

@@ -59,6 +59,15 @@
 .Content {
     padding-top: 130px;
     min-height: 90vh;
+    @media (max-width: 1024px) {
+        padding-top: 110px;
+    }
+    @media (max-width: 560px) {
+        padding-top: 90px;
+    }
+    @media (max-width: 420px) {
+        padding-top: 70px;
+    }
 }
 .Background {
     position: absolute;
