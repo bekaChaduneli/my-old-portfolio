@@ -4,8 +4,21 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
     &__Projects {
-        width: 60%;
+        width: 80%;
+    }
+    &__MainProjectHeadline {
+        text-align: center;
+        font-size: 64px;
+        font-family: var(--font-acorn);
+        margin-bottom: 40px;
+    }
+    &__Button {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
     }
 }
 .Content {

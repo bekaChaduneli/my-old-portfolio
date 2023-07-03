@@ -33,75 +33,79 @@ export default function AllProjects({ data }) {
         <div className={styles.Projects}>
             {currentItems?.map((project, index) => {
                 return (
-                    <div className={styles.Project} key={index}>
-                        <figure className={styles.Project__Background}>
-                            {/* <div className={styles.Project__Overlay}></div> */}
-                            {project.videoLink ? (
-                                <video
-                                    src={require(`../../assets/videos/${project.videoLink}.mp4`)}
-                                    className={styles.Project__Video}
-                                    autoPlay
-                                    loop
-                                    muted
-                                />
-                            ) : (
-                                <img
-                                    className={styles.Project__BackgroundImage}
-                                    id={`image-${index}`}
-                                    alt="project-image"
-                                    src={`/images/${project.image[0]}`}
-                                    //   src="/images/3d-portfolio.png"
-                                />
-                            )}
-                        </figure>
-                        <div className={styles.Project__ProjectAbout}>
-                            <h1 className={styles.Project__ProjectHeadline}>
-                                {project.name}
-                            </h1>
-                            <div className={styles.Project__ProjectText}>
-                                <p>{project.slug}</p>
-                            </div>
-                            <div className={styles.Project__ProjectDateWrapper}>
-                                <CalendarClock
-                                    className={styles.Project__ProjectDateIcon}
-                                />{" "}
-                                <span className={styles.Project__ProjectDate}>
-                                    {project.date}
-                                </span>
-                            </div>
-                            <div
-                                className={
-                                    styles.Project__ProjectFrameworkWrapper
-                                }
-                            >
-                                {project.frameworks?.map((framework) => (
-                                    <img
-                                        src={`/images/${framework}.png`}
-                                        className={
-                                            styles.Project__ProjectFramework
-                                        }
-                                        alt="framework"
+                    <Link
+                        className={styles.Project__ProjectsLink}
+                        href={`/projects/${project?.id}`}
+                    >
+                        <div className={styles.Project} key={index}>
+                            <figure className={styles.Project__Background}>
+                                {/* <div className={styles.Project__Overlay}></div> */}
+                                {project.videoLink ? (
+                                    <video
+                                        src={require(`../../assets/videos/${project.videoLink}.mp4`)}
+                                        className={styles.Project__Video}
+                                        autoPlay
+                                        loop
+                                        muted
                                     />
-                                ))}
-                            </div>
-                            <div
-                                className={styles.Project__ProjectsLinksWrapper}
-                            >
-                                <Link
-                                    className={styles.Project__ProjectsLink}
-                                    href={`${project?.github}`}
+                                ) : (
+                                    <img
+                                        className={
+                                            styles.Project__BackgroundImage
+                                        }
+                                        id={`image-${index}`}
+                                        alt="project-image"
+                                        src={`/images/${project.image[0]}`}
+                                        //   src="/images/3d-portfolio.png"
+                                    />
+                                )}
+                            </figure>
+                            <div className={styles.Project__ProjectAbout}>
+                                <h1 className={styles.Project__ProjectHeadline}>
+                                    {project.name}
+                                </h1>
+                                <div className={styles.Project__ProjectText}>
+                                    <p>{project.slug}</p>
+                                </div>
+                                <div
+                                    className={
+                                        styles.Project__ProjectDateWrapper
+                                    }
                                 >
-                                    <Github /> Github{" "}
-                                </Link>
-                                <Link
-                                    className={styles.Project__ProjectsLink}
-                                    href={`${project?.live}`}
+                                    <CalendarClock
+                                        className={
+                                            styles.Project__ProjectDateIcon
+                                        }
+                                    />{" "}
+                                    <span
+                                        className={styles.Project__ProjectDate}
+                                    >
+                                        {project.date}
+                                    </span>
+                                </div>
+                                <div
+                                    className={
+                                        styles.Project__ProjectFrameworkWrapper
+                                    }
                                 >
-                                    <LayoutTemplate /> Live{" "}
-                                </Link>
+                                    {project.frameworks?.map((framework) => (
+                                        <img
+                                            src={`/images/${framework}.png`}
+                                            className={
+                                                styles.Project__ProjectFramework
+                                            }
+                                            alt="framework"
+                                        />
+                                    ))}
+                                </div>
+                                <div
+                                    className={
+                                        styles.Project__ProjectsLinksWrapper
+                                    }
+                                ></div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 );
             })}
             <div className={styles.PaginationWrapper}>
