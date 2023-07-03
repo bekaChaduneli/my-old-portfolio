@@ -1,5 +1,5 @@
 .Project {
-    padding: 50px 20%;
+    padding: 50px 10%;
     overflow: hidden;
     text-align: center;
     display: flex;
@@ -9,20 +9,29 @@
     &__Headline {
         font-size: 80px;
         line-height: 110%;
-        margin-bottom: 82px;
+        margin-bottom: 18px;
     }
-    &__Text {
-        font-size: 44px;
+    &__Slug {
+        font-size: 24px;
         font-family: var(--font-Fexin);
         line-height: 105%;
-        color: #efc4f4;
-        margin-bottom: 30px;
+        color: #f9dafcb7;
+        margin-bottom: 20px;
+    }
+    &__Frameworks {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 82px;
+    }
+    &__Framework {
+        width: 40px;
+        height: 40px;
     }
     &__LaptopWrapper {
         width: 1200px;
         overflow: hidden;
         height: 630px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         position: relative;
     }
     &__Laptop {
@@ -40,5 +49,30 @@
         border-radius: 30px;
         transform: translate(-50%, 10px);
         position: absolute;
+    }
+    &__ButtonsWrapper {
+        display: flex;
+        margin-bottom: 80px;
+        gap: 30px;
+    }
+    &__TextWrapper {
+        // list-style: none;
+        display: flex;
+        margin-bottom: 140px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    &__Text {
+        text-align: start;
+        font-size: 32px;
+        font-family: var(--font-pragmatica);
+        font-weight: 700;
+    }
+    &__ImagesWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
     }
 }

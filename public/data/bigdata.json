@@ -119,8 +119,8 @@
                 "weddings-main.png",
                 "weddings-about.png",
                 "weddings-package.png",
-                "spotify-packages.png",
-                "spotify-honeymoon.png"
+                "weddings-packages.png",
+                "weddings-honeymoon.png"
             ],
             "tools": ["/html.png", "/scss.png", "/gsap.png", "/jquery.png"],
             "live": "http://wedding.artmedia.ge/",
@@ -196,14 +196,16 @@
             "date": " Mar",
             "image": [
                 "entertaiment-main.png",
-                "entertaiment-movie.png",
+                "entertaiment-movies.png",
                 "entertaiment-series.png",
                 "entertaiment-bookmarks.png"
             ],
             "tools": ["/react.png", "/typescript.png", "/styledcomponents.png"],
             "github": "https://github.com/bekaChaduneli/entertaiment-web-app",
             "live": "https://entertaiment-web-app-nu.vercel.app/",
-            "about": "The main goal of this project was to get experience working with large files, building the site using the received information, and I also got to work with react components like swipper"
+            "about": [
+                "The main goal of this project was to get experience working with large files, building the site using the received information, and I also got to work with react components like swipper"
+            ]
         },
         {
             "name": "Planet facts",
@@ -230,7 +232,9 @@
             "tools": ["/react.png", "/typescript.png", "/styledcomponents.png"],
             "github": "https://github.com/bekaChaduneli/planet-facts-react",
             "live": "https://planet-facts-reacts.vercel.app/",
-            "about": "The main goal of this project was to gain experience working with React routers and Vite"
+            "about": [
+                "The main goal of this project was to gain experience working with React routers and Vite"
+            ]
         },
         {
             "name": "3D Portfolio",
@@ -257,7 +261,9 @@
             ],
             "github": "https://github.com/bekaChaduneli/3d-portfolio",
             "live": "https://3d-portfolio-liard.vercel.app/",
-            "about": "The main goal of the project was to get experience working with three.js"
+            "about": [
+                "The main goal of the project was to get experience working with three.js"
+            ]
         },
         {
             "name": "Clock app",
@@ -279,7 +285,9 @@
             "tools": ["/react.png", "/typescript.png", "/chakraui.png"],
             "github": "https://github.com/bekaChaduneli/clock-app-react",
             "live": "https://clock-app-react-z4tq.vercel.app/",
-            "about": "The main goal of this project was to gain experience working with API, Typescript and Chakra UI"
+            "about": [
+                "The main goal of this project was to gain experience working with API, Typescript and Chakra UI"
+            ]
         },
         {
             "name": "Github user search",
@@ -302,7 +310,9 @@
             "tools": ["/react.png", "/styledcomponents.png"],
             "github": "https://github.com/bekaChaduneli/github-user-search-app-REACT",
             "live": "https://github-user-search-app-react.vercel.app/",
-            "about": "This is my forth React app. The main goal of this project was to fetch the GitHub API with Axios and include the API information in HTML with React and Styled components"
+            "about": [
+                "This is my forth React app. The main goal of this project was to fetch the GitHub API with Axios and include the API information in HTML with React and Styled components"
+            ]
         },
         {
             "name": "Ecommerce product",
@@ -325,7 +335,9 @@
             "tools": ["/javascript.png", "/css.png", "/html.png"],
             "github": "https://github.com/bekaChaduneli/ecommerce-product-page",
             "live": "https://bekachaduneli.github.io/ecommerce-product-page/",
-            "about": "The main goal of this project was to create a box with a document object model where many product images could be viewed"
+            "about": [
+                "The main goal of this project was to create a box with a document object model where many product images could be viewed"
+            ]
         },
         {
             "name": "Metaversus app",
@@ -345,7 +357,9 @@
             "image": ["metaversus.png"],
             "tools": ["/react.png", "/tailwind.png", "/framermotion.png"],
             "github": "https://github.com/bekaChaduneli/metaversus-app",
-            "about": "The main goal of the project was to get experience working with framer motion"
+            "about": [
+                "The main goal of the project was to get experience working with framer motion"
+            ]
         },
         {
             "name": "company project",
@@ -367,7 +381,9 @@
             "tools": ["/react.png", "/tailwind.png"],
             "github": "https://github.com/bekaChaduneli/artmedia-project",
             "live": "https://artmedia-project-phi.vercel.app/",
-            "about": "The main goal of this project was to get experience with SwipperJS, UseForm, and other tools.            "
+            "about": [
+                "The main goal of this project was to get experience with SwipperJS, UseForm, and other tools."
+            ]
         },
         {
             "name": "Interactive card details",

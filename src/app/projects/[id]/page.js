@@ -29,6 +29,18 @@ export default function Page() {
             <div className={styles.Project__Slug}>
                 <p>{data?.slug}</p>
             </div>
+            <div className={styles.Project__Frameworks}>
+                {data?.frameworks.map((framework, index) => {
+                    return (
+                        <img
+                            key={index}
+                            src={`/images/${framework}.png`}
+                            alt="Framework"
+                            className={styles.Project__Framework}
+                        />
+                    );
+                })}
+            </div>
             <figure className={styles.Project__LaptopWrapper}>
                 <img
                     src="/images/laptop.png"
@@ -52,10 +64,10 @@ export default function Page() {
                 )}
             </figure>
             <div className={styles.Project__ButtonsWrapper}>
-                <AppButton xl href={data?.github}>
+                <AppButton lg href={data?.github}>
                     Github
                 </AppButton>
-                <AppButton xl href={data?.live}>
+                <AppButton lg href={data?.live}>
                     Live
                 </AppButton>
             </div>
