@@ -1,0 +1,44 @@
+.Project {
+    padding: 50px 20%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-acorn);
+    &__Headline {
+        font-size: 80px;
+        line-height: 110%;
+        margin-bottom: 82px;
+    }
+    &__Text {
+        font-size: 44px;
+        font-family: var(--font-Fexin);
+        line-height: 105%;
+        color: #efc4f4;
+        margin-bottom: 30px;
+    }
+    &__LaptopWrapper {
+        width: 1200px;
+        overflow: hidden;
+        height: 630px;
+        margin-bottom: 80px;
+        position: relative;
+    }
+    &__Laptop {
+        width: 100%;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        position: absolute;
+    }
+    &__LaptopBackground {
+        height: 86%;
+        z-index: 0;
+        left: 50%;
+        border-radius: 30px;
+        transform: translate(-50%, 10px);
+        position: absolute;
+    }
+}
