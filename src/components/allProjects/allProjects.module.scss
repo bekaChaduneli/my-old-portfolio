@@ -2,7 +2,18 @@
     display: flex;
     gap: 30px;
     position: relative;
+    justify-content: center;
     flex-wrap: wrap;
+    @media (max-width: 1280px) {
+        gap: 24px;
+    }
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
+    @media (max-width: 560px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .Project {
     position: relative;
@@ -11,6 +22,41 @@
     width: 450px;
     height: 240px;
     box-shadow: 0px 10px 20px 0px #00000094;
+    @media (max-width: 1640px) {
+        width: 350px;
+        height: 218px;
+        border-radius: 26px;
+    }
+    @media (max-width: 1440px) {
+        width: 330px;
+        height: 204px;
+        border-radius: 24px;
+    }
+    @media (max-width: 1280px) {
+        width: 420px;
+        height: 224px;
+        border-radius: 20px;
+    }
+    @media (max-width: 1024px) {
+        width: 320px;
+        height: 180px;
+        border-radius: 18px;
+    }
+    @media (max-width: 768px) {
+        width: 230px;
+        height: 140px;
+        border-radius: 14px;
+    }
+    @media (max-width: 560px) {
+        width: 380px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    @media (max-width: 420px) {
+        width: 280px;
+        height: 160px;
+        border-radius: 6px;
+    }
 
     &__Background {
         width: 100%;
@@ -36,12 +82,20 @@
         flex-direction: column;
         justify-content: center;
         opacity: 0;
-        width: 100%;
+        width: 100.1%;
+        left: 0;
         transition: 0.4s;
-        height: 100%;
-        background-color: #000;
+        height: 100.1%;
+        background-color: rgba(#000, 0.5);
         border-radius: 14px;
         text-align: center;
+        transition: 0.4s;
+        @media (max-width: 768px) {
+            padding: 12px 30px;
+        }
+        @media (max-width: 560px) {
+            padding: 16px 34px;
+        }
     }
 
     &__ProjectHeadline {
@@ -50,55 +104,117 @@
 
         font-family: var(--font-acorn);
         margin-bottom: 8px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        @media (max-width: 560px) {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        @media (max-width: 420px) {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
     }
     &__ProjectText {
         font-size: 14px;
         position: relative;
-
         font-family: var(--font-pragmatica);
         margin-bottom: 16px;
+        @media (max-width: 768px) {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 560px) {
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+        @media (max-width: 420px) {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
     }
     &__ProjectDateWrapper {
         display: flex;
-
         gap: 12px;
-
         align-items: center;
         justify-content: center;
         margin-bottom: 12px;
+        @media (max-width: 768px) {
+            gap: 6px;
+        }
+        @media (max-width: 560px) {
+            gap: 10px;
+        }
+        @media (max-width: 420px) {
+            gap: 8px;
+        }
     }
     &__ProjectDateIcon {
         width: 24px;
-
         height: 24px;
+        @media (max-width: 768px) {
+            width: 16px;
+            height: 16px;
+        }
+        @media (max-width: 560px) {
+            width: 20px;
+            height: 20px;
+        }
+        @media (max-width: 420px) {
+            width: 18px;
+            height: 18px;
+        }
     }
 
     &__ProjectDate {
         font-size: 16px;
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+        @media (max-width: 560px) {
+            font-size: 14px;
+        }
     }
     &__ProjectFrameworkWrapper {
         display: flex;
         gap: 8px;
         justify-content: center;
-
-        margin-bottom: 24px;
-
         align-items: center;
+        @media (max-width: 768px) {
+            gap: 6px;
+        }
     }
     &__ProjectFramework {
         width: 26px;
-
         height: 26px;
+        @media (max-width: 768px) {
+            width: 18px;
+            height: 18px;
+        }
+        @media (max-width: 560px) {
+            width: 22px;
+            height: 22px;
+        }
+        @media (max-width: 420px) {
+            width: 20px;
+            height: 20px;
+        }
     }
     &__ProjectsLinksWrapper {
         display: flex;
         gap: 22px;
         justify-content: center;
+
         align-items: center;
     }
     &__ProjectsLink {
         list-style: none;
         text-decoration: none;
+        transition: 0.4s;
+        border-radius: 14px;
+
         color: #fce2ff;
 
         &:hover {
@@ -111,9 +227,8 @@
 
 .Project:hover .Project__ProjectAbout {
     opacity: 1;
-}
-.Project:hover {
-    transform: scale(1.08);
+    backdrop-filter: blur(4px);
+    border-radius: 14px;
 }
 
 .PaginationWrapper {
@@ -122,6 +237,15 @@
     align-items: center;
     width: 100%;
     padding-top: 40px;
+    @media (max-width: 768px) {
+        padding-top: 24px;
+    }
+    @media (max-width: 560px) {
+        padding-top: 16px;
+    }
+    @media (max-width: 420px) {
+        padding-top: 10px;
+    }
 }
 
 .Pagination {
@@ -132,6 +256,22 @@
     border-radius: 36px;
     padding: 12px 20px;
     background-color: rgba(214, 0, 233, 0.094);
+    @media (max-width: 1024px) {
+        border-radius: 30px;
+        padding: 10px 18px;
+    }
+    @media (max-width: 768px) {
+        border-radius: 26px;
+        padding: 8px 16px;
+    }
+    @media (max-width: 560px) {
+        border-radius: 22px;
+        padding: 6px 12px;
+    }
+    @media (max-width: 420px) {
+        border-radius: 18px;
+        padding: 6px 10px;
+    }
     &__Button {
         padding: 8px 14px;
         background-color: rgba(233, 0, 254, 0.25);
@@ -146,6 +286,24 @@
         transition: 0.4s;
         gap: 6px;
         border-radius: 20px;
+        @media (max-width: 1024px) {
+            padding: 6px 13px;
+            gap: 4px;
+            border-radius: 18px;
+        }
+        @media (max-width: 768px) {
+            border-radius: 16px;
+        }
+        @media (max-width: 560px) {
+            padding: 4px 12px;
+            font-size: 14px;
+            border-radius: 14px;
+        }
+        @media (max-width: 420px) {
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 12px;
+        }
         &:hover {
             background-color: rgba(233, 0, 254, 0.394);
         }
@@ -157,6 +315,10 @@
     &__ButtonIcon {
         width: 16px;
         height: 16px;
+        @media (max-width: 768px) {
+            width: 12px;
+            height: 12px;
+        }
     }
     &__Element {
         transition: 0.4s;
@@ -166,6 +328,14 @@
         color: #fce2ff;
         border-radius: 6px;
         background-color: rgba(154, 5, 168, 0.467);
+        @media (max-width: 768px) {
+            padding: 4px 10px;
+            font-size: 14px;
+        }
+        @media (max-width: 560px) {
+            display: none;
+        }
+
         &:hover {
             background-color: rgba(233, 0, 254, 0.505);
         }

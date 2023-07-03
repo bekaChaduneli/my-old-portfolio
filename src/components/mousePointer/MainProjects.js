@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-
-import ReactDOM from "react-dom";
 import FramerText from "@/components/framerText/FramerText";
 import { useState } from "react";
 import useMouse from "@react-hook/mouse-position";

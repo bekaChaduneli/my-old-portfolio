@@ -39,7 +39,6 @@ export default function AllProjects({ data }) {
                     >
                         <div className={styles.Project} key={index}>
                             <figure className={styles.Project__Background}>
-                                {/* <div className={styles.Project__Overlay}></div> */}
                                 {project.videoLink ? (
                                     <video
                                         src={require(`../../assets/videos/${project.videoLink}.mp4`)}
@@ -56,7 +55,6 @@ export default function AllProjects({ data }) {
                                         id={`image-${index}`}
                                         alt="project-image"
                                         src={`/images/${project.image[0]}`}
-                                        //   src="/images/3d-portfolio.png"
                                     />
                                 )}
                             </figure>

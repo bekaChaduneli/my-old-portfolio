@@ -16,12 +16,44 @@
         font-size: 64px;
         font-family: var(--font-acorn);
         margin-bottom: 40px;
+        @media (max-width: 1280px) {
+            margin-bottom: 34px;
+            font-size: 58px;
+        }
+        @media (max-width: 1024px) {
+            margin-bottom: 26px;
+            font-size: 52px;
+        }
+        @media (max-width: 560px) {
+            margin-bottom: 20px;
+            font-size: 48px;
+        }
+        @media (max-width: 420px) {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
     }
     &__Button {
         margin-top: 40px;
         display: flex;
         justify-content: center;
         margin-bottom: 100px;
+        @media (max-width: 1280px) {
+            margin-bottom: 80px;
+            margin-top: 34px;
+        }
+        @media (max-width: 1024px) {
+            margin-bottom: 70px;
+            margin-top: 28px;
+        }
+        @media (max-width: 560px) {
+            margin-bottom: 60px;
+            margin-top: 24px;
+        }
+        @media (max-width: 420px) {
+            margin-bottom: 54px;
+            margin-top: 18px;
+        }
     }
 }
 .Content {

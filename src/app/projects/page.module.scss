@@ -25,21 +25,21 @@
             font-size: 50px;
         }
         @media (max-width: 768px) {
-            margin-bottom: 34px;
-            font-size: 40px;
+            margin-bottom: 24px;
+            font-size: 38px;
         }
     }
-    // &__Button {
-    //     list-style: none;
-    //     text-decoration: none;
-    //     color: #fce2ff;
-    //     font-size: 22px;
-    //     padding: 8px 24px;
-    //     border-radius: 6px;
-    //     background-color: rgba(#880094, 0.28);
-    // }
 }
 
 .SeeMoreWrapper {
     margin: 60px 0;
+    @media (max-width: 1024px) {
+        margin: 50px 0;
+    }
+    @media (max-width: 1024px) {
+        margin: 40px 0;
+    }
+    @media (max-width: 420px) {
+        margin: 28px 0;
+    }
 }
