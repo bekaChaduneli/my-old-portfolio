@@ -1,0 +1,68 @@
+.Timeline {
+    display: flex;
+    margin-bottom: 70px;
+    align-items: center;
+    &__Wrapper {
+        position: relative;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &::before {
+            content: " ";
+            background: #ffffff5e;
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            width: 1px;
+            top: 20px;
+            height: 100%;
+            z-index: 400;
+        }
+    }
+    &__Content {
+        padding-left: 20px;
+        &::before {
+            content: " ";
+            background: #000;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #e1e1e1;
+            left: -9px;
+            width: 15px;
+            height: 15px;
+            margin-top: 3px;
+            z-index: 400;
+        }
+    }
+    &__ContentHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    &__ContentName {
+        font-size: 20px;
+        font-family: var(--font-gt);
+    }
+    &__ContentNameLink {
+        margin-right: 4px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+        font-family: var(--font-pragmatica);
+    }
+    &__ContentData {
+        font-family: var(--font-gt);
+        font-size: 16px;
+    }
+    &__ContentText {
+        width: 1050px;
+        line-height: 160%;
+        font-size: 14px;
+        font-family: var(--font-pragmatica);
+        text-align: start;
+    }
+}

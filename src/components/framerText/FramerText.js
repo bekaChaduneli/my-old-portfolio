@@ -10,7 +10,7 @@ import {
 import { wrap } from "framer-motion";
 import styles from "./framerText.module.scss";
 
-export default function FramerText({ children, baseVelocity = 100 }) {
+export default function FramerText({ children, custom, baseVelocity = 100 }) {
     const baseX = useMotionValue(0);
     const smoothVelocity = useSpring(0, {
         damping: 50,
@@ -32,6 +32,15 @@ export default function FramerText({ children, baseVelocity = 100 }) {
         moveBy += directionFactor.current * moveBy * velocityFactor.get();
         baseX.set(baseX.get() + moveBy);
     });
+    if (custom) {
+        return (
+            <div className={styles.Parallax}>
+                <motion.div className={styles.Parallax__Scroller} style={{ x }}>
+                    {children}
+                </motion.div>
+            </div>
+        );
+    }
     return (
         <div className={styles.Parallax}>
             <motion.div className={styles.Parallax__Scroller} style={{ x }}>

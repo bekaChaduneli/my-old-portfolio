@@ -14,41 +14,74 @@
                 "filmora": "Filmora"
             }
         },
-        "position": "Full-Stack Developer",
-        "languages": {
-            "english": "Conversant",
-            "georgian": "Native"
+        "work": {
+            "name": "Artmedia",
+            "nameLink": "https://www.linkedin.com/company/artmedia-web/mycompany/",
+            "contents": [
+                {
+                    "name": "Frontend Internship",
+                    "data": "20.04.2023 - present",
+                    "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                }
+            ]
         },
+        "languages": {
+            "contents": [
+                {
+                    "name": "English",
+                    "data": "CONVERSANT",
+                    "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+                },
+                {
+                    "name": "Georgian",
+                    "data": "NATIVE",
+                    "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+                }
+            ]
+        },
+        "educations": [
+            {
+                "name": "BTU",
+                "nameLink": "https://btu.edu.ge/",
+                "contents": [
+                    {
+                        "name": "Business Administration - Management",
+                        "data": "18.09.2021 - 01.07.2022",
+                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                    },
+                    {
+                        "name": "Information Technology",
+                        "data": "18.09.2022 - present",
+                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                    }
+                ]
+            },
+            {
+                "name": "Bitcamp",
+                "nameLink": "https://www.bitcamp.ge/programs",
+                "contents": [
+                    {
+                        "name": "Full Stack Development, Bitcamp Pro",
+                        "data": "20.11.2022 - 02.03.2023",
+                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                    },
+                    {
+                        "name": "React 101",
+                        "data": "02.03.2023 - 12.04.2023",
+                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                    }
+                ]
+            }
+        ],
+
+        "position": "Full-Stack Developer",
+
         "linkedin": "https://www.linkedin.com/in/beka-chaduneli-28203422b/",
         "github": "https://github.com/bekaChaduneli",
         "facebook": "https://www.facebook.com/chadunelibb/",
         "instagram": "https://www.instagram.com/bekachaduneli/",
         "mail": "beka.chaduneli.1@btu.edu.ge"
     },
-
-    "questions": [
-        {
-            "name": "Tell me about you",
-            "answer": "Hello, I’m a full-stack web developer. I used eloquent javascript to teach myself fundamentals of web technologies - creating markup, manipulating DOM, and building web apps using modern javascript. After working on about 10-15 projects using Vanilla JavaScript, I learned how to use React to Build more ambitious and scalable web applications. Nowadays I’m learning advanced React, NodeJS, and Databases. I am very motivated to learn many new things in technologies, for example, Three.js, Prisma, React Native, Next.js, Python, C, and many others. I devote all my time to programming and building projects"
-        },
-        {
-            "name": "Do you have work experience?",
-            "answer": "I have no work experience, but I am in the process of searching, if you have any suggestions, write to me on the following email - beka.chaduneli.1@btu.edu.ge"
-        },
-        {
-            "name": "Tell me something about your education",
-            "answer": "In 2021, I entered the Faculty of Management at the University of Business and Technology, but I soon realized that I made a mistake and a year later I moved to the Faculty of Information Technology, where I am still studying today. During this time, I passed such subjects as Python, Oracle, Information security, and Principles of digital technologies. Also, on December 20, 2022, I started learning web development at Bitcamp. It's a Georgian super-intensive Bootcamp, where I study full-stack development, and I also took the react 101 course and covered React at an advanced level. In addition to all this, Bitcamp taught me how to develop on my own independently"
-        },
-        {
-            "name": "What is bitcamp",
-            "answer": "BitCamp is a platform for people interested in learning and teaching programming and web technologies. On this platform, aspiring developers test learning and gaining experience, using developers who have guided them along the way"
-        },
-        {
-            "name": "",
-            "answer": ""
-        }
-    ],
-
     "projects": [
         {
             "name": "Breadit",

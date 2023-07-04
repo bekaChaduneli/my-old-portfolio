@@ -27,8 +27,8 @@ export default function Page() {
             </h1>
             <MainProjects data={data} />
             <div className={styles.SeeMoreWrapper}>
-                <AppButton md href="/projects/archive">
-                    See more
+                <AppButton md type="white" href="/projects/archive">
+                    SEE MORE
                 </AppButton>
             </div>
         </div>

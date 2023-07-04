@@ -31,8 +31,8 @@ export default function Home() {
                     </h1>
                     <MainProjects data={data} />
                     <div className={styles.Wrapper__Button}>
-                        <AppButton lg href="/projects/archive">
-                            See More
+                        <AppButton md type="white" href="/projects/archive">
+                            SEE MORE
                         </AppButton>
                     </div>
                 </div>

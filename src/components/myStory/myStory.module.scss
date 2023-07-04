@@ -1,0 +1,31 @@
+.Story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    margin-bottom: 100px;
+    &__Headline {
+        font-size: 100px;
+        line-height: 100%;
+        font-family: var(--font-acorn);
+    }
+    &__Text {
+        font-size: 40px;
+        font-family: var(--font-roman);
+        line-height: 100%;
+        margin-bottom: 32px;
+    }
+    &__Me {
+        font-family: var(--font-pragmatica);
+        font-weight: 700;
+        font-size: 18px;
+        padding: 0 30%;
+        p {
+            strong {
+                font-family: var(--font-acorn);
+            }
+        }
+    }
+}
