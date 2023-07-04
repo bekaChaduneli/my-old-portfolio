@@ -40,8 +40,9 @@ export default function page() {
                 <h1 className={styles.About__ExperienceText}>Languages</h1>
                 <TimelineBox data={data?.personal.languages} />
             </div>
+
             <h1 className={styles.About__Skills}>SKILLS</h1>
-            
+
             <FramerSkills data={data?.skills} />
         </div>
     );

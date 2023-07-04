@@ -1,5 +1,5 @@
 "use client";
-import MainProjects from "@/components/mousePointer/MainProjects";
+import MainProjects from "@/components/mainProjects/MainProjects";
 import React from "react";
 import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
