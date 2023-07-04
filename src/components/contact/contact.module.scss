@@ -1,76 +1,130 @@
 .Contact {
-  width: 60%;
-  &__Form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-family: var(--font-acorn);
-  }
-  //   &__InputWrapper {
-  //   }
-  &__Input {
-    margin-bottom: 8px;
-    width: 100%;
-    padding: 24px;
-    background-color: transparent;
-    border: 0.8px solid rgba(#fff, 0.3);
-    font-size: 18px;
-    font-family: var(--font-pragmatica);
-    font-weight: 700;
-    color: #fff;
-    &--error {
-      border: 0.8px solid #ff0000;
-      color: #ff0000;
-      &::placeholder {
-        color: #ff0000;
-      }
+    width: 60%;
+    @media (max-width: 1280px) {
+        width: 80%;
     }
-  }
-  &__TextArea {
-    margin-bottom: 8px;
-    width: 100%;
-    padding: 12px;
-    min-height: 200px;
-    // outline: none;
-    transition: 0.3s;
-    color: #fff;
-    background-color: transparent;
-    border: 0.8px solid rgba(#fff, 0.3);
-    font-size: 16px;
-    font-family: var(--font-pragmatica);
-    font-weight: 700;
-    &--error {
-      border: 0.8px solid #ff0000;
-      color: #ff0000;
-      &::placeholder {
-        color: #ff0000;
-      }
+    @media (max-width: 560px) {
+        width: 90%;
     }
-  }
-  &__Error {
-    color: #ff0000;
-    font-size: 14px;
-  }
-  &__Button {
-    font-size: 20px;
-    font-family: var(--font-gt);
+    &__Form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: var(--font-acorn);
 
-    max-width: 260px;
-    border: none;
-    color: #020a13;
-    border-radius: 5px;
-    padding: 15px 40px;
-    transition: 0.4s;
-
-    margin-bottom: 3rem;
-    &:hover {
-      transition: 0.4s;
-      transform: scale(0.9);
-      opacity: 0.9;
+        @media (max-width: 1024px) {
+            gap: 8px;
+        }
+        @media (max-width: 560px) {
+            gap: 6px;
+        }
     }
-  }
-  &__SubmitMassage {
-    color: #fff;
-    font-size: 18px;
-  }
+    &__Input {
+        margin-bottom: 8px;
+        width: 100%;
+        padding: 24px;
+        background-color: transparent;
+        border: 0.8px solid rgba(#fff, 0.3);
+        font-size: 18px;
+        font-family: var(--font-pragmatica);
+        font-weight: 700;
+        color: #fff;
+        @media (max-width: 1024px) {
+            padding: 16px;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        @media (max-width: 560px) {
+            padding: 10px;
+            font-size: 14px;
+        }
+        &--error {
+            border: 0.8px solid #ff0000;
+            color: #ff0000;
+            &::placeholder {
+                color: #ff0000;
+            }
+        }
+    }
+    &__TextArea {
+        margin-bottom: 8px;
+        width: 100%;
+        padding: 24px;
+        min-height: 200px;
+        transition: 0.3s;
+        color: #fff;
+        background-color: transparent;
+        border: 0.8px solid rgba(#fff, 0.3);
+        font-size: 16px;
+        font-family: var(--font-pragmatica);
+        font-weight: 700;
+        @media (max-width: 1024px) {
+            padding: 16px;
+            min-height: 160px;
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+        @media (max-width: 560px) {
+            padding: 10px;
+            min-height: 120px;
+            font-size: 13px;
+        }
+        &--error {
+            border: 0.8px solid #ff0000;
+            color: #ff0000;
+            &::placeholder {
+                color: #ff0000;
+            }
+        }
+    }
+    &__Error {
+        color: #ff0000;
+        font-size: 14px;
+        line-height: 100%;
+        @media (max-width: 560px) {
+            font-size: 12px;
+        }
+    }
+    &__Button {
+        font-size: 20px;
+        font-family: var(--font-gt);
+        max-width: 260px;
+        border: none;
+        color: #020a13;
+        border-radius: 5px;
+        padding: 15px 40px;
+        transition: 0.4s;
+
+        margin-bottom: 3rem;
+        @media (max-width: 1024px) {
+            padding: 10px 28px;
+            font-size: 16px;
+            max-width: 180px;
+            border-radius: 4px;
+        }
+        @media (max-width: 560px) {
+            padding: 8px 22px;
+            font-size: 14px;
+            max-width: 140px;
+            border-radius: 3px;
+        }
+        &:hover {
+            transition: 0.4s;
+            transform: scale(0.9);
+            opacity: 0.9;
+        }
+    }
+    &__SubmitMassage {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 40px;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 560px) {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
 }
