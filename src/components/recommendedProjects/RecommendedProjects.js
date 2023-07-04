@@ -6,7 +6,7 @@ export default function RecommendedProjects({ data }) {
   function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-
+  const [hovered, setHovered] = useState("");
   const [projectOne, setProjectOne] = useState(null);
   const [projectTwo, setProjectTwo] = useState(null);
 
@@ -31,26 +31,64 @@ export default function RecommendedProjects({ data }) {
 
   return (
     <div className={styles.Wrapper}>
-      <Link href={`/projects/${data?.projects[projectOne]?.id}`}>
+      <Link
+        onMouseEnter={() => {
+          setHovered(projectOne);
+        }}
+        onMouseLeave={() => {
+          setHovered("");
+        }}
+        href={`/projects/${data?.projects[projectOne]?.id}`}
+      >
         <figure className={styles.Wrapper__Left}>
           {projectOne !== null && (
-            <img
-              src={`/images/${data.projects[projectOne].image[0]}`}
-              className={styles.Wrapper__Image}
-              alt="Tbilisi"
-            />
+            <>
+              <img
+                src={`/images/${data.projects[projectOne]?.image[0]}`}
+                className={styles.Wrapper__Image}
+                alt="Tbilisi"
+              />
+              {hovered === projectOne && (
+                <video
+                  src={require(`../../assets/videos/${data.projects[projectOne]?.videoLink}.mp4`)}
+                  className={styles.Wrapper__Image}
+                  autoPlay
+                  loop
+                  muted
+                />
+              )}
+            </>
           )}
           <h1 className={styles.Wrapper__ImageText}>See more</h1>
         </figure>
       </Link>
-      <Link href={`/projects/${data?.projects[projectTwo]?.id}`}>
+      <Link
+        onMouseEnter={() => {
+          setHovered(projectTwo);
+        }}
+        onMouseLeave={() => {
+          setHovered("");
+        }}
+        href={`/projects/${data?.projects[projectTwo]?.id}`}
+      >
         <figure className={styles.Wrapper__Right}>
           {projectTwo !== null && (
-            <img
-              src={`/images/${data.projects[projectTwo].image[0]}`}
-              className={styles.Wrapper__Image}
-              alt="Tbilisi"
-            />
+            <>
+              <img
+                src={`/images/${data.projects[projectTwo]?.image[0]}`}
+                className={styles.Wrapper__Image}
+                alt="Tbilisi"
+              />
+              {hovered === projectTwo && (
+                <video
+                  src={require(`../../assets/videos/${data.projects[projectTwo]?.videoLink}.mp4`)}
+                  className={styles.Wrapper__Image}
+                  autoPlay
+                  loop
+                  muted
+                />
+              )}
+            </>
           )}
           <span className={styles.Wrapper__ImageText}>See more</span>
         </figure>
