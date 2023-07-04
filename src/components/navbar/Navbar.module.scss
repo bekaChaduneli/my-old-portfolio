@@ -38,6 +38,9 @@
         height: 100%;
         z-index: 0;
         transform: translate(-12px, -20px);
+        @media (max-width: 1024px) {
+            transform: translate(-10px, -15px);
+        }
         &--active {
             transition: 0.6s;
             backdrop-filter: blur(6px);
