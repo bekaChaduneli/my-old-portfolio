@@ -1,14 +1,16 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./recommendedProjects.module.scss";
 
 export default function RecommendedProjects({ data }) {
   function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
   const [hovered, setHovered] = useState("");
   const [projectOne, setProjectOne] = useState(null);
   const [projectTwo, setProjectTwo] = useState(null);
+  const videoRefs = useRef([]);
 
   useEffect(() => {
     if (data && data.projects && data.projects.length > 0) {
@@ -29,15 +31,26 @@ export default function RecommendedProjects({ data }) {
     console.log(projectTwo);
   }, [projectOne, projectTwo]);
 
+  const handleVideoMouseEnter = (index) => {
+    setHovered(index);
+    if (videoRefs.current[index]) {
+      videoRefs.current[index].play();
+    }
+  };
+
+  const handleVideoMouseLeave = (index) => {
+    setHovered("");
+    if (videoRefs.current[index]) {
+      videoRefs.current[index].pause();
+      videoRefs.current[index].currentTime = 0;
+    }
+  };
+
   return (
     <div className={styles.Wrapper}>
       <Link
-        onMouseEnter={() => {
-          setHovered(projectOne);
-        }}
-        onMouseLeave={() => {
-          setHovered("");
-        }}
+        onMouseEnter={() => handleVideoMouseEnter(projectOne)}
+        onMouseLeave={() => handleVideoMouseLeave(projectOne)}
         href={`/projects/${data?.projects[projectOne]?.id}`}
       >
         <figure className={styles.Wrapper__Left}>
@@ -48,11 +61,13 @@ export default function RecommendedProjects({ data }) {
                 className={styles.Wrapper__Image}
                 alt="Tbilisi"
               />
-              {hovered === projectOne && (
+              {data.projects[projectOne]?.videoLink && (
                 <video
+                  ref={(ref) => {
+                    videoRefs.current[projectOne] = ref;
+                  }}
                   src={require(`../../assets/videos/${data.projects[projectOne]?.videoLink}.mp4`)}
                   className={styles.Wrapper__Image}
-                  autoPlay
                   loop
                   muted
                 />
@@ -63,12 +78,8 @@ export default function RecommendedProjects({ data }) {
         </figure>
       </Link>
       <Link
-        onMouseEnter={() => {
-          setHovered(projectTwo);
-        }}
-        onMouseLeave={() => {
-          setHovered("");
-        }}
+        onMouseEnter={() => handleVideoMouseEnter(projectTwo)}
+        onMouseLeave={() => handleVideoMouseLeave(projectTwo)}
         href={`/projects/${data?.projects[projectTwo]?.id}`}
       >
         <figure className={styles.Wrapper__Right}>
@@ -79,11 +90,13 @@ export default function RecommendedProjects({ data }) {
                 className={styles.Wrapper__Image}
                 alt="Tbilisi"
               />
-              {hovered === projectTwo && (
+              {data.projects[projectTwo]?.videoLink && (
                 <video
+                  ref={(ref) => {
+                    videoRefs.current[projectTwo] = ref;
+                  }}
                   src={require(`../../assets/videos/${data.projects[projectTwo]?.videoLink}.mp4`)}
                   className={styles.Wrapper__Image}
-                  autoPlay
                   loop
                   muted
                 />

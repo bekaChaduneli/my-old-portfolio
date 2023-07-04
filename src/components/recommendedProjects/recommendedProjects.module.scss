@@ -1,12 +1,19 @@
 .Wrapper {
   display: flex;
   gap: 24px;
+
   &__Left {
     width: 800px;
-    height: 500px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(0.94);
+      transition: 0.3s;
+    }
     &:hover .Wrapper__ImageText {
       bottom: 20px;
       opacity: 1;
@@ -16,9 +23,14 @@
   &__Right {
     width: 500px;
     position: relative;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
+    transition: 0.3s;
     border-radius: 12px;
+    &:hover {
+      transform: scale(0.94);
+      transition: 0.3s;
+    }
     &:hover .Wrapper__ImageText {
       bottom: 20px;
       opacity: 1;
@@ -48,5 +60,3 @@
     color: #fff;
   }
 }
-
-// .Wrapper:hover
