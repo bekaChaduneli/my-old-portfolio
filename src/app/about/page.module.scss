@@ -1,22 +1,32 @@
 .About {
-    padding: 80px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__ExperienceWrapper {
-        margin-bottom: 60px;
-    }
-    &__ExperienceText {
-        font-size: 42px;
-        margin-bottom: 30px;
-        font-family: var(--font-acorn);
-        align-self: flex-start;
-    }
-    &__Skills {
-        font-size: 54px;
-        padding-top: 30px;
-        margin-bottom: 40px;
-        font-family: var(--font-acorn);
-    }
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__ExperienceWrapper {
+    margin-bottom: 60px;
+  }
+  &__ExperienceText {
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-family: var(--font-acorn);
+    align-self: flex-start;
+  }
+  &__Skills {
+    font-size: 54px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    font-family: var(--font-acorn);
+  }
+  &__ProjectsWrapper {
+    padding-top: 80px;
+    margin-bottom: 100px;
+  }
+  &__Projects {
+    font-size: 54px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: var(--font-acorn);
+  }
 }
