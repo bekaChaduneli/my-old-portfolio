@@ -1,0 +1,32 @@
+.SkillsWrapper {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Skills {
+    // display: block;
+    margin-right: 42px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    background-color: #ffff;
+    color: #000;
+    font-family: var(--font-gt);
+    display: flex;
+    gap: 8px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    &__SkillIcon {
+        width: 40px;
+        height: 40px;
+    }
+    &__Text {
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-family: var(--font-gt);
+        color: #343131;
+    }
+}

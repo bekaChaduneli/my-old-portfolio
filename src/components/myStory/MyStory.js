@@ -4,7 +4,9 @@ export default function MyStory() {
     return (
         <div className={styles.Story}>
             <h1 className={styles.Story__Headline}>I'M BEKA</h1>
-            <h2 className={styles.Story__Text}>Full Stack Developer</h2>
+            <h2 className={styles.Story__Text}>
+                Full Stack Developer From <strong>Tbilisi, Georgia</strong>
+            </h2>
             <div className={styles.Story__Me}>
                 <p>
                     I started learning programming on{" "}

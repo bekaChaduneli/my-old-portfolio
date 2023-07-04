@@ -9,8 +9,15 @@ import {
 } from "framer-motion";
 import { wrap } from "framer-motion";
 import styles from "./framerText.module.scss";
+import classNames from "classnames";
 
-export default function FramerText({ children, custom, baseVelocity = 100 }) {
+export default function FramerText({
+    children,
+    custom,
+    left,
+    right,
+    baseVelocity = 100,
+}) {
     const baseX = useMotionValue(0);
     const smoothVelocity = useSpring(0, {
         damping: 50,
@@ -19,7 +26,10 @@ export default function FramerText({ children, custom, baseVelocity = 100 }) {
     const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
         clamp: false,
     });
-    const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+
+    const x = custom
+        ? useTransform(baseX, (v) => `${wrap(-0, -54, v)}%`)
+        : useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
 
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
@@ -35,7 +45,13 @@ export default function FramerText({ children, custom, baseVelocity = 100 }) {
     if (custom) {
         return (
             <div className={styles.Parallax}>
-                <motion.div className={styles.Parallax__Scroller} style={{ x }}>
+                <motion.div
+                    className={classNames(styles.Parallax__Scroller, {
+                        [styles["Parallax__Scroller--left"]]: left,
+                        [styles["Parallax__Scroller--right"]]: right,
+                    })}
+                    style={{ x }}
+                >
                     {children}
                 </motion.div>
             </div>

@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
 import TimelineBox from "@/components/timelineBox/TimelineBox";
+import FramerSkills from "@/components/framerSkills/FramerSkills";
 
 export default function page() {
     const [data, setData] = useState(null);
@@ -39,6 +40,9 @@ export default function page() {
                 <h1 className={styles.About__ExperienceText}>Languages</h1>
                 <TimelineBox data={data?.personal.languages} />
             </div>
+            <h1 className={styles.About__Skills}>SKILLS</h1>
+            
+            <FramerSkills data={data?.skills} />
         </div>
     );
 }

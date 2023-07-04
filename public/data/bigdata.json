@@ -848,11 +848,20 @@
             "about": ""
         },
         {
-            "name": "SQL",
+            "name": "MySql",
             "startlearningdate": "February",
             "main": true,
             "tip": "Database",
-            "icon": "/sql.png",
+            "icon": "/mysql.png",
+            "projectsList": ["breadit", "spotify-clone"],
+            "about": ""
+        },
+        {
+            "name": "Postgres",
+            "startlearningdate": "February",
+            "main": true,
+            "tip": "Database",
+            "icon": "/postgres.png",
             "projectsList": ["breadit", "spotify-clone"],
             "about": ""
         },
@@ -884,12 +893,30 @@
             "about": ""
         },
         {
+            "name": "Green Sock",
+            "main": false,
+            "icon": "/gsap.png",
+            "startlearningdate": "April",
+            "tip": "Animation Framework",
+            "projectsList": ["weddings-project"],
+            "about": ""
+        },
+        {
             "name": "Prisma",
             "main": false,
             "icon": "/prisma.png",
             "startlearningdate": "jun",
             "tip": "next-generation ORM",
             "projectsList": ["breadit"],
+            "about": ""
+        },
+        {
+            "name": "Supabase",
+            "main": false,
+            "icon": "/supabase.png",
+            "startlearningdate": "jun",
+            "tip": "open source Firebase alternative",
+            "projectsList": ["spotify-clone"],
             "about": ""
         },
         {
@@ -908,6 +935,15 @@
                 "todo-ui",
                 "tip-calculator-app-react"
             ],
+            "about": ""
+        },
+        {
+            "name": "Jquery",
+            "main": false,
+            "icon": "/jquery.png",
+            "startlearningdate": "April",
+            "tip": "JavaScript library",
+            "projectsList": ["weddings-project"],
             "about": ""
         },
         {
@@ -991,6 +1027,22 @@
             "main": false,
             "startlearningdate": "",
             "icon": "/figma.png",
+            "tip": "",
+            "about": ""
+        },
+        {
+            "name": "Jira",
+            "main": false,
+            "startlearningdate": "",
+            "icon": "/jira.png",
+            "tip": "",
+            "about": ""
+        },
+        {
+            "name": "Trello",
+            "main": false,
+            "startlearningdate": "",
+            "icon": "/trello.png",
             "tip": "",
             "about": ""
         },

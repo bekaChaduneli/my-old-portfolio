@@ -1,23 +1,31 @@
 .Parallax {
     overflow: hidden;
     letter-spacing: -2px;
+    position: relative;
     line-height: 0.8;
     margin: 0;
     white-space: nowrap;
     display: flex;
+    width: 100%;
+    left: 0;
     flex-wrap: nowrap;
     @media (max-width: 1280px) {
         letter-spacing: 1px;
     }
     &__Scroller {
+        position: inherit;
         font-weight: 600;
         text-transform: uppercase;
         font-size: 64px;
         display: flex;
         white-space: nowrap;
-        display: flex;
         flex-wrap: nowrap;
-
+        &--left {
+            left: 1100px;
+        }
+        &--right {
+            right: -1100px;
+        }
         span {
             display: block;
             margin-right: 30px;

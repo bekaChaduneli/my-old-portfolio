@@ -12,10 +12,15 @@
         font-family: var(--font-acorn);
     }
     &__Text {
-        font-size: 40px;
+        font-size: 24px;
         font-family: var(--font-gt);
         line-height: 100%;
         margin-bottom: 32px;
+        strong {
+            font-family: var(--font-acorn);
+            letter-spacing: 2px;
+            text-decoration: underline;
+        }
     }
     &__Me {
         font-family: var(--font-gt);
