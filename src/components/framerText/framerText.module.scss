@@ -29,6 +29,12 @@
         span {
             display: block;
             margin-right: 30px;
+            @media (max-width: 768px) {
+                margin-right: 24px;
+            }
+            @media (max-width: 420px) {
+                margin-right: 16px;
+            }
         }
     }
 }

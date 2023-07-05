@@ -19,14 +19,58 @@
     border-radius: 8px;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1024px) {
+        margin-right: 28px;
+        padding: 8px 18px;
+    }
+    @media (max-width: 768px) {
+        margin-right: 10px;
+        padding: 6px 14px;
+    }
+    @media (max-width: 560px) {
+        margin-right: 6px;
+        margin-bottom: 14px;
+    }
+    @media (max-width: 420px) {
+    }
     &__SkillIcon {
         width: 40px;
         height: 40px;
+        @media (max-width: 1024px) {
+            width: 32px;
+            height: 32px;
+        }
+        @media (max-width: 768px) {
+            width: 30px;
+            height: 30px;
+        }
+        @media (max-width: 560px) {
+            width: 28px;
+            height: 28px;
+        }
+        @media (max-width: 420px) {
+            width: 26px;
+            height: 26px;
+        }
     }
     &__Text {
         font-size: 24px;
         letter-spacing: 1px;
         font-family: var(--font-gt);
         color: #343131;
+        @media (max-width: 1024px) {
+            font-size: 22px;
+            letter-spacing: 0.8px;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+        @media (max-width: 560px) {
+            font-size: 18px;
+            letter-spacing: 0.6px;
+        }
+        @media (max-width: 420px) {
+            font-size: 16px;
+        }
     }
 }

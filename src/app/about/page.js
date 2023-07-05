@@ -44,7 +44,6 @@ export default function page() {
         <RecommendedProjects data={data} />
       </div>
       <h1 className={styles.About__Skills}>SKILLS</h1>
-
       <FramerSkills data={data?.skills} />
     </div>
   );
