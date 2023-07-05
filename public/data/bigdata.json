@@ -229,7 +229,11 @@
             "github": "https://github.com/bekaChaduneli/entertaiment-web-app",
             "live": "https://entertaiment-web-app-nu.vercel.app/",
             "about": [
-                "The main goal of this project was to get experience working with large files, building the site using the received information, and I also got to work with react components like swipper"
+                "Introducing an engaging films and series site built with React, Typescript, and styled components. This project offers a seamless browsing experience with four distinct pages: Main, Series, Movies, and Bookmarked Series and Films",
+                "The Main page showcases the most popular films and series, providing users with an enticing selection of content. Users can explore the Series and Movies pages to discover a wide range of options in each category",
+                "One unique feature of this project is the ability for users to bookmark their favorite films and series. The Bookmarked Series and Films page allows users to easily access and revisit their chosen content, ensuring a personalized and convenient viewing experience",
+                "Created with React, Typescript, and styled components, this project emphasizes clean code structure and efficient performance. The integration of styled components enables a modular and visually appealing design, enhancing the overall user interface",
+                "Embark on a journey of cinematic wonders with our films and series site. Explore popular titles, dive into captivating series, and bookmark your favorites for easy access. Immerse yourself in a world of entertainment as we present a user-centric platform designed to elevate your viewing experience"        
             ]
         },
         {
@@ -250,7 +254,10 @@
             "github": "https://github.com/bekaChaduneli/planet-facts-react",
             "live": "https://planet-facts-reacts.vercel.app/",
             "about": [
-                "The main goal of this project was to gain experience working with React routers and Vite"
+                "Introducing an enlightening planets facts page created with React, Typescript, and styled components. This project offers users a captivating journey through the vast expanse of our solar system. Leveraging the power of React Router, users can effortlessly explore detailed information about various celestial bodies, including Earth, Mars, Jupiter, and more",
+                "Immerse yourself in the awe-inspiring wonders of each planet as you Immerse yourself in the awe-inspiring wonders of each planet as you delve into their unique characteristics, such as size, composition, atmosphere, and notable features. This user-friendly interface ensures seamless navigation and an engaging educational experience",
+                "Developed with React, Typescript, and styled components, this project prioritizes code modularity and performance optimization. The use of styled components enhances the visual aesthetics, creating a cohesive and visually appealing design",
+                "Embark on a cosmic journey through our planets facts page, where you can expand your knowledge of the solar system. Explore fascinating facts, unravel celestial mysteries, and ignite your curiosity about the planets that surround us. Join us as we unveil the secrets of our galactic neighborhood in this captivating React-based project"
             ]
         },
         {
@@ -279,7 +286,9 @@
             "github": "https://github.com/bekaChaduneli/3d-portfolio",
             "live": "https://3d-portfolio-liard.vercel.app/",
             "about": [
-                "The main goal of the project was to get experience working with three.js"
+                "Introducing an immersive website crafted with React, Typescript, and styled components. This project showcases a visually stunning and seamless user experience, incorporating the power of Three.js for captivating transitions and animations",
+                "With its modern and sleek design, the website takes visitors on a captivating journey, engaging them with smooth transitions between pages and delightful visual effects. The integration of React and Typescript ensures a robust and maintainable codebase, while styled components enhance the visual aesthetics and provide a consistent design language",
+                "Experience a seamless and visually pleasing exploration as you navigate through the website's pages. Immerse yourself in the captivating transitions powered by Three.js, and discover the seamless synergy between technology and design. Join us on this immersive journey as we invite you to experience the magic of this React-based project, designed to captivate and engage visitors with its fluid and visually appealing user interface"
             ]
         },
         {
@@ -296,7 +305,9 @@
             "github": "https://github.com/bekaChaduneli/clock-app-react",
             "live": "https://clock-app-react-z4tq.vercel.app/",
             "about": [
-                "The main goal of this project was to gain experience working with API, Typescript and Chakra UI"
+                "Introducing a clock website built with React, Typescript, and Chakra UI. This project allows users to check the time in their respective time zone and provides information about their location",
+                "Additionally, users are presented with randomly generated phrases that refresh on each visit, sourced from various APIs. The website offers a simple and intuitive interface, prioritizing functionality and ease of use",
+                "Users can effortlessly view the current time in their nation and explore interesting phrases generated dynamically. Join us on this digital journey as we present a clock website that combines essential timekeeping features with intriguing random phrases, all powered by React, Typescript, and Chakra UI"
             ]
         },
         {
@@ -314,7 +325,10 @@
             "github": "https://github.com/bekaChaduneli/github-user-search-app-REACT",
             "live": "https://github-user-search-app-react.vercel.app/",
             "about": [
-                "This is my forth React app. The main goal of this project was to fetch the GitHub API with Axios and include the API information in HTML with React and Styled components"
+                "Introducing a GitHub user search application built with React and styled components. This project enables users to search for GitHub users and access their information. It utilizes the GitHub API to fetch data and display relevant details about each user",
+                "Initially created with HTML, CSS, and JavaScript, this project has been reimagined using React for enhanced functionality and improved user experience",
+                "The application offers a seamless interface for users to search and explore GitHub profiles effortlessly. Join us as we dive into the world of GitHub users, leveraging the power of React and styled components to deliver a dynamic and intuitive search experience",
+                "Discover the coding prowess of developers on GitHub and gain insights into their projects and contributions"
             ]
         },
         {
@@ -335,7 +349,9 @@
             "github": "https://github.com/bekaChaduneli/ecommerce-product-page",
             "live": "https://bekachaduneli.github.io/ecommerce-product-page/",
             "about": [
-                "The main goal of this project was to create a box with a document object model where many product images could be viewed"
+                "Introducing an ecommerce product page created with HTML, CSS, and JavaScript. This project provides users with a platform to explore product listings, add items to their basket, view product images, and check the final price",
+                "The website offers a clean and intuitive interface, allowing users to browse through various products and make informed purchase decisions. Leveraging the power of HTML, CSS, and JavaScript, this project delivers a seamless shopping experience, enabling users to interact with product details and add items to their virtual basket",
+                "Join us on this digital journey as we present an ecommerce product page that showcases products, facilitates smooth navigation, and ensures a hassle-free shopping experience for users"
             ]
         },
         {
@@ -350,11 +366,14 @@
             "tools": ["/react.png", "/tailwind.png", "/framermotion.png"],
             "github": "https://github.com/bekaChaduneli/metaversus-app",
             "about": [
-                "The main goal of the project was to get experience working with framer motion"
+                "Introducing a metaverse app created with React and Tailwind CSS. This project focuses on providing an immersive experience by incorporating smooth transitions using Framer Motion",
+                "The main objective was to gain experience working with Framer Motion and create seamless animations throughout the app. With React's powerful framework and Tailwind CSS's utility classes, the app delivers a responsive and visually appealing interface",
+                "Dive into the metaverse and explore a world of smooth transitions and captivating animations. This project showcases the seamless integration of React and Tailwind CSS while emphasizing the importance of creating engaging and interactive user experiences",
+                "Join us on this digital adventure as we bring the metaverse to life, leveraging the power of React and Tailwind CSS to deliver a visually stunning and immersive app"
             ]
         },
         {
-            "name": "company project",
+            "name": "Artmedia test",
             "best": false,
             "slug": "React minified project with validation, swipper and animations",
             "id": "company-project",
@@ -362,12 +381,15 @@
             "display": false,
             "date": " Apr",
             "frameworks": ["react", "tailwind"],
-            "image": ["artmedia.test.png"],
+            "image": ["artmedia-test.png"],
             "tools": ["/react.png", "/tailwind.png"],
             "github": "https://github.com/bekaChaduneli/artmedia-project",
             "live": "https://artmedia-project-phi.vercel.app/",
             "about": [
-                "The main goal of this project was to get experience with SwipperJS, UseForm, and other tools."
+               "Introducing my work test project created with React and Tailwind CSS. This project showcases the implementation of various features and functionalities, including the Splide slider, useForm validations, transitions, and more",
+               "The project aims to demonstrate my proficiency in utilizing these technologies and integrating them seamlessly into a web application. With React's component-based architecture and Tailwind CSS's utility classes, the project offers a responsive and visually appealing user interface",
+               "Explore the functionalities of the Splide slider, experience smooth transitions, and witness the power of useForm validations. This work test project serves as a testament to my skills and capabilities in creating dynamic and interactive web applications",
+               "Join me on this journey as we delve into the world of React and Tailwind CSS, uncovering the potential of these technologies in delivering engaging user experiences"
             ]
         },
         {
@@ -398,7 +420,7 @@
             "date": " Feb",
             "react": false,
             "frameworks": ["html", "css", "javascript"],
-            "image": ["comment-section.png"],
+            "image": ["comments-section.png"],
             "tools": ["/javascript.png", "/css.png", "/html.png"],
             "github": "https://github.com/bekaChaduneli/interactive-comment-section",
             "live": "https://bekachaduneli.github.io/interactive-comment-section/",
@@ -416,7 +438,7 @@
             "id": "todo-ui",
             "videoLink": "todo-react",
             "date": " Mar",
-            "image": ["todo-ui"],
+            "image": ["todo-ui.png"],
             "frameworks": ["react", "tailwind"],
             "tools": ["/react.png", "/tailwind.png"],
             "github": "https://github.com/bekaChaduneli/Todo-UI-REACT",
@@ -571,6 +593,7 @@
             "best": false,
             "slug": "A countdown timer site where the user can see how much time is left until the countdown ends",
             "id": "launch-countdown-timer",
+            "videoLink": "launch-countdown",
             "date": " Feb",
             "image": ["launch-countdown.png"],
             "frameworks": ["html", "css", "javascript"],
@@ -649,7 +672,7 @@
             "videoLink": "fylo",
             "date": " Jan",
             "frameworks": ["html", "css"],
-            "image": ["fylo-landing-page"],
+            "image": ["fylo-landing-page.png"],
             "tools": ["/css.png", "/html.png"],
             "github": "https://github.com/bekaChaduneli/fylo-landing-page-with-two-column-layout-master",
             "live": "https://bekachaduneli.github.io/fylo-landing-page-with-two-column-layout-master/",
