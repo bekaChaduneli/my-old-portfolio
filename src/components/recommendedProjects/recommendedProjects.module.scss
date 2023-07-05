@@ -1,62 +1,137 @@
 .Wrapper {
-  display: flex;
-  gap: 24px;
+    display: flex;
+    gap: 24px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    &__Left {
+        width: 800px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        transition: 0.3s;
+        @media (max-width: 1440px) {
+            width: 600px;
+            height: 300px;
+            border-radius: 8px;
+        }
+        @media (max-width: 1280px) {
+            width: 500px;
+            height: 260px;
+        }
+        @media (max-width: 1280px) {
+            width: 500px;
+            height: 260px;
+        }
+        @media (max-width: 1024px) {
+            width: 390px;
+            height: 200px;
+        }
+        @media (max-width: 768px) {
+            width: 440px;
+            height: 240px;
+        }
+        @media (max-width: 560px) {
+            width: 370px;
+            height: 210px;
+        }
+        @media (max-width: 420px) {
+            width: 300px;
+            height: 170px;
+        }
 
-  &__Left {
-    width: 800px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    transition: 0.3s;
-
-    &:hover {
-      transform: scale(0.94);
-      transition: 0.3s;
+        &:hover {
+            transform: scale(0.94);
+            transition: 0.3s;
+        }
+        &:hover .Wrapper__ImageText {
+            bottom: 20px;
+            opacity: 1;
+            transition: 0.3s;
+            @media (max-width: 560px) {
+                bottom: 10px;
+            }
+        }
     }
-    &:hover .Wrapper__ImageText {
-      bottom: 20px;
-      opacity: 1;
-      transition: 0.3s;
+    &__Right {
+        width: 500px;
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        transition: 0.3s;
+        border-radius: 12px;
+        @media (max-width: 1440px) {
+            width: 375px;
+            height: 300px;
+            border-radius: 8px;
+        }
+        @media (max-width: 1280px) {
+            width: 335px;
+            height: 260px;
+        }
+        @media (max-width: 1024px) {
+            width: 270px;
+            height: 200px;
+        }
+        @media (max-width: 768px) {
+            width: 440px;
+            height: 240px;
+        }
+        @media (max-width: 560px) {
+            width: 370px;
+            height: 210px;
+        }
+        @media (max-width: 420px) {
+            width: 300px;
+            height: 170px;
+        }
+        &:hover {
+            transform: scale(0.94);
+            transition: 0.3s;
+        }
+        &:hover .Wrapper__ImageText {
+            bottom: 20px;
+            opacity: 1;
+            transition: 0.3s;
+            @media (max-width: 560px) {
+                bottom: 10px;
+            }
+        }
     }
-  }
-  &__Right {
-    width: 500px;
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-    transition: 0.3s;
-    border-radius: 12px;
-    &:hover {
-      transform: scale(0.94);
-      transition: 0.3s;
+    &__Image {
+        top: 0;
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        object-fit: cover;
     }
-    &:hover .Wrapper__ImageText {
-      bottom: 20px;
-      opacity: 1;
-      transition: 0.3s;
+    &__ImageText {
+        position: absolute;
+        padding: 10px 22px;
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+        background: #00000097;
+        bottom: 0px;
+        line-height: 100%;
+        transition: 0.4s;
+        opacity: 0;
+        left: 30px;
+        font-family: var(--font-gt);
+        font-size: 22px;
+        color: #fff;
+        @media (max-width: 560px) {
+            left: 12px;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        @media (max-width: 420px) {
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 18px;
+        }
     }
-  }
-  &__Image {
-    top: 0;
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    object-fit: cover;
-  }
-  &__ImageText {
-    position: absolute;
-    padding: 10px 22px;
-    border-radius: 10px;
-    backdrop-filter: blur(4px);
-    background: #00000097;
-    bottom: 0px;
-    line-height: 100%;
-    transition: 0.4s;
-    opacity: 0;
-    left: 30px;
-    font-family: var(--font-gt);
-    font-size: 22px;
-    color: #fff;
-  }
 }
