@@ -26,11 +26,7 @@ export default function FramerText({
     const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
         clamp: false,
     });
-
-    const x = custom
-        ? useTransform(baseX, (v) => `${wrap(-0, -54, v)}%`)
-        : useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
-
+    const x = useTransform(baseX, (v) => `${wrap(-0, -54, v)}%`);
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
         let moveBy = directionFactor.current * baseVelocity * (delta / 1000);

@@ -3,7 +3,7 @@ import styles from "./myStory.module.scss";
 export default function MyStory() {
     return (
         <div className={styles.Story}>
-            <h1 className={styles.Story__Headline}>I'M BEKA</h1>
+            <h1 className={styles.Story__Headline}>I AM BEKA</h1>
             <h2 className={styles.Story__Text}>
                 Full Stack Developer From <strong>Tbilisi, Georgia</strong>
             </h2>

@@ -11,7 +11,8 @@
             width: 92%;
         }
     }
-    &__MainProjectHeadline {
+
+    &__Headline {
         text-align: center;
         font-size: 64px;
         font-family: var(--font-acorn);
@@ -62,6 +63,11 @@
     @media (max-width: 1024px) {
         padding-top: 80px;
     }
+}
+.Scroll {
+    scroll-snap-align: center;
+    width: 100%;
+    scroll-snap-type: y mandatory;
 }
 .Background {
     position: absolute;
