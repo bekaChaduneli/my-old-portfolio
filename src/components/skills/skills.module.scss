@@ -7,19 +7,15 @@
     flex-wrap: wrap;
     @media (max-width: 1440px) {
         gap: 16px;
-        margin-bottom: 80px;
     }
     @media (max-width: 1024px) {
         gap: 14px;
-        margin-bottom: 70px;
     }
     @media (max-width: 768px) {
         gap: 12px;
-        margin-bottom: 60px;
     }
     @media (max-width: 560px) {
         gap: 10px;
-        margin-bottom: 50px;
     }
     @media (max-width: 420px) {
         gap: 8px;

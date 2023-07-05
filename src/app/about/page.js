@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import TimelineBox from "@/components/timelineBox/TimelineBox";
 import FramerSkills from "@/components/framerSkills/FramerSkills";
 import RecommendedProjects from "@/components/recommendedProjects/RecommendedProjects";
+import Contact from "@/components/contact/Contact";
 
 export default function Page() {
     const [data, setData] = useState(null);

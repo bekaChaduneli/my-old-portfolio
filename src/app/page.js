@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Header from "@/components/header/Header";
 import AppButton from "@/components/appButton/AppButton";
 import Skills from "@/components/skills/Skills";
+import Contact from "@/components/contact/Contact";
 
 export default function Home() {
     const [data, setData] = useState(null);
@@ -38,6 +39,17 @@ export default function Home() {
                 <div className={styles.Wrapper__Skills}>
                     <h1 className={styles.Wrapper__Headline}>Skills</h1>
                     <Skills data={data?.skills} />
+                </div>
+                <div className={styles.Wrapper__ContactWrapper}>
+                    <h1 className={styles.Wrapper__Contact}>Contact Me</h1>
+                    <div className={styles.Wrapper__ContactText}>
+                        <p>
+                            Get in touch or shoot me an email directly on{" "}
+                            <strong>beka.chaduneli.1@btu.edu.ge</strong>
+                        </p>
+                    </div>
+
+                    <Contact />
                 </div>
             </div>
         </>
