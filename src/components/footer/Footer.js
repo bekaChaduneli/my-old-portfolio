@@ -24,7 +24,7 @@ export default function Footer() {
                         className={styles.Footer__IconLink}
                         href="https://www.linkedin.com/in/beka-chaduneli-28203422b/"
                     >
-                        <Linkedin className={styles.Footer__Icon}  />
+                        <Linkedin className={styles.Footer__Icon} />
                     </Link>
                 </div>
             </div>

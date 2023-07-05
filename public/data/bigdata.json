@@ -21,7 +21,7 @@
                 {
                     "name": "Frontend Internship",
                     "data": "20.04.2023 - present",
-                    "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                    "text": "I started working as a Frontend developer intern at Artmedia on April 20, and since that day I have been getting real experience with Next.js, Javascript, Scss, Gsap, Jquery, Trello, and Jira."
                 }
             ]
         },
@@ -30,12 +30,12 @@
                 {
                     "name": "English",
                     "data": "CONVERSANT",
-                    "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+                    "text": "I speak English at the B1 level. I have no problem listening to or understanding anything. I have a slight barrier when speaking because I make grammatical mistakes"
                 },
                 {
                     "name": "Georgian",
                     "data": "NATIVE",
-                    "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+                    "text": "Georgian is my native language"
                 }
             ]
         },
@@ -47,12 +47,12 @@
                     {
                         "name": "Business Administration - Management",
                         "data": "18.09.2021 - 01.07.2022",
-                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                        "text": "In 2021, I entered the Faculty of Management at the University of Business and Technology, where I took such interesting subjects as principles of Digital technologies, Startup, Mathematics, Introduction to entrepreneurship, Job search, and Academic writing"
                     },
                     {
                         "name": "Information Technology",
                         "data": "18.09.2022 - present",
-                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                        "text": "After 1 year of teaching management, I decided that my sphere was programming, after which I moved to the faculty of Information technology, where I am still studying today, and during this time I took such necessary and interesting subjects as Python, Calculus, Web development, database administration, information security, and English"
                     }
                 ]
             },
@@ -62,13 +62,13 @@
                 "contents": [
                     {
                         "name": "Full Stack Development, Bitcamp Pro",
-                        "data": "20.11.2022 - 02.03.2023",
-                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                        "data": "20.12.2022 - 20.03.2023",
+                        "text": "At the end of 2022, a great desire to develop more intensively appeared, which led to the fact that I started studying in the Full stack development boot camp, where I covered the fundamental knowledge of web development. I spent an average of 8-10 hours a day in programming and tried to get a lot of experience in practice. You can see these projects on the projects page. In Bitcamp Pro, I mastered such skills as Problem Solving, JavaScript, React.js, Node.js, Algorithms, Data Structures, GitHub · MySql, Postgres, Figma, Express, CSS, HTML, and Postman"
                     },
                     {
                         "name": "React 101",
-                        "data": "02.03.2023 - 12.04.2023",
-                        "text": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+                        "data": "20.03.2023 - 16.04.2023",
+                        "text": "When I covered the fundamentals well, I decided to learn the Javascript framework. Because Bitcamp also had a course on React, I decided to take that course. During the course, I made more than 10 projects, and along with React, I mastered such skills as Styled-components, Typescript, Framer motion, and Next"
                     }
                 ]
             }
@@ -291,7 +291,7 @@
             "display": false,
             "date": " Mar",
             "frameworks": ["react", "typescript", "chakraui"],
-            "image": ["clock-app.png"],
+            "image": ["clock-closed.png", "clock-opened.png"],
             "tools": ["/react.png", "/typescript.png", "/chakraui.png"],
             "github": "https://github.com/bekaChaduneli/clock-app-react",
             "live": "https://clock-app-react-z4tq.vercel.app/",
@@ -309,7 +309,7 @@
             "frameworks": ["react", "styledcomponents"],
             "date": " Mar",
 
-            "image": ["github-search-app"],
+            "image": ["github-search-app.png"],
             "tools": ["/react.png", "/styledcomponents.png"],
             "github": "https://github.com/bekaChaduneli/github-user-search-app-REACT",
             "live": "https://github-user-search-app-react.vercel.app/",
@@ -435,7 +435,7 @@
             "videoLink": "github-search-app",
             "date": " Feb",
             "frameworks": ["html", "css", "javascript"],
-            "image": ["github-search-app"],
+            "image": ["github-search-app.png"],
             "tools": ["/javascript.png", "/css.png", "/html.png"],
             "github": "https://github.com/bekaChaduneli/github-user-search-app",
             "live": "https://bekachaduneli.github.io/github-user-search-app/",
