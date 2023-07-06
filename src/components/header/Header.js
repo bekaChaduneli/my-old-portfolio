@@ -76,7 +76,7 @@ export default function Header() {
             });
 
             tl.to(linkElement, {
-                y: 100,
+                y: -160,
                 duration: 1,
             });
         }

@@ -3,7 +3,7 @@ import Contact from "@/components/contact/Contact";
 import React, { useEffect } from "react";
 import styles from "./page.module.scss";
 import { gsap } from "gsap";
-export default function page() {
+export default function Page() {
     useEffect(() => {
         if (window.innerWidth >= 1024) {
             gsap.to(".headline", {

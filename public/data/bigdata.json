@@ -233,7 +233,7 @@
                 "The Main page showcases the most popular films and series, providing users with an enticing selection of content. Users can explore the Series and Movies pages to discover a wide range of options in each category",
                 "One unique feature of this project is the ability for users to bookmark their favorite films and series. The Bookmarked Series and Films page allows users to easily access and revisit their chosen content, ensuring a personalized and convenient viewing experience",
                 "Created with React, Typescript, and styled components, this project emphasizes clean code structure and efficient performance. The integration of styled components enables a modular and visually appealing design, enhancing the overall user interface",
-                "Embark on a journey of cinematic wonders with our films and series site. Explore popular titles, dive into captivating series, and bookmark your favorites for easy access. Immerse yourself in a world of entertainment as we present a user-centric platform designed to elevate your viewing experience"        
+                "Embark on a journey of cinematic wonders with our films and series site. Explore popular titles, dive into captivating series, and bookmark your favorites for easy access. Immerse yourself in a world of entertainment as we present a user-centric platform designed to elevate your viewing experience"
             ]
         },
         {
@@ -386,10 +386,10 @@
             "github": "https://github.com/bekaChaduneli/artmedia-project",
             "live": "https://artmedia-project-phi.vercel.app/",
             "about": [
-               "Introducing my work test project created with React and Tailwind CSS. This project showcases the implementation of various features and functionalities, including the Splide slider, useForm validations, transitions, and more",
-               "The project aims to demonstrate my proficiency in utilizing these technologies and integrating them seamlessly into a web application. With React's component-based architecture and Tailwind CSS's utility classes, the project offers a responsive and visually appealing user interface",
-               "Explore the functionalities of the Splide slider, experience smooth transitions, and witness the power of useForm validations. This work test project serves as a testament to my skills and capabilities in creating dynamic and interactive web applications",
-               "Join me on this journey as we delve into the world of React and Tailwind CSS, uncovering the potential of these technologies in delivering engaging user experiences"
+                "Introducing my work test project created with React and Tailwind CSS. This project showcases the implementation of various features and functionalities, including the Splide slider, useForm validations, transitions, and more",
+                "The project aims to demonstrate my proficiency in utilizing these technologies and integrating them seamlessly into a web application. With React's component-based architecture and Tailwind CSS's utility classes, the project offers a responsive and visually appealing user interface",
+                "Explore the functionalities of the Splide slider, experience smooth transitions, and witness the power of useForm validations. This work test project serves as a testament to my skills and capabilities in creating dynamic and interactive web applications",
+                "Join me on this journey as we delve into the world of React and Tailwind CSS, uncovering the potential of these technologies in delivering engaging user experiences"
             ]
         },
         {
