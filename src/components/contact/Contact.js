@@ -50,25 +50,25 @@ export default function Contact() {
                 opacity: 1,
                 y: -20,
                 duration: 0.6,
+                delay: 0.6,
             });
             gsap.to(".email", {
                 opacity: 1,
                 y: -20,
                 duration: 0.6,
-
-                delay: 0.4,
+                delay: 1,
             });
             gsap.to(".textarea", {
                 opacity: 1,
                 y: -20,
                 duration: 0.6,
-                delay: 0.6,
+                delay: 1.2,
             });
             gsap.to(".button", {
                 opacity: 1,
                 y: -20,
                 duration: 0.6,
-                delay: 0.8,
+                delay: 1.4,
             });
         }
     }, []);
