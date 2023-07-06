@@ -1,11 +1,10 @@
-// "use client";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import styles from "./page.module.scss";
-// import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import "../assets/styles/main.scss";
 import "./globals.css";
 import Providers from "@/components/Providers/Providers";
+import Loader from "@/components/loader/Loader";
 
 export const metadata = {
     title: "Create Next App",
@@ -16,13 +15,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                {/* <ProgressBar
-                    height="4px"
-                    color="#fffd00"
-                    options={{ showSpinner: false }}
-                    shallowRouting
-                /> */}
                 <Providers>
+                    <Loader />
                     <span className={styles.Scroll} id="root"></span>
                     <Navbar />
                     <div className={styles.Background}>

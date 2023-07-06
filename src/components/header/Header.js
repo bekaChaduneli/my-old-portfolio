@@ -37,30 +37,31 @@ export default function Header() {
                 opacity: 1,
                 y: -30,
                 duration: 1,
+                delay: 1.4,
             });
             gsap.to(".text", {
                 opacity: 1,
                 y: -20,
                 duration: 1,
-                delay: 0.4,
+                delay: 1.8,
             });
             gsap.to(".skills", {
                 opacity: 1,
                 y: -20,
                 duration: 1,
-                delay: 0.6,
+                delay: 2,
             });
             gsap.to(".location", {
                 opacity: 1,
                 y: -20,
                 duration: 1,
-                delay: 0.8,
+                delay: 2.2,
             });
             gsap.to(".buttons", {
                 opacity: 1,
                 y: -20,
                 duration: 1,
-                delay: 1,
+                delay: 2.4,
             });
             const linkElement = document.querySelector(".header");
 
