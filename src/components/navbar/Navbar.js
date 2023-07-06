@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
 import classNames from "classnames";
 import { usePathname } from "next/navigation";
+import { gsap } from "gsap";
 export default function Navbar() {
     const pathname = usePathname();
     const [scrolled, setScrolled] = useState(false);
@@ -16,6 +17,13 @@ export default function Navbar() {
 
         window.addEventListener("scroll", handleScroll);
 
+        if (window.innerWidth >= 1024) {
+            gsap.to(".navbar", {
+                y: 60,
+                opacity: 1,
+                duration: 1,
+            });
+        }
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -24,7 +32,7 @@ export default function Navbar() {
         console.log(pathname);
     }, [pathname]);
     return (
-        <div className={styles.Navbar}>
+        <div className={`${styles.Navbar} navbar`}>
             <div className={styles.Navbar__Box}>
                 <div
                     className={classNames(styles.Navbar__Background, {

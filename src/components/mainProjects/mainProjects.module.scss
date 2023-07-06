@@ -25,11 +25,10 @@
 .ProjectsWrapper {
     overflow: hidden;
     border-collapse: collapse;
-    // position: relative;
     width: 100%;
-
-    // opacity: 0;
-    // top: 80px;
+    @media (min-width: 1024px) {
+        opacity: 0;
+    }
 }
 .ProjectsHeadlines {
     display: grid;

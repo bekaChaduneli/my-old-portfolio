@@ -5,6 +5,10 @@
     width: 100%;
     z-index: 999;
     padding: 40px;
+    @media (min-width: 1024px) {
+        top: -60px;
+        opacity: 0;
+    }
     @media (max-width: 1024px) {
         padding: 34px 34px 20px;
     }

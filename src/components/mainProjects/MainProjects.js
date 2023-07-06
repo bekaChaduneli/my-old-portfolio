@@ -94,11 +94,15 @@ export default function MainProjects({ data }) {
                     duration: 1,
                 });
             });
+            gsap.to(".wrapper", {
+                opacity: 1,
+                duration: 2,
+            });
         }
     }, [data]);
 
     return (
-        <div ref={ref} className={styles.ProjectsWrapper}>
+        <div ref={ref} className={`${styles.ProjectsWrapper} wrapper`}>
             <div className={styles.ProjectsHeadlines}>
                 <h1 className={styles.ProjectsHeadlines__Text}>Project name</h1>
                 <h1 className={styles.ProjectsHeadlines__Tools}>

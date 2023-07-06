@@ -1,9 +1,11 @@
 "use client";
 import { useForm } from "react-hook-form";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./contact.module.scss";
 import classNames from "classnames";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Contact() {
     const ref = useRef();
     const {
@@ -41,14 +43,43 @@ export default function Contact() {
                 }
             );
     };
+    useEffect(() => {
+        if (window.innerWidth >= 1024) {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to(".name", {
+                opacity: 1,
+                y: -20,
+                duration: 0.6,
+            });
+            gsap.to(".email", {
+                opacity: 1,
+                y: -20,
+                duration: 0.6,
+
+                delay: 0.4,
+            });
+            gsap.to(".textarea", {
+                opacity: 1,
+                y: -20,
+                duration: 0.6,
+                delay: 0.6,
+            });
+            gsap.to(".button", {
+                opacity: 1,
+                y: -20,
+                duration: 0.6,
+                delay: 0.8,
+            });
+        }
+    }, []);
     return (
-        <div className={styles.Contact}>
+        <div className={`${styles.Contact} contact`}>
             <form
                 className={styles.Contact__Form}
                 ref={ref}
                 onSubmit={handleSubmit(onSubmit)}
             >
-                <div className={styles.Contact__InputWrapper}>
+                <div className={`${styles.Contact__InputWrapper} name`}>
                     <input
                         className={classNames(styles.Contact__Input, {
                             [styles["Contact__Input--error"]]:
@@ -65,7 +96,7 @@ export default function Contact() {
                     )}
                 </div>
 
-                <div className={styles.Contact__InputWrapper}>
+                <div className={`${styles.Contact__InputWrapper} email`}>
                     <input
                         className={classNames(styles.Contact__Input, {
                             [styles["Contact__Input--error"]]: errors.email,
@@ -85,7 +116,7 @@ export default function Contact() {
                         </span>
                     )}
                 </div>
-                <div className={styles.Contact__InputWrapper}>
+                <div className={`${styles.Contact__InputWrapper} textarea`}>
                     <textarea
                         className={classNames(styles.Contact__TextArea, {
                             [styles["Contact__TextArea--error"]]:
@@ -102,7 +133,10 @@ export default function Contact() {
                     )}
                 </div>
                 {!limit && (
-                    <button className={styles.Contact__Button} type="submit">
+                    <button
+                        className={`${styles.Contact__Button} button`}
+                        type="submit"
+                    >
                         SUBMIT
                     </button>
                 )}

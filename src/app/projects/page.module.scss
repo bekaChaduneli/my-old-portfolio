@@ -16,6 +16,11 @@
         font-family: var(--font-acorn);
         font-size: 80px;
         margin-bottom: 60px;
+        @media (min-width: 1024px) {
+            opacity: 0;
+            top: 20px;
+            position: relative;
+        }
         @media (max-width: 1280px) {
             font-size: 60px;
             margin-bottom: 50px;

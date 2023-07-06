@@ -27,7 +27,7 @@ export default function Home() {
         <>
             <div className={styles.Wrapper}>
                 <Header />
-                <div className={styles.Wrapper__Projects}>
+                <div className={`${styles.Wrapper__Projects} projects`}>
                     <h1 className={styles.Wrapper__Headline}>Main Projects</h1>
                     <MainProjects data={data} />
                     <div className={styles.Wrapper__Button}>
@@ -40,9 +40,15 @@ export default function Home() {
                     <h1 className={styles.Wrapper__Headline}>Skills</h1>
                     <Skills data={data?.skills} />
                 </div>
-                <div className={styles.Wrapper__ContactWrapper}>
-                    <h1 className={styles.Wrapper__Contact}>Contact Me</h1>
-                    <div className={styles.Wrapper__ContactText}>
+                <div className={`${styles.Wrapper__ContactWrapper} contact`}>
+                    <h1
+                        className={`${styles.Wrapper__Contact} contactHeadline`}
+                    >
+                        Contact Me
+                    </h1>
+                    <div
+                        className={`${styles.Wrapper__ContactText} contactText`}
+                    >
                         <p>
                             Get in touch or shoot me an email directly on{" "}
                             <strong>beka.chaduneli.1@btu.edu.ge</strong>
