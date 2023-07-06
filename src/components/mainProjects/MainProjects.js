@@ -75,25 +75,26 @@ export default function MainProjects({ data }) {
     const sliderRef = useRef(null);
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+        if (window.innerWidth >= 1024) {
+            gsap.registerPlugin(ScrollTrigger);
+            const linkElements = document.querySelectorAll(".trigger");
+            linkElements?.forEach((linkElement) => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: linkElement,
+                        start: "40% bottom",
+                        end: "180% bottom",
+                        scrub: 1,
+                        markers: false,
+                    },
+                });
 
-        const linkElements = document.querySelectorAll("#trigger");
-        linkElements?.forEach((linkElement) => {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: linkElement,
-                    start: "40% bottom",
-                    end: "180% bottom",
-                    scrub: 1,
-                    markers: false,
-                },
+                tl.to(linkElement, {
+                    opacity: 1,
+                    duration: 1,
+                });
             });
-
-            tl.to(linkElement, {
-                opacity: 1,
-                duration: 1,
-            });
-        });
+        }
     }, [data]);
 
     return (
@@ -121,9 +122,8 @@ export default function MainProjects({ data }) {
                             }}
                         >
                             <Link
-                                className={styles.Link}
+                                className={`${styles.Link} trigger`}
                                 key={project.id}
-                                id="trigger"
                                 ref={sliderRef}
                                 href={`/projects/${project.id}`}
                             >

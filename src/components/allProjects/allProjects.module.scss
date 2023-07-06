@@ -236,13 +236,15 @@
         align-items: center;
     }
     &__ProjectsLink {
-        opacity: 0;
         list-style: none;
         text-decoration: none;
         border-radius: 14px;
         position: relative;
-        top: 80px;
         color: #fce2ff;
+        @media (min-width: 1024px) {
+            opacity: 0;
+            top: 80px;
+        }
 
         &:hover {
             transform: scale(0.95);

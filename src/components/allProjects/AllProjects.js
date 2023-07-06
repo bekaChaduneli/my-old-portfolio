@@ -39,26 +39,27 @@ export default function AllProjects({ data }) {
     };
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+        if (window.innerWidth >= 1024) {
+            gsap.registerPlugin(ScrollTrigger);
+            const linkElements = document.querySelectorAll(".trigger");
+            linkElements?.forEach((linkElement) => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: linkElement,
+                        start: "top bottom",
+                        end: "bottom bottom",
+                        scrub: 1,
+                        markers: false,
+                    },
+                });
 
-        const linkElements = document.querySelectorAll(".trigger");
-        linkElements?.forEach((linkElement) => {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: linkElement,
-                    start: "top bottom",
-                    end: "bottom bottom",
-                    scrub: 1,
-                    markers: false,
-                },
+                tl.to(linkElement, {
+                    y: -80,
+                    opacity: 1,
+                    duration: 1,
+                });
             });
-
-            tl.to(linkElement, {
-                y: -80,
-                opacity: 1,
-                duration: 1,
-            });
-        });
+        }
     }, [data?.projects]);
     return (
         <div className={styles.Projects}>
