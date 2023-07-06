@@ -1,9 +1,11 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./header.module.scss";
 import { MapPin } from "lucide-react";
 import { useTypingText } from "@/hooks/useTypingText";
 import AppButton from "../appButton/AppButton";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Header() {
     const { word } = useTypingText(
         [
@@ -28,19 +30,73 @@ export default function Header() {
         130,
         20
     );
+    useEffect(() => {
+        if (window.innerWidth >= 1024) {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to(".headline", {
+                opacity: 1,
+                y: -30,
+                duration: 1,
+            });
+            gsap.to(".text", {
+                opacity: 1,
+                y: -20,
+                duration: 1,
+                delay: 0.4,
+            });
+            gsap.to(".skills", {
+                opacity: 1,
+                y: -20,
+                duration: 1,
+                delay: 0.6,
+            });
+            gsap.to(".location", {
+                opacity: 1,
+                y: -20,
+                duration: 1,
+                delay: 0.8,
+            });
+            gsap.to(".buttons", {
+                opacity: 1,
+                y: -20,
+                duration: 1,
+                delay: 1,
+            });
+            const linkElement = document.querySelector(".header");
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: linkElement,
+                    start: "-100px middle",
+                    end: "1000px middle",
+                    scrub: 1,
+                    markers: false,
+                },
+            });
+
+            tl.to(linkElement, {
+                y: 100,
+                duration: 1,
+            });
+        }
+    }, []);
     return (
-        <div className={styles.Header}>
-            <h1 className={styles.Header__Headline}>Hi I am Beka</h1>
-            <h2 className={styles.Header__Text}>Full Stack Developer</h2>
-            <h1 className={styles.Header__Skills}>
+        <div className={`${styles.Header} header`}>
+            <h1 className={`${styles.Header__Headline} headline`}>
+                Hi I am Beka
+            </h1>
+            <h2 className={`${styles.Header__Text} text`}>
+                Full Stack Developer
+            </h2>
+            <h1 className={`${styles.Header__Skills} skills`}>
                 I Love{" "}
                 <span className={styles.Header__SkillsValue}>{word}</span>
             </h1>
-            <div className={styles.Header__Location}>
+            <div className={`${styles.Header__Location} location`}>
                 <MapPin className={styles.Header__LocationIcon} /> Tbilisi,
                 Georgia
             </div>
-            <div className={styles.Header__ButtonsWrapper}>
+            <div className={`${styles.Header__ButtonsWrapper} buttons`}>
                 <AppButton lg href="/about">
                     About me
                 </AppButton>
