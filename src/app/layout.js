@@ -1,8 +1,8 @@
-import "./globals.css";
-import "../assets/styles/main.scss";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import styles from "./page.module.scss";
+import "../assets/styles/main.scss";
+import "./globals.css";
 
 export const metadata = {
     title: "Create Next App",
