@@ -6,6 +6,7 @@ export default function AppButton({ href, children, type, sm, md, lg, xl }) {
     if (href) {
         return (
             <Link
+                id="trigger"
                 className={
                     type == "white"
                         ? classNames(styles.WhiteButton, {
@@ -29,6 +30,7 @@ export default function AppButton({ href, children, type, sm, md, lg, xl }) {
     }
     return (
         <button
+            id="trigger"
             className={
                 type == "white"
                     ? classNames(styles.WhiteButton, {

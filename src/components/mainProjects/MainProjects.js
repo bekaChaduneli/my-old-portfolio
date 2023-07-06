@@ -5,7 +5,7 @@ import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import useMouse from "@react-hook/mouse-position";
-import { motion, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import MyImage from "../../../public/images/laptop.png";
 import styles from "./mainProjects.module.scss";
 import Image from "next/image";
@@ -74,25 +74,27 @@ export default function MainProjects({ data }) {
     }
     const sliderRef = useRef(null);
 
-    // useEffect(() => {
-    //     const serviceRows = document.querySelectorAll(".link");
-    //     serviceRows.forEach((serviceRow) => {
-    //         let tl = gsap.timeline({
-    //             scrollTrigger: {
-    //                 trigger: serviceRow,
-    //                 start: "top bottom",
-    //                 end: "bottom bottom",
-    //                 scrub: 1,
-    //                 markers: false,
-    //             },
-    //         });
-    //         tl.to(serviceRow, {
-    //             y: -50,
-    //             opacity: 1,
-    //             duration: 1,
-    //         });
-    //     });
-    // }, []);
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const linkElements = document.querySelectorAll("#trigger");
+        linkElements?.forEach((linkElement) => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: linkElement,
+                    start: "40% bottom",
+                    end: "180% bottom",
+                    scrub: 1,
+                    markers: false,
+                },
+            });
+
+            tl.to(linkElement, {
+                opacity: 1,
+                duration: 1,
+            });
+        });
+    }, [data]);
 
     return (
         <div ref={ref} className={styles.ProjectsWrapper}>
@@ -121,6 +123,7 @@ export default function MainProjects({ data }) {
                             <Link
                                 className={styles.Link}
                                 key={project.id}
+                                id="trigger"
                                 ref={sliderRef}
                                 href={`/projects/${project.id}`}
                             >
