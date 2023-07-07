@@ -95,9 +95,6 @@ export default function Header() {
         <AppButton lg href="/about">
           About me
         </AppButton>
-        <AppButton lg href="#">
-          Resume
-        </AppButton>
       </div>
     </div>
   );
