@@ -166,8 +166,24 @@
         z-index: 0;
         width: 80%;
         left: 50%;
+        overflow: hidden;
         border-radius: 30px;
         transform: translate(-50%, 10px);
+        position: relative;
+        @media (max-width: 1024px) {
+            border-radius: 14px;
+            transform: translate(-50%, 2px);
+        }
+        @media (max-width: 420px) {
+            border-radius: 4px;
+            transform: translate(-50%, 2px);
+        }
+    }
+    &__LaptopBackgroundImg {
+        width: 100%;
+        min-height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
         position: absolute;
     }
     &__ButtonsWrapper {

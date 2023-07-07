@@ -4,6 +4,12 @@
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
+    column-count: 2;
+    column-gap: 1.5em;
+    @media (min-width: 1024px) {
+        opacity: 0;
+        top: 70px;
+    }
     @media (max-width: 1280px) {
         gap: 24px;
     }
@@ -17,47 +23,56 @@
 }
 .Project {
     position: relative;
-    border-radius: 30px;
+    border-radius: 24px;
     transition: 0.4s;
-    width: 450px;
-    height: 240px;
+    width: 580px;
+    height: 350px;
     box-shadow: 0px 10px 20px 0px #00000094;
     @media (max-width: 1640px) {
-        width: 350px;
-        height: 218px;
-        border-radius: 26px;
-    }
-    @media (max-width: 1440px) {
-        width: 330px;
-        height: 204px;
-        border-radius: 24px;
+        width: 470px;
+        height: 300px;
+        border-radius: 20px;
     }
     @media (max-width: 1280px) {
-        width: 420px;
-        height: 224px;
-        border-radius: 20px;
+        width: 400px;
+        height: 234px;
+        border-radius: 14px;
     }
     @media (max-width: 1024px) {
         width: 320px;
         height: 180px;
-        border-radius: 18px;
+        border-radius: 12px;
     }
     @media (max-width: 768px) {
-        width: 230px;
-        height: 140px;
-        border-radius: 14px;
+        width: 240px;
+        height: 150px;
+        border-radius: 8px;
     }
     @media (max-width: 560px) {
-        width: 380px;
-        height: 200px;
-        border-radius: 10px;
-    }
-    @media (max-width: 420px) {
-        width: 280px;
-        height: 160px;
+        width: 390px;
+        height: 270px;
         border-radius: 6px;
     }
+    @media (max-width: 420px) {
+        max-width: 310px;
+        max-height: 200px;
+        border-radius: 4px;
+    }
 
+    &__HoverBackground {
+        pointer-events: none;
+        position: absolute;
+        transition: 0.4s;
+        opacity: 0;
+        left: 0px;
+        bottom: 0px;
+        z-index: 1;
+        inset: 0px;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.1) 10%,
+            rgba(0, 0, 0, 0.78) 80%
+        );
+    }
     &__Background {
         width: 100%;
         height: 100%;
@@ -73,6 +88,13 @@
         border-radius: 14px;
         width: 100%;
         height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    &__BackgroundImg {
+        object-fit: cover;
+        width: 100%;
+        min-height: 100%;
         position: absolute;
     }
     &__ProjectAboutBackground {
@@ -89,8 +111,7 @@
         position: absolute;
         padding: 10px 22px;
         border-radius: 10px;
-        backdrop-filter: blur(4px);
-        background: #00000097;
+        z-index: 2;
         bottom: 0px;
         line-height: 100%;
         transition: 0.4s;
@@ -120,12 +141,19 @@
     }
 
     &__ProjectHeadline {
-        font-size: 18px;
+        font-size: 32px;
         position: relative;
         z-index: 1;
-
         font-family: var(--font-acorn);
-        margin-bottom: 8px;
+        margin-bottom: 12px;
+        @media (max-width: 1280px) {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
         @media (max-width: 768px) {
             font-size: 14px;
             margin-bottom: 2px;
@@ -140,11 +168,20 @@
         }
     }
     &__ProjectText {
-        font-size: 14px;
+        font-size: 16px;
+        opacity: 0.8;
         z-index: 1;
         position: relative;
         font-family: var(--font-pragmatica);
         margin-bottom: 16px;
+        @media (max-width: 1280px) {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
         @media (max-width: 768px) {
             font-size: 10px;
             margin-bottom: 10px;
@@ -206,7 +243,7 @@
         display: flex;
         z-index: 1;
         gap: 8px;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         @media (max-width: 768px) {
             gap: 6px;
@@ -256,7 +293,7 @@
 
 .Project:hover .Project__ProjectAbout {
     opacity: 1;
-    bottom: 14px;
+    bottom: 22px;
     @media (max-width: 1024px) {
         bottom: 12px;
     }
@@ -266,6 +303,9 @@
     @media (max-width: 560px) {
         bottom: 10px;
     }
+}
+.Project:hover .Project__HoverBackground {
+    opacity: 1;
 }
 .Project:hover .Project__ProjectAboutBackground {
     backdrop-filter: blur(4px);

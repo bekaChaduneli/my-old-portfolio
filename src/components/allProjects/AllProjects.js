@@ -6,7 +6,7 @@ import classNames from "classnames";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function AllProjects({ data }) {
-    const itemsPerPage = 12;
+    const itemsPerPage = 10;
     const videoRefs = useRef([]);
     const [currentPage, setCurrentPage] = useState(1);
     const indexOfLastItem = currentPage * itemsPerPage;
@@ -58,11 +58,17 @@ export default function AllProjects({ data }) {
                     opacity: 1,
                     duration: 1,
                 });
+                gsap.to(".projects", {
+                    y: -70,
+                    opacity: 1,
+                    duration: 1,
+                    delay: 0.6,
+                });
             });
         }
     }, [data?.projects]);
     return (
-        <div className={styles.Projects}>
+        <div className={`${styles.Projects} projects`}>
             {currentItems?.map((project, index) => {
                 return (
                     <Link
@@ -72,7 +78,12 @@ export default function AllProjects({ data }) {
                         onMouseLeave={() => handleVideoMouseLeave(index)}
                         href={`/projects/${project?.id}`}
                     >
-                        <div className={styles.Project} key={index}>
+                        <div
+                            style={{ height: `${project.height}px` }}
+                            className={styles.Project}
+                            key={index}
+                        >
+                            <div className={styles.Project__HoverBackground} />
                             <figure className={styles.Project__Background}>
                                 {project.videoLink ? (
                                     <video
@@ -85,43 +96,48 @@ export default function AllProjects({ data }) {
                                         muted
                                     />
                                 ) : (
-                                    <img
-                                        key={index}
+                                    <figure
                                         className={
                                             styles.Project__BackgroundImage
                                         }
-                                        id={`image-${index}`}
-                                        alt="project-image"
-                                        src={`/images/${project.image[0]}`}
-                                    />
+                                    >
+                                        <img
+                                            key={index}
+                                            className={
+                                                styles.Project__BackgroundImg
+                                            }
+                                            id={`image-${index}`}
+                                            alt="project-image"
+                                            src={`/images/${project.image[0]}`}
+                                        />
+                                    </figure>
                                 )}
                             </figure>
                             <div className={styles.Project__ProjectAbout}>
-                                {project.name}
-                                {/* <div className={styles.Project__ProjectAboutBackground} />
-                <h1 className={styles.Project__ProjectHeadline}>
-                  {project.name}
-                </h1>
-                <div className={styles.Project__ProjectText}>
-                  <p>{project.slug}</p>
-                </div>
-                <div className={styles.Project__ProjectDateWrapper}>
-                  <CalendarClock className={styles.Project__ProjectDateIcon} />{" "}
-                  <span className={styles.Project__ProjectDate}>
-                    {project.date}
-                  </span>
-                </div>
-                <div className={styles.Project__ProjectFrameworkWrapper}>
-                  {project.frameworks?.map((framework, index) => (
-                    <img
-                      key={index}
-                      src={`/images/${framework}.png`}
-                      className={styles.Project__ProjectFramework}
-                      alt="framework"
-                    />
-                  ))}
-                </div>
-                <div className={styles.Project__ProjectsLinksWrapper}></div> */}
+                                <h1 className={styles.Project__ProjectHeadline}>
+                                    {project.name}
+                                </h1>
+                                <div className={styles.Project__ProjectText}>
+                                    <p>{project.slug}</p>
+                                </div>
+                                <div
+                                    className={
+                                        styles.Project__ProjectFrameworkWrapper
+                                    }
+                                >
+                                    {project.frameworks?.map(
+                                        (framework, index) => (
+                                            <img
+                                                key={index}
+                                                src={`/images/${framework}.png`}
+                                                className={
+                                                    styles.Project__ProjectFramework
+                                                }
+                                                alt="framework"
+                                            />
+                                        )
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </Link>

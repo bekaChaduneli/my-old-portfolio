@@ -125,11 +125,13 @@ export default function Page() {
                         muted
                     />
                 ) : (
-                    <img
-                        className={styles.Project__LaptopBackgroundImage}
-                        alt="project background"
-                        src={`/images/${data?.image[0]}`}
-                    />
+                    <figure className={styles.Project__LaptopBackgroundImage}>
+                        <img
+                            className={styles.Project__LaptopBackgroundImg}
+                            alt="project background"
+                            src={`/images/${data?.image[0]}`}
+                        />
+                    </figure>
                 )}
             </figure>
             <div className={styles.Project__ButtonsWrapper}>

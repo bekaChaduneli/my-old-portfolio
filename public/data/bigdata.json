@@ -159,10 +159,8 @@
             "live": "http://wedding.artmedia.ge/",
             "about": [
                 "Introducing a captivating wedding site that offers a seamless booking experience for couples. This project, which I previously shared with you, provides a platform where users can effortlessly plan and book their dream weddings",
-                "With a user-friendly interface, the site allows couples to explore various wedding options, browse through available services, and make bookings based on their preferences. The intuitive design ensures easy navigation and showcases the elegance and sophistication synonymous with weddings",
-                "Created with HTML, GSAP, SCSS, and jQuery, this project reflects my dedication to delivering visually appealing and functional web applications. The use of GSAP brings animations and transitions to life, enhancing the overall user experience",
-                "By leveraging HTML, SCSS, and jQuery, I have created a comprehensive wedding site that caters to the unique needs of couples. It serves as a valuable tool for couples looking to create memorable moments on their special day",
-                "Explore the possibilities with our wedding site, where your dream wedding awaits. Discover, plan, and book your perfect celebration, as we guide you through an enchanting journey of love and togetherness"
+                "Tthe site allows couples to explore various wedding options, browse through available services, and make bookings based on their preferences. The intuitive design ensures easy navigation and showcases the elegance and sophistication synonymous with weddings",
+                "Created with HTML, GSAP, SCSS, and jQuery, this project reflects my dedication to delivering visually appealing and functional web applications. The use of GSAP brings animations and transitions to life, enhancing the overall user experience"
             ]
         },
 
@@ -186,8 +184,34 @@
             "about": [
                 "Introducing a Google clone, which is craeted with Next.js and Tailwind CSS. This project, powered by the Google API, offers users a familiar search experience where they can explore a vast array of information, view images, and even search random words",
                 "It looks like real Google. Clone provides an intuitive interface for users to search for anything they desire. The project dynamically displays the number of results found for each search term, mimicking the functionality of the original search engine",
-                "Built on Next.js, the project delivers efficient server-side rendering and ensures a seamless browsing experience. Tailwind CSS enhances the design aesthetics, creating a visually appealing and responsive user interface",
-                "Unlock the power of search with our Google clone, where you can explore, discover, and find information with ease. Embrace the familiarity of Google while enjoying the capabilities of this tailor-made project, providing an immersive search experience for users"
+                "Built on Next.js, the project delivers efficient server-side rendering and ensures a seamless browsing experience. Tailwind CSS enhances the design aesthetics, creating a visually appealing and responsive user interface"
+            ]
+        },
+        {
+            "name": "My Portfolio",
+            "slug": "Developer portfolio website",
+            "id": "my-portfolio",
+            "best": false,
+            "display": false,
+            "frameworks": ["next", "scss", "gsap", "framermotion"],
+            "date": " Mar",
+            "image": [
+                "my-portfolio-main.png",
+                "my-portfolio-about.png",
+                "my-portfolio-projects.png",
+                "my-portfolio-contact.png"
+            ],
+            "tools": [
+                "/next.png",
+                "/scss.png",
+                "/gsap.png",
+                "/framermotion.png"
+            ],
+            "github": "https://github.com/bekaChaduneli/my-new-portfolio",
+            "live": "https://portfolio-six-ecru-43.vercel.app/",
+            "about": [
+                "my portfolio project, a platform I've created using Next.js, SCSS, GSAP, and Framer Motion",
+                "The main goal was to get experience on a project that would be completely my plan without all the templates and present information about myself"
             ]
         },
         {
@@ -352,6 +376,27 @@
                 "Introducing an ecommerce product page created with HTML, CSS, and JavaScript. This project provides users with a platform to explore product listings, add items to their basket, view product images, and check the final price",
                 "The website offers a clean and intuitive interface, allowing users to browse through various products and make informed purchase decisions. Leveraging the power of HTML, CSS, and JavaScript, this project delivers a seamless shopping experience, enabling users to interact with product details and add items to their virtual basket",
                 "Join us on this digital journey as we present an ecommerce product page that showcases products, facilitates smooth navigation, and ensures a hassle-free shopping experience for users"
+            ]
+        },
+        {
+            "name": "My old Portfolio",
+            "best": false,
+            "slug": "Portfolio Website",
+            "id": "portfolio",
+            "display": false,
+            "frameworks": ["react", "typescript", "three", "chakraui"],
+            "date": " Feb",
+            "image": [
+                "portfolio-main.png",
+                "portfolio-projects.png",
+                "portfolio-skills.png"
+            ],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/my-portfolio",
+            "live": "https://my-portfolio-pink-pi.vercel.app/",
+            "about": [
+                "my portfolio project, a platform I've created using React, TypeScript, Three.js, and Chakra UI.",
+                "The main goal was to get experience on a project that would be completely my plan without all the templates and also to get a better experience with Framer motion and ThreeJS"
             ]
         },
         {
@@ -589,6 +634,61 @@
             ]
         },
         {
+            "name": "Todo",
+            "best": false,
+            "slug": "A site for managing todos where it is possible to delete, activate and filter todos, which are saved in the user sessions",
+            "id": "todo",
+            "date": " jun",
+            "image": ["todo.png"],
+            "frameworks": ["react", "css"],
+            "tools": ["/react.png", "/css.png"],
+            "github": "https://github.com/bekaChaduneli/artmedia-todo-test",
+            "live": "https://todo-mocha-rho.vercel.app/",
+            "about": [
+                "Introducing a functional Todo created with React and Css. This project provides users with a simple and intuitive interface to manage their tasks efficiently. Users can easily add new todos, mark them as completed or active, and delete them as needed",
+                "The app also includes a feature that highlights the active todos, allowing users to prioritize their tasks effectively. Additionally, users have the option to switch to a dark mode theme for a more comfortable viewing experience",
+                "This todo can save your tasks within your session. This means that your task information is securely stored and easily accessible whenever you use the app",
+                "With its user-friendly design and essential features, this React and Css based Todo App simplifies task management and enhances productivity"
+            ]
+        },
+        {
+            "name": "Posts List",
+            "best": false,
+            "slug": "seamless platform to explore and engage with a wide range of posts",
+            "id": "posts",
+            "date": " jun",
+            "image": ["posts.png", "post.png"],
+            "frameworks": ["react", "css"],
+            "tools": ["/react.png", "/css.png"],
+            "github": "https://github.com/bekaChaduneli/artmedia-proj",
+            "live": "https://artmedia-proj-q3a6.vercel.app/",
+            "about": [
+                "Posts List is built with Next.js and CSS, is a remarkable project that brings you a seamless platform to explore and engage with a wide range of posts. With a simple and intuitive interface, users can dive into a captivating world of posts, authors, and comments, all powered by an API",
+                "Experience the joy of browsing through a diverse collection of posts, effortlessly loading and displaying content. Posts List allows you to delve into each post, discover its author, and engage with the vibrant community through comments",
+                "Share your thoughts and connect with like-minded individuals by adding comments, fostering meaningful conversations that extend beyond the initial post. With each visit, explore the author's other posts, gaining a deeper understanding of their unique perspectives",
+                "Posts List opens the gateway to endless possibilities, where exploration, connection, and engagement seamlessly intertwine. Embrace the world of posts, authors, and comments with PostConnect and discover a truly enriching experience"
+            ]
+        },
+        {
+            "name": "Tip calculator app",
+            "best": false,
+            "slug": "Tip and amount calculation site that was built with javascript",
+            "id": "tip-calculator-app",
+            "videoLink": "tip-calculator",
+            "date": " Jan",
+            "image": ["tip-calculator.png"],
+            "frameworks": ["html", "css", "javascript"],
+            "tools": ["/javascript.png", "/css.png", "/html.png"],
+            "github": "https://github.com/bekaChaduneli/tip-calculator-app",
+            "live": "https://bekachaduneli.github.io/tip-calculator-app/",
+            "about": [
+                "Introducing a Tip Calculator application built using HTML, CSS, and JavaScript. This project allows users to calculate the tip amount and total bill based on the entered bill amount and desired tip percentage",
+                "By providing a convenient and efficient way to calculate tips, this application aims to simplify the payment process for users. With its straightforward interface, users can easily input the bill amount and select the desired tip percentage to instantly obtain the tip amount and the final total",
+                "This project serves as an excellent introduction to JavaScript programming, providing a practical example of using basic mathematical calculations to enhance user experience",
+                "Overall, the Tip Calculator application offers a practical solution for quickly calculating tips, making it a useful tool for everyday use"
+            ]
+        },
+        {
             "name": "launch countdown timer",
             "best": false,
             "slug": "A countdown timer site where the user can see how much time is left until the countdown ends",
@@ -702,6 +802,23 @@
             ]
         },
         {
+            "name": "Dynamic Form",
+            "best": false,
+            "slug": "Generated form where it is possible to receive unlimited information from the user",
+            "id": "dynamic-form",
+            "date": " May",
+            "frameworks": ["react", "css"],
+            "image": ["dynamic-form.png"],
+            "tools": ["/react.png", "/css.png"],
+            "github": "https://github.com/bekaChaduneli/dynamic-form",
+            "live": "https://dynamic-form-ruddy.vercel.app/",
+            "about": [
+                "Dynamic form is built using React and CSS, this tool enables users to create forms with ease, adding inputs and components as needed",
+                "In form users can effortlessly write and manage inputs within their forms. The flexibility of this project allows users to add new elements on the go, adapting the form to their specific requirements",
+                "When it's time to submit, form conveniently bundles all the entered information into a single, organized array. This simplifies the process of data collection, eliminating the need to manage multiple inputs individually"
+            ]
+        },
+        {
             "name": "four card section",
             "best": false,
             "slug": "A flexible project of four components whose positions are selected by a grid",
@@ -772,6 +889,21 @@
                 "The primary objective of this project was to ensure that the page adapts seamlessly to different screen sizes and devices, providing an optimal viewing experience for users across desktops, tablets, and mobile devices",
                 "By incorporating responsive design principles, I learned how to structure and style elements to achieve fluidity and responsiveness. The Skilled Landing Page serves as a testament to my growing skills in creating engaging and user-friendly web pages",
                 "It exemplifies my commitment to staying up-to-date with modern web design practices and delivering a seamless user experience"
+            ]
+        },
+        {
+            "name": "ShpagattiBall",
+            "best": false,
+            "slug": "CodeHS (Introducing to javascript) final project where I created a football game with two characters: Jotia Tsaava and Harry Maguire",
+            "id": "shpagattiBall",
+            "date": " Dec",
+            "frameworks": ["codehs"],
+            "tools": ["/codehs.png"],
+            "image": ["codehs-project.png"],
+            "live": "https://codehs.com/share/id/write-the-code-gLvrFR/run",
+            "about": [
+                "Mini game developed through the CodeHS Karel course. In this project, immerse yourself in the world of football as Jotia Tsaava and Harry Maguaire. The game continues until one player scores 3 goals",
+                "ShpagattiBall is the final task of my learning journey in the CodeHS Karel course, where I acquired my programming skills and grasped the fundamentals."
             ]
         }
     ],
