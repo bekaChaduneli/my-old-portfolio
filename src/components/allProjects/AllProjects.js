@@ -93,6 +93,8 @@ export default function AllProjects({ data }) {
                     className={classNames(styles.Projects__FilterItem, {
                         [styles["Projects__FilterItem--active"]]:
                             currentFramework === "",
+                        [styles["Projects__FilterItem--notActive"]]:
+                            currentFramework !== "",
                     })}
                     onClick={() => handleFrameworkClick("")}
                 >
@@ -101,7 +103,31 @@ export default function AllProjects({ data }) {
                 <span
                     className={classNames(styles.Projects__FilterItem, {
                         [styles["Projects__FilterItem--active"]]:
+                            currentFramework === "next",
+                        [styles["Projects__FilterItem--notActive"]]:
+                            currentFramework !== "next",
+                    })}
+                    onClick={() => handleFrameworkClick("next")}
+                >
+                    Next
+                </span>
+                <span
+                    className={classNames(styles.Projects__FilterItem, {
+                        [styles["Projects__FilterItem--active"]]:
+                            currentFramework === "typescript",
+                        [styles["Projects__FilterItem--notActive"]]:
+                            currentFramework !== "typescript",
+                    })}
+                    onClick={() => handleFrameworkClick("typescript")}
+                >
+                    Typescript
+                </span>
+                <span
+                    className={classNames(styles.Projects__FilterItem, {
+                        [styles["Projects__FilterItem--active"]]:
                             currentFramework === "react",
+                        [styles["Projects__FilterItem--notActive"]]:
+                            currentFramework !== "react",
                     })}
                     onClick={() => handleFrameworkClick("react")}
                 >
@@ -111,6 +137,8 @@ export default function AllProjects({ data }) {
                     className={classNames(styles.Projects__FilterItem, {
                         [styles["Projects__FilterItem--active"]]:
                             currentFramework === "javascript",
+                        [styles["Projects__FilterItem--notActive"]]:
+                            currentFramework !== "javascript",
                     })}
                     onClick={() => handleFrameworkClick("javascript")}
                 >
@@ -119,11 +147,13 @@ export default function AllProjects({ data }) {
                 <span
                     className={classNames(styles.Projects__FilterItem, {
                         [styles["Projects__FilterItem--active"]]:
-                            currentFramework === "typescript",
+                            currentFramework === "jquery",
+                        [styles["Projects__FilterItem--notActive"]]:
+                            currentFramework !== "jquery",
                     })}
-                    onClick={() => handleFrameworkClick("typescript")}
+                    onClick={() => handleFrameworkClick("jquery")}
                 >
-                    Typescript
+                    Jquery
                 </span>
             </div>
             <div className={styles.Projects}>
