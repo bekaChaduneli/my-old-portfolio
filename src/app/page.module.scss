@@ -13,6 +13,11 @@
     }
     &__Skills {
         width: 80%;
+        @media (min-width: 1024px) {
+            position: relative;
+            opacity: 0;
+            top: 76px;
+        }
     }
     &__ContactWrapper {
         display: flex;
@@ -21,6 +26,11 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 110px;
+        @media (min-width: 1024px) {
+            position: relative;
+            opacity: 0;
+            top: 76px;
+        }
         @media (max-width: 1440px) {
             margin-bottom: 80px;
         }

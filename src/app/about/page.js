@@ -36,8 +36,8 @@ export default function Page() {
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: triggerElement,
-                        start: "top 80%",
-                        end: "bottom 70%",
+                        start: "top bottom",
+                        end: "bottom bottom",
                         scrub: 1,
                         markers: false,
                     },
