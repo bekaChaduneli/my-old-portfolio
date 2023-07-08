@@ -103,11 +103,11 @@
             "github": "https://github.com/bekaChaduneli/reddit-clone",
             "live": "https://reddit-clone-ir9l.vercel.app/",
             "about": [
-                "Breadit is an impressive project that has successfully developed a user-friendly platform for online community enthusiasts. Leveraging the capabilities of Next.js, NextAuth, TypeScript, Prisma, and MySQL, Breadit offers a seamless and intuitive experience for users seeking to connect and engage with diverse communities",
-                "With Breadit, users can effortlessly register via email and explore a vast array of communities catering to their interests. The platform allows for the creation and joining of communities, enabling users to find their niche and connect with like-minded individuals",
-                "Breadit's flexible posting system empowers users to share a wide range of content types, while the interactive features, such as reactions, comments, and replies, facilitate engaging discussions and interactions within the community",
+                "Breadit is created with Next.js, NextAuth, TypeScript, Prisma, and MySQL, Breadit offers a seamless and intuitive experience for users seeking to connect and engage with diverse communities",
+                "With Breadit, users can register via email. The platform allows for the creation and joining of communities, enabling users to connect with peoples",
+                "Breadit's posting system empowers users to share a wide range of content types, while the interactive features, such as reactions, comments, and replies.",
                 "The main page's dynamic feed presents users with a wealth of posts, ensuring a constant stream of content tailored to their preferences and keeping them engaged",
-                "Breadit has succeeded in delivering a reliable and user-centric platform, offering an enjoyable experience for online community enthusiasts to connect, share, and engage in meaningful discussions"
+                "Breadit has succeeded in delivering a reliable and user-centric platform, offering an enjoyable experience for online community to connect, share, and engage in meaningful discussions"
             ]
         },
         {
@@ -133,10 +133,10 @@
             "github": "https://github.com/bekaChaduneli/spotify-clone",
             "live": "https://spotify-clone-tau-ochre.vercel.app/",
             "about": [
-                "Introducing a music platform, inspired by the popular music streaming platform. This project, as discussed earlier, is built with Next.js, TypeScript, Supabase, and Tailwind CSS, offering users a comprehensive music experience",
-                "The Spotify clone allows users to register, upload their music, search for songs, create playlists, and enjoy a seamless listening experience. It showcases my proficiency in Next.js, TypeScript, Supabase, and Tailwind CSS, creating a visually appealing and user-friendly interface",
+                "Introducing a music platform, inspired by the popular music streaming platform. This project, as discussed earlier, is built with Next.js, TypeScript, Supabase, and Tailwind CSS, offering users a music experience",
+                "The Spotify clone allows users to register, upload their music, search for songs, create playlists, and enjoy a seamless listening experience.",
                 "With Next.js, the project leverages server-side rendering for efficient performance, while TypeScript ensures strong typing and code integrity. Supabase provides a reliable database solution for user authentication, music storage, and playlist management. Tailwind CSS ensures a sleek and responsive design across different devices",
-                "Experience the joy of music with our Spotify clone, where you can explore, create, and enjoy your favorite tunes. Dive into a world of melodies as we bring the essence of Spotify to your fingertips, providing an immersive music streaming experience"
+                "Experience the joy of music with our Spotify clone, where you can explore, create, and enjoy your favorite tunes."
             ]
         },
         {
@@ -146,7 +146,7 @@
             "videoLink": "wedding-project",
             "best": true,
             "display": false,
-            "frameworks": ["html", "scss", "jquery"],
+            "frameworks": ["html", "scss", "jquery", "gsap"],
             "date": " Apr",
             "image": [
                 "weddings-main.png",
@@ -160,7 +160,7 @@
             "about": [
                 "Introducing a captivating wedding site that offers a seamless booking experience for couples. This project, which I previously shared with you, provides a platform where users can effortlessly plan and book their dream weddings",
                 "Tthe site allows couples to explore various wedding options, browse through available services, and make bookings based on their preferences. The intuitive design ensures easy navigation and showcases the elegance and sophistication synonymous with weddings",
-                "Created with HTML, GSAP, SCSS, and jQuery, this project reflects my dedication to delivering visually appealing and functional web applications. The use of GSAP brings animations and transitions to life, enhancing the overall user experience"
+                "Created with HTML, GSAP, SCSS, and jQuery, this project reflects my dedication to delivering visually appealing and functional web applications."
             ]
         },
 
