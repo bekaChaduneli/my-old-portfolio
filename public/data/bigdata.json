@@ -143,12 +143,12 @@
             "name": "Weddings project",
             "slug": "weddings specified platform",
             "id": "weddings-project",
-            "videoLink": "wedding-project",
             "best": true,
             "display": false,
             "frameworks": ["html", "scss", "jquery", "gsap"],
             "date": " Apr",
             "image": [
+                "weddings-video.png",
                 "weddings-main.png",
                 "weddings-about.png",
                 "weddings-package.png",
