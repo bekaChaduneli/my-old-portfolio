@@ -195,6 +195,7 @@
             "display": false,
             "frameworks": ["next", "scss", "gsap", "framermotion"],
             "date": " Mar",
+            "videoLink": "my-new-portfolio",
             "image": [
                 "my-portfolio-main.png",
                 "my-portfolio-about.png",
