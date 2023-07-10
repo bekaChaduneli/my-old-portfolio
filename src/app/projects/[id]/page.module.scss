@@ -9,7 +9,7 @@
     &__Headline {
         font-size: 80px;
         line-height: 110%;
-        margin-bottom: 18px;
+        margin-bottom: 12px;
         @media (min-width: 1024px) {
             opacity: 0;
             position: relative;
@@ -17,15 +17,15 @@
         }
         @media (max-width: 1280px) {
             font-size: 70px;
-            margin-bottom: 14px;
+            margin-bottom: 10px;
         }
         @media (max-width: 1024px) {
             font-size: 60px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         @media (max-width: 768px) {
             font-size: 50px;
-            margin-bottom: 18px;
+            margin-bottom: 10px;
         }
         @media (max-width: 420px) {
             font-size: 40px;
@@ -33,10 +33,10 @@
         }
     }
     &__Slug {
-        font-size: 24px;
-        font-family: var(--font-Fexin);
-        line-height: 105%;
-        color: #f9dafcb7;
+        font-size: 22px;
+        font-family: var(--font-gt);
+        line-height: 100%;
+        color: #ffffffed;
         margin-bottom: 20px;
         @media (min-width: 1024px) {
             opacity: 0;

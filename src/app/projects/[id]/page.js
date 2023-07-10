@@ -136,12 +136,22 @@ export default function Page() {
             </figure>
             <div className={styles.Project__ButtonsWrapper}>
                 {data?.github && (
-                    <AppButton lg href={data?.github}>
+                    <AppButton
+                        lg
+                        type="white"
+                        target="_blank"
+                        href={data?.github}
+                    >
                         Github
                     </AppButton>
                 )}
                 {data?.live && (
-                    <AppButton lg href={data?.live}>
+                    <AppButton
+                        type="white"
+                        lg
+                        target="_blank"
+                        href={data?.live}
+                    >
                         Live
                     </AppButton>
                 )}

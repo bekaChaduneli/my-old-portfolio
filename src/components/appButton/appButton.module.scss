@@ -233,39 +233,34 @@
         }
     }
     &--lg {
-        padding: 8px 50px;
-        border-radius: 12px;
+        padding: 12px 50px;
+        border-radius: 6px;
         min-width: 240px;
-        font-size: 30px;
+        font-size: 24px;
         @media (max-width: 1280px) {
             min-width: 200px;
-            padding: 8px 50px;
-            font-size: 26px;
-            border-radius: 12px;
+            padding: 8px 46px;
+            font-size: 20px;
         }
         @media (max-width: 1024px) {
             min-width: 160px;
             padding: 8px 42px;
-            font-size: 24px;
-            border-radius: 12px;
+            font-size: 18px;
+            border-radius: 4px;
         }
         @media (max-width: 768px) {
             min-width: 120px;
             padding: 8px 38px;
-            font-size: 22px;
-            border-radius: 10px;
+            font-size: 16px;
         }
         @media (max-width: 560px) {
             min-width: 110px;
             padding: 8px 34px;
-            font-size: 20px;
-            border-radius: 8px;
         }
         @media (max-width: 420px) {
             min-width: 60px;
             padding: 6px 28px;
-            font-size: 16px;
-            border-radius: 6px;
+            border-radius: 2px;
         }
     }
     &--xl {
