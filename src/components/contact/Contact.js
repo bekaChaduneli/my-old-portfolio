@@ -64,12 +64,6 @@ export default function Contact() {
                 duration: 0.6,
                 delay: 1.2,
             });
-            gsap.to(".button", {
-                opacity: 1,
-                y: -20,
-                duration: 0.6,
-                delay: 1.4,
-            });
         }
     }, []);
     return (
@@ -133,10 +127,7 @@ export default function Contact() {
                     )}
                 </div>
                 {!limit && (
-                    <button
-                        className={`${styles.Contact__Button} button`}
-                        type="submit"
-                    >
+                    <button className={styles.Contact__Button} type="submit">
                         SUBMIT
                     </button>
                 )}
