@@ -27,7 +27,7 @@ export default function MyStory() {
         <div className={styles.Story}>
             <h1 className={`${styles.Story__Headline} headline`}>I AM BEKA</h1>
             <h2 className={`${styles.Story__Text} text`}>
-                Full Stack Developer From <strong>Tbilisi, Georgia</strong>
+                Front-end Developer From <strong>Tbilisi, Georgia</strong>
             </h2>
             <div className={`${styles.Story__Me} story`}>
                 <p>
