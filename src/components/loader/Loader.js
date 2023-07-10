@@ -32,11 +32,32 @@ export default function Loader() {
                     })}
                 >
                     <div className={styles.Wrapper__Content}>
-                        <div className={styles.Wrapper__ProgressBar} />
-                        <h2 className={styles.Wrapper__Headline}>
-                            Beka Chaduneli
-                        </h2>
-                        <h1 className={styles.Wrapper__Text}>Portfolio</h1>
+                        <h2 className={styles.Wrapper__Headline}>Chaduneli</h2>
+                        <div className={styles.Wrapper__ContentWrapper}>
+                            <div className={styles.Wrapper__Left}>
+                                <span className={styles.Wrapper__Text}>
+                                    Beka
+                                </span>
+                            </div>
+                            <div className={styles.Wrapper__Right}>
+                                <span className={styles.Wrapper__RightHeadline}>
+                                    Frontend developer
+                                </span>
+                                <span className={styles.Wrapper__RightText}>
+                                    portfolio
+                                </span>
+                                <span className={styles.Wrapper__RightText}>
+                                    2023
+                                </span>
+                            </div>
+                        </div>
+                        <div className={styles.Demo}>
+                            <div className={styles.Demo__ProgressBar}>
+                                <div
+                                    className={styles.Demo__ProgressBarValue}
+                                ></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             )}
