@@ -135,12 +135,16 @@ export default function Page() {
                 )}
             </figure>
             <div className={styles.Project__ButtonsWrapper}>
-                <AppButton lg href={data?.github}>
-                    Github
-                </AppButton>
-                <AppButton lg href={data?.live}>
-                    Live
-                </AppButton>
+                {data?.github && (
+                    <AppButton lg href={data?.github}>
+                        Github
+                    </AppButton>
+                )}
+                {data?.live && (
+                    <AppButton lg href={data?.live}>
+                        Live
+                    </AppButton>
+                )}
             </div>
             <ul className={styles.Project__TextWrapper}>
                 {data?.about.map((text, index) => {
