@@ -2,11 +2,21 @@ import Link from "next/link";
 import React from "react";
 import styles from "./appButton.module.scss";
 import classNames from "classnames";
-export default function AppButton({ href, children, type, sm, md, lg, xl }) {
+export default function AppButton({
+    href,
+    children,
+    target,
+    type,
+    sm,
+    md,
+    lg,
+    xl,
+}) {
     if (href) {
         return (
             <Link
                 id="trigger"
+                target={target ? target : ""}
                 className={
                     type == "white"
                         ? classNames(styles.WhiteButton, {
