@@ -84,7 +84,7 @@ export default function Header() {
   return (
     <div className={`${styles.Header} header`}>
       <h1 className={`${styles.Header__Headline} headline`}>Hi I am Beka</h1>
-      <h2 className={`${styles.Header__Text} text`}>Front End Developer</h2>
+      <h2 className={`${styles.Header__Text} text`}>Full-Stack Developer</h2>
       <h1 className={`${styles.Header__Skills} skills`}>
         I Love <span className={styles.Header__SkillsValue}>{word}</span>
       </h1>

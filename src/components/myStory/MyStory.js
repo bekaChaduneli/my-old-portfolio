@@ -27,14 +27,14 @@ export default function MyStory() {
         <div className={styles.Story}>
             <h1 className={`${styles.Story__Headline} headline`}>I AM BEKA</h1>
             <h2 className={`${styles.Story__Text} text`}>
-                Front-end Developer From <strong>Tbilisi, Georgia</strong>
+                Full-Stack Developer From <strong>Tbilisi, Georgia</strong>
             </h2>
             <div className={`${styles.Story__Me} story`}>
                 <p>
                     I started learning programming on{" "}
                     <strong>December 20, 2022</strong>, and I progressing daily
                     since then. Nowtime, I am working as an intern as a
-                    front-end developer at Artmedia.
+                    full-stack developer at Artmedia.
                 </p>
             </div>
         </div>
