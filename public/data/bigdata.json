@@ -140,6 +140,34 @@
             ]
         },
         {
+            "name": "Enigma",
+            "slug": "Artificial Intelligence App",
+            "id": "enigma",
+            "videoLink": "enigma",
+            "best": true,
+            "display": true,
+            "frameworks": ["next", "typescript", "prisma", "tailwind", "mysql", "stripe"],
+            "date": "2023 july",
+            "image": ["enigma-main.png", "enigma-dashboard.png", "enigma-content.png", "enigma-settings.png"],
+            "tools": [
+                "/next.png",
+                "/typescript.png",
+                "/prisma.png",
+                "/tailwind.png",
+                "/mysql.png",
+                "/stripe.png"
+            ],
+            "github": "https://github.com/bekaChaduneli/enigma",
+            "live": "https://enigma-tau.vercel.app/",
+            "about": [
+                "Enigma, a cutting-edge project developed with Next.js, TypeScript, Prisma, Tailwind, MySQL, and Stripe, is an AI-powered app that unleashes your creativity. With Enigma, users can effortlessly generate music, videos, photos, code, and interact with a custom-built chatbot for a unique experience",
+                "Authentication is seamless and secure, thanks to Clerk, allowing users to engage with Enigma's features hassle-free. Users can opt for the Pro version, priced at $20, granting unlimited requests, while the free version allows up to 5 requests",
+                "Breadit's posting system empowers users to share a wide range of content types, while the interactive features, such as reactions, comments, and replies.",
+                "The main goal behind Enigma was to harness the power of AI APIs, master innovative authentication with Clerk, and implement smooth payment and customer support systems",
+                "Welcome to Enigma, where creativity knows no bounds. Explore the possibilities and let your imagination thrive with our AI app, designed to empower and inspire"
+            ]
+        },
+        {
             "name": "Weddings project",
             "slug": "weddings specified platform",
             "id": "weddings-project",
@@ -577,25 +605,6 @@
                 "The app also includes a feature that highlights the active todos, allowing users to prioritize their tasks effectively. Additionally, users have the option to switch to a dark mode theme for a more comfortable viewing experience",
                 "The Todo App focuses on usability and practicality, offering a straightforward solution for organizing and tracking daily tasks",
                 "With its user-friendly design and essential features, this HTML, CSS, and JavaScript-based Todo App simplifies task management and enhances productivity"
-            ]
-        },
-        {
-            "name": "Tip calculator app",
-            "best": false,
-            "slug": "Tip and amount calculation site that was built with javascript",
-            "id": "tip-calculator-app",
-            "videoLink": "tip-calculator",
-            "date": "2023 January",
-            "image": ["tip-calculator.png"],
-            "frameworks": ["html", "css", "javascript"],
-            "tools": ["/javascript.png", "/css.png", "/html.png"],
-            "github": "https://github.com/bekaChaduneli/tip-calculator-app",
-            "live": "https://bekachaduneli.github.io/tip-calculator-app/",
-            "about": [
-                "Introducing a Tip Calculator application built using HTML, CSS, and JavaScript. This project allows users to calculate the tip amount and total bill based on the entered bill amount and desired tip percentage",
-                "By providing a convenient and efficient way to calculate tips, this application aims to simplify the payment process for users. With its straightforward interface, users can easily input the bill amount and select the desired tip percentage to instantly obtain the tip amount and the final total",
-                "This project serves as an excellent introduction to JavaScript programming, providing a practical example of using basic mathematical calculations to enhance user experience",
-                "Overall, the Tip Calculator application offers a practical solution for quickly calculating tips, making it a useful tool for everyday use"
             ]
         },
         {
