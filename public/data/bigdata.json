@@ -174,7 +174,6 @@
             "about": [
                 "Enigma, a cutting-edge project developed with Next.js, TypeScript, Prisma, Tailwind, MySQL, and Stripe, is an AI-powered app that unleashes your creativity. With Enigma, users can effortlessly generate music, videos, photos, code, and interact with a custom-built chatbot for a unique experience",
                 "Authentication is seamless and secure, thanks to Clerk, allowing users to engage with Enigma's features hassle-free. Users can opt for the Pro version, priced at $20, granting unlimited requests, while the free version allows up to 5 requests",
-                "Breadit's posting system empowers users to share a wide range of content types, while the interactive features, such as reactions, comments, and replies.",
                 "The main goal behind Enigma was to harness the power of AI APIs, master innovative authentication with Clerk, and implement smooth payment and customer support systems",
                 "Welcome to Enigma, where creativity knows no bounds. Explore the possibilities and let your imagination thrive with our AI app, designed to empower and inspire"
             ]
