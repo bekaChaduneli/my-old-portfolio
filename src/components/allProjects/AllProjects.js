@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function AllProjects({ data }) {
     const itemsPerPage = 10;
-    const videoRefs = useRef([]);
     const [currentFramework, setCurrentFramework] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const indexOfLastItem = currentPage * itemsPerPage;
@@ -37,19 +36,6 @@ export default function AllProjects({ data }) {
 
     const handleNextPage = () => {
         setCurrentPage((prevPage) => prevPage + 1);
-    };
-
-    const handleVideoMouseEnter = (index) => {
-        if (videoRefs.current[index]) {
-            videoRefs.current[index].play();
-        }
-    };
-
-    const handleVideoMouseLeave = (index) => {
-        if (videoRefs.current[index]) {
-            videoRefs.current[index].pause();
-            videoRefs.current[index].currentTime = 0;
-        }
     };
 
     useEffect(() => {
@@ -84,6 +70,7 @@ export default function AllProjects({ data }) {
 
     const handleFrameworkClick = (framework) => {
         setCurrentFramework(framework);
+        setCurrentPage(1);
     };
 
     return (
@@ -161,8 +148,6 @@ export default function AllProjects({ data }) {
                     <Link
                         key={index}
                         className={`${styles.Project__ProjectsLink} trigger`}
-                        onMouseEnter={() => handleVideoMouseEnter(index)}
-                        onMouseLeave={() => handleVideoMouseLeave(index)}
                         href={`/projects/${project?.id}`}
                     >
                         <div
@@ -173,34 +158,14 @@ export default function AllProjects({ data }) {
                             key={index}
                         >
                             <div className={styles.Project__HoverBackground} />
-                            <figure className={styles.Project__Background}>
-                                {project.videoLink ? (
-                                    <video
-                                        src={require(`../../assets/videos/${project.videoLink}.mp4`)}
-                                        ref={(ref) => {
-                                            videoRefs.current[index] = ref;
-                                        }}
-                                        className={styles.Project__Video}
-                                        loop
-                                        muted
-                                    />
-                                ) : (
-                                    <figure
-                                        className={
-                                            styles.Project__BackgroundImage
-                                        }
-                                    >
-                                        <img
-                                            key={index}
-                                            className={
-                                                styles.Project__BackgroundImg
-                                            }
-                                            id={`image-${index}`}
-                                            alt="project-image"
-                                            src={`/images/${project.image[0]}`}
-                                        />
-                                    </figure>
-                                )}
+                            <figure className={styles.Project__BackgroundImage}>
+                                <img
+                                    key={index}
+                                    className={styles.Project__BackgroundImg}
+                                    id={`image-${index}`}
+                                    alt="project-image"
+                                    src={`/images/${project.image[0]}`}
+                                />
                             </figure>
                             <div className={styles.Project__ProjectAbout}>
                                 <h1 className={styles.Project__ProjectHeadline}>
