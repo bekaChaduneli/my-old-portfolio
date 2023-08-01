@@ -146,9 +146,21 @@
             "videoLink": "enigma",
             "best": true,
             "display": true,
-            "frameworks": ["next", "typescript", "prisma", "tailwind", "mysql", "stripe"],
+            "frameworks": [
+                "next",
+                "typescript",
+                "prisma",
+                "tailwind",
+                "mysql",
+                "stripe"
+            ],
             "date": "2023 july",
-            "image": ["enigma-main.png", "enigma-dashboard.png", "enigma-content.png", "enigma-settings.png"],
+            "image": [
+                "enigma-main.png",
+                "enigma-dashboard.png",
+                "enigma-content.png",
+                "enigma-settings.png"
+            ],
             "tools": [
                 "/next.png",
                 "/typescript.png",
@@ -316,20 +328,12 @@
         {
             "name": "3D Portfolio",
             "best": false,
+            "display": false,
             "slug": "A 3D website with a flexible portfolio-like design powered by three js",
             "frameworks": ["three", "react", "typescript", "styledcomponents"],
             "id": "3d-portfolio",
-            "react": true,
-            "typescript": true,
-            "javascript": false,
-            "three": true,
-            "styledcomponents": true,
-            "chakraui": false,
-            "markup": false,
-            "tailwind": false,
-            "display": false,
             "date": "2023 March",
-            "image": ["3d-portfolio.png"],
+            "image": ["3d-portfolio.jpg"],
             "tools": [
                 "/three.png",
                 "/react.png",
