@@ -2,25 +2,14 @@
     "personal": {
         "name": "beka",
         "lasname": "chaduneli",
-        "age": 19,
         "address": "Tbilisi, Georgia",
-        "phone": "(+995) 571 11 85 60",
-        "bithday": "20 November",
-        "bithdate": "2003.11.20",
-        "noprogrammingstack": {
-            "photoshop": "Adobe Photoshop",
-            "videomontage": {
-                "sonyvegas": "Sony Vegas",
-                "filmora": "Filmora"
-            }
-        },
         "work": {
             "name": "Artmedia",
             "nameLink": "https://www.linkedin.com/company/artmedia-web/mycompany/",
             "contents": [
                 {
                     "name": "Frontend Internship",
-                    "data": "20.04.2023 - present",
+                    "data": "20.04.2023 - 02.08.2023",
                     "text": "I started working as a Frontend developer intern at Artmedia on April 20, and since that day I have been getting real experience with Next.js, Javascript, Scss, Gsap, Jquery, Trello, and Jira."
                 }
             ]
