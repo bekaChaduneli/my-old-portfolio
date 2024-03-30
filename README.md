@@ -16,7 +16,7 @@ The main goal was to get experience on a project that would be completely my pla
 
 ### Links
 
--   Live Site URL: [Live site](https://portfolio-six-ecru-43.vercel.app/)
+-   Live Site URL: [Live site]([https://my-old-portfolio-eight.vercel.app/)
 -   Solution URL: [Solution URL](https://github.com/bekaChaduneli/my-new-portfolio)
 
 ### Built with
